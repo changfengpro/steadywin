@@ -1,0 +1,545 @@
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"GIM6010.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Module/GIM6010/GIM6010.c"
+  20              		.global	motor_t
+  21              		.section	.bss.motor_t,"aw",%nobits
+  22              		.align	2
+  25              	motor_t:
+  26 0000 00000000 		.space	56
+  26      00000000 
+  26      00000000 
+  26      00000000 
+  26      00000000 
+  27              		.section	.text.float_to_uint,"ax",%progbits
+  28              		.align	1
+  29              		.syntax unified
+  30              		.thumb
+  31              		.thumb_func
+  33              	float_to_uint:
+  34              	.LFB132:
+   1:Module/GIM6010/GIM6010.c **** #include "GIM6010.h"
+   2:Module/GIM6010/GIM6010.c **** 
+   3:Module/GIM6010/GIM6010.c **** motor_fbpara_t motor_t;
+   4:Module/GIM6010/GIM6010.c **** 
+   5:Module/GIM6010/GIM6010.c **** /**
+   6:Module/GIM6010/GIM6010.c **** ************************************************************************
+   7:Module/GIM6010/GIM6010.c **** * @brief:      	float_to_uint: 浮点数转换为无符号整数函数
+   8:Module/GIM6010/GIM6010.c **** * @param[in]:   x_float:	待转换的浮点数
+   9:Module/GIM6010/GIM6010.c **** * @param[in]:   x_min:		范围最小值
+  10:Module/GIM6010/GIM6010.c **** * @param[in]:   x_max:		范围最大值
+  11:Module/GIM6010/GIM6010.c **** * @param[in]:   bits: 		目标无符号整数的位数
+  12:Module/GIM6010/GIM6010.c **** * @retval:     	无符号整数结果
+  13:Module/GIM6010/GIM6010.c **** * @details:    	将给定的浮点数 x 在指定范围 [x_min, x_max] 内进行线性映射，映�
+  14:Module/GIM6010/GIM6010.c **** ************************************************************************
+  15:Module/GIM6010/GIM6010.c **** **/
+  16:Module/GIM6010/GIM6010.c **** static int float_to_uint(float x_float, float x_min, float x_max, int bits)
+  17:Module/GIM6010/GIM6010.c **** {
+  35              		.loc 1 17 1
+  36              		.cfi_startproc
+  37              		@ args = 0, pretend = 0, frame = 24
+  38              		@ frame_needed = 1, uses_anonymous_args = 0
+  39              		@ link register save eliminated.
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 2
+
+
+  40 0000 80B4     		push	{r7}
+  41              	.LCFI0:
+  42              		.cfi_def_cfa_offset 4
+  43              		.cfi_offset 7, -4
+  44 0002 87B0     		sub	sp, sp, #28
+  45              	.LCFI1:
+  46              		.cfi_def_cfa_offset 32
+  47 0004 00AF     		add	r7, sp, #0
+  48              	.LCFI2:
+  49              		.cfi_def_cfa_register 7
+  50 0006 87ED030A 		vstr.32	s0, [r7, #12]
+  51 000a C7ED020A 		vstr.32	s1, [r7, #8]
+  52 000e 87ED011A 		vstr.32	s2, [r7, #4]
+  53 0012 3860     		str	r0, [r7]
+  18:Module/GIM6010/GIM6010.c **** 	/* Converts a float to an unsigned int, given range and number of bits */
+  19:Module/GIM6010/GIM6010.c **** 	float span = x_max - x_min;
+  54              		.loc 1 19 8
+  55 0014 97ED017A 		vldr.32	s14, [r7, #4]
+  56 0018 D7ED027A 		vldr.32	s15, [r7, #8]
+  57 001c 77EE677A 		vsub.f32	s15, s14, s15
+  58 0020 C7ED057A 		vstr.32	s15, [r7, #20]
+  20:Module/GIM6010/GIM6010.c **** 	float offset = x_min;
+  59              		.loc 1 20 8
+  60 0024 BB68     		ldr	r3, [r7, #8]	@ float
+  61 0026 3B61     		str	r3, [r7, #16]	@ float
+  21:Module/GIM6010/GIM6010.c **** 	return (int) ((x_float-offset)*((float)((1<<bits)-1))/span);
+  62              		.loc 1 21 24
+  63 0028 97ED037A 		vldr.32	s14, [r7, #12]
+  64 002c D7ED047A 		vldr.32	s15, [r7, #16]
+  65 0030 37EE677A 		vsub.f32	s14, s14, s15
+  66              		.loc 1 21 44
+  67 0034 0122     		movs	r2, #1
+  68 0036 3B68     		ldr	r3, [r7]
+  69 0038 02FA03F3 		lsl	r3, r2, r3
+  70              		.loc 1 21 51
+  71 003c 013B     		subs	r3, r3, #1
+  72              		.loc 1 21 34
+  73 003e 07EE903A 		vmov	s15, r3	@ int
+  74 0042 F8EEE77A 		vcvt.f32.s32	s15, s15
+  75              		.loc 1 21 32
+  76 0046 67EE276A 		vmul.f32	s13, s14, s15
+  77              		.loc 1 21 55
+  78 004a 97ED057A 		vldr.32	s14, [r7, #20]
+  79 004e C6EE877A 		vdiv.f32	s15, s13, s14
+  80              		.loc 1 21 9
+  81 0052 FDEEE77A 		vcvt.s32.f32	s15, s15
+  82              		.loc 1 21 9 is_stmt 0 discriminator 1
+  83 0056 17EE903A 		vmov	r3, s15	@ int
+  22:Module/GIM6010/GIM6010.c **** }
+  84              		.loc 1 22 1 is_stmt 1
+  85 005a 1846     		mov	r0, r3
+  86 005c 1C37     		adds	r7, r7, #28
+  87              	.LCFI3:
+  88              		.cfi_def_cfa_offset 4
+  89 005e BD46     		mov	sp, r7
+  90              	.LCFI4:
+  91              		.cfi_def_cfa_register 13
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 3
+
+
+  92              		@ sp needed
+  93 0060 5DF8047B 		ldr	r7, [sp], #4
+  94              	.LCFI5:
+  95              		.cfi_restore 7
+  96              		.cfi_def_cfa_offset 0
+  97 0064 7047     		bx	lr
+  98              		.cfi_endproc
+  99              	.LFE132:
+ 101              		.section	.text.uint_to_float,"ax",%progbits
+ 102              		.align	1
+ 103              		.syntax unified
+ 104              		.thumb
+ 105              		.thumb_func
+ 107              	uint_to_float:
+ 108              	.LFB133:
+  23:Module/GIM6010/GIM6010.c **** /**
+  24:Module/GIM6010/GIM6010.c **** ************************************************************************
+  25:Module/GIM6010/GIM6010.c **** * @brief:      	uint_to_float: 无符号整数转换为浮点数函数
+  26:Module/GIM6010/GIM6010.c **** * @param[in]:   x_int: 待转换的无符号整数
+  27:Module/GIM6010/GIM6010.c **** * @param[in]:   x_min: 范围最小值
+  28:Module/GIM6010/GIM6010.c **** * @param[in]:   x_max: 范围最大值
+  29:Module/GIM6010/GIM6010.c **** * @param[in]:   bits:  无符号整数的位数
+  30:Module/GIM6010/GIM6010.c **** * @retval:     	浮点数结果
+  31:Module/GIM6010/GIM6010.c **** * @details:    	将给定的无符号整数 x_int 在指定范围 [x_min, x_max] 内进行线性映
+  32:Module/GIM6010/GIM6010.c **** ************************************************************************
+  33:Module/GIM6010/GIM6010.c **** **/
+  34:Module/GIM6010/GIM6010.c **** static float uint_to_float(int x_int, float x_min, float x_max, int bits)
+  35:Module/GIM6010/GIM6010.c **** {
+ 109              		.loc 1 35 1
+ 110              		.cfi_startproc
+ 111              		@ args = 0, pretend = 0, frame = 24
+ 112              		@ frame_needed = 1, uses_anonymous_args = 0
+ 113              		@ link register save eliminated.
+ 114 0000 80B4     		push	{r7}
+ 115              	.LCFI6:
+ 116              		.cfi_def_cfa_offset 4
+ 117              		.cfi_offset 7, -4
+ 118 0002 87B0     		sub	sp, sp, #28
+ 119              	.LCFI7:
+ 120              		.cfi_def_cfa_offset 32
+ 121 0004 00AF     		add	r7, sp, #0
+ 122              	.LCFI8:
+ 123              		.cfi_def_cfa_register 7
+ 124 0006 F860     		str	r0, [r7, #12]
+ 125 0008 87ED020A 		vstr.32	s0, [r7, #8]
+ 126 000c C7ED010A 		vstr.32	s1, [r7, #4]
+ 127 0010 3960     		str	r1, [r7]
+  36:Module/GIM6010/GIM6010.c **** 	/* converts unsigned int to float, given range and number of bits */
+  37:Module/GIM6010/GIM6010.c **** 	float span = x_max - x_min;
+ 128              		.loc 1 37 8
+ 129 0012 97ED017A 		vldr.32	s14, [r7, #4]
+ 130 0016 D7ED027A 		vldr.32	s15, [r7, #8]
+ 131 001a 77EE677A 		vsub.f32	s15, s14, s15
+ 132 001e C7ED057A 		vstr.32	s15, [r7, #20]
+  38:Module/GIM6010/GIM6010.c **** 	float offset = x_min;
+ 133              		.loc 1 38 8
+ 134 0022 BB68     		ldr	r3, [r7, #8]	@ float
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 4
+
+
+ 135 0024 3B61     		str	r3, [r7, #16]	@ float
+  39:Module/GIM6010/GIM6010.c **** 	return ((float)x_int)*span/((float)((1<<bits)-1)) + offset;
+ 136              		.loc 1 39 10
+ 137 0026 FB68     		ldr	r3, [r7, #12]
+ 138 0028 07EE903A 		vmov	s15, r3	@ int
+ 139 002c B8EEE77A 		vcvt.f32.s32	s14, s15
+ 140              		.loc 1 39 23
+ 141 0030 D7ED057A 		vldr.32	s15, [r7, #20]
+ 142 0034 67EE276A 		vmul.f32	s13, s14, s15
+ 143              		.loc 1 39 40
+ 144 0038 0122     		movs	r2, #1
+ 145 003a 3B68     		ldr	r3, [r7]
+ 146 003c 02FA03F3 		lsl	r3, r2, r3
+ 147              		.loc 1 39 47
+ 148 0040 013B     		subs	r3, r3, #1
+ 149              		.loc 1 39 30
+ 150 0042 07EE903A 		vmov	s15, r3	@ int
+ 151 0046 F8EEE77A 		vcvt.f32.s32	s15, s15
+ 152              		.loc 1 39 28
+ 153 004a 86EEA77A 		vdiv.f32	s14, s13, s15
+ 154              		.loc 1 39 52
+ 155 004e D7ED047A 		vldr.32	s15, [r7, #16]
+ 156 0052 77EE277A 		vadd.f32	s15, s14, s15
+  40:Module/GIM6010/GIM6010.c **** }
+ 157              		.loc 1 40 1
+ 158 0056 B0EE670A 		vmov.f32	s0, s15
+ 159 005a 1C37     		adds	r7, r7, #28
+ 160              	.LCFI9:
+ 161              		.cfi_def_cfa_offset 4
+ 162 005c BD46     		mov	sp, r7
+ 163              	.LCFI10:
+ 164              		.cfi_def_cfa_register 13
+ 165              		@ sp needed
+ 166 005e 5DF8047B 		ldr	r7, [sp], #4
+ 167              	.LCFI11:
+ 168              		.cfi_restore 7
+ 169              		.cfi_def_cfa_offset 0
+ 170 0062 7047     		bx	lr
+ 171              		.cfi_endproc
+ 172              	.LFE133:
+ 174              		.section	.text.GIMMotorSetMode,"ax",%progbits
+ 175              		.align	1
+ 176              		.global	GIMMotorSetMode
+ 177              		.syntax unified
+ 178              		.thumb
+ 179              		.thumb_func
+ 181              	GIMMotorSetMode:
+ 182              	.LFB134:
+  41:Module/GIM6010/GIM6010.c **** 
+  42:Module/GIM6010/GIM6010.c **** /**
+  43:Module/GIM6010/GIM6010.c **** ************************************************************************
+  44:Module/GIM6010/GIM6010.c **** * @brief:      	GIMMotorSetMode: 设置电机模式函数
+  45:Module/GIM6010/GIM6010.c **** * @param[in]:   fdhcan:     指向FDCAN_HandleTypeDef结构的指针
+  46:Module/GIM6010/GIM6010.c **** * @param[in]:   motor_id: 电机ID，指定目标电机
+  47:Module/GIM6010/GIM6010.c **** * @param[in]:   cmd:    指定要开启的模式
+  48:Module/GIM6010/GIM6010.c **** * @retval:     	void
+  49:Module/GIM6010/GIM6010.c **** * @details:    	通过CAN总线向特定电机发送启用特定模式的命令
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 5
+
+
+  50:Module/GIM6010/GIM6010.c **** ************************************************************************
+  51:Module/GIM6010/GIM6010.c **** **/
+  52:Module/GIM6010/GIM6010.c **** void GIMMotorSetMode(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, GIMMotor_Mode_e cmd)
+  53:Module/GIM6010/GIM6010.c **** {
+ 183              		.loc 1 53 1
+ 184              		.cfi_startproc
+ 185              		@ args = 0, pretend = 0, frame = 16
+ 186              		@ frame_needed = 1, uses_anonymous_args = 0
+ 187 0000 80B5     		push	{r7, lr}
+ 188              	.LCFI12:
+ 189              		.cfi_def_cfa_offset 8
+ 190              		.cfi_offset 7, -8
+ 191              		.cfi_offset 14, -4
+ 192 0002 84B0     		sub	sp, sp, #16
+ 193              	.LCFI13:
+ 194              		.cfi_def_cfa_offset 24
+ 195 0004 00AF     		add	r7, sp, #0
+ 196              	.LCFI14:
+ 197              		.cfi_def_cfa_register 7
+ 198 0006 7860     		str	r0, [r7, #4]
+ 199 0008 0B46     		mov	r3, r1
+ 200 000a 7B80     		strh	r3, [r7, #2]	@ movhi
+ 201 000c 1346     		mov	r3, r2
+ 202 000e 7B70     		strb	r3, [r7, #1]
+  54:Module/GIM6010/GIM6010.c ****     uint8_t tx_buff[8];
+  55:Module/GIM6010/GIM6010.c ****     memset(tx_buff, 0xff, 7);  // 发送电机指令的时候前面7bytes都是0xff
+ 203              		.loc 1 55 5
+ 204 0010 07F10803 		add	r3, r7, #8
+ 205 0014 0722     		movs	r2, #7
+ 206 0016 FF21     		movs	r1, #255
+ 207 0018 1846     		mov	r0, r3
+ 208 001a FFF7FEFF 		bl	memset
+  56:Module/GIM6010/GIM6010.c ****     tx_buff[7] = (uint8_t)cmd; // 最后一位是命令id
+ 209              		.loc 1 56 16
+ 210 001e 7B78     		ldrb	r3, [r7, #1]
+ 211 0020 FB73     		strb	r3, [r7, #15]
+  57:Module/GIM6010/GIM6010.c ****     fdcan_send_message(&hfdcan1, motor_id, tx_buff, sizeof(tx_buff));
+ 212              		.loc 1 57 5
+ 213 0022 07F10802 		add	r2, r7, #8
+ 214 0026 7988     		ldrh	r1, [r7, #2]
+ 215 0028 0823     		movs	r3, #8
+ 216 002a 0348     		ldr	r0, .L6
+ 217 002c FFF7FEFF 		bl	fdcan_send_message
+  58:Module/GIM6010/GIM6010.c **** }
+ 218              		.loc 1 58 1
+ 219 0030 00BF     		nop
+ 220 0032 1037     		adds	r7, r7, #16
+ 221              	.LCFI15:
+ 222              		.cfi_def_cfa_offset 8
+ 223 0034 BD46     		mov	sp, r7
+ 224              	.LCFI16:
+ 225              		.cfi_def_cfa_register 13
+ 226              		@ sp needed
+ 227 0036 80BD     		pop	{r7, pc}
+ 228              	.L7:
+ 229              		.align	2
+ 230              	.L6:
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 6
+
+
+ 231 0038 00000000 		.word	hfdcan1
+ 232              		.cfi_endproc
+ 233              	.LFE134:
+ 235              		.section	.text.mit_ctrl,"ax",%progbits
+ 236              		.align	1
+ 237              		.global	mit_ctrl
+ 238              		.syntax unified
+ 239              		.thumb
+ 240              		.thumb_func
+ 242              	mit_ctrl:
+ 243              	.LFB135:
+  59:Module/GIM6010/GIM6010.c **** 
+  60:Module/GIM6010/GIM6010.c **** /**
+  61:Module/GIM6010/GIM6010.c **** ************************************************************************
+  62:Module/GIM6010/GIM6010.c **** * @brief:      	mit_ctrl: MIT模式下的电机控制函数
+  63:Module/GIM6010/GIM6010.c **** * @param[in]:   hcan:			指向CAN_HandleTypeDef结构的指针，用于指定CAN总线
+  64:Module/GIM6010/GIM6010.c **** * @param[in]:   id:	电机ID，指定目标电机
+  65:Module/GIM6010/GIM6010.c **** * @param[in]:   pos:			位置给定值
+  66:Module/GIM6010/GIM6010.c **** * @param[in]:   vel:			速度给定值
+  67:Module/GIM6010/GIM6010.c **** * @param[in]:   kp:				位置比例系数
+  68:Module/GIM6010/GIM6010.c **** * @param[in]:   kd:				位置微分系数
+  69:Module/GIM6010/GIM6010.c **** * @param[in]:   torq:			转矩给定值
+  70:Module/GIM6010/GIM6010.c **** * @retval:     	void
+  71:Module/GIM6010/GIM6010.c **** * @details:    	通过CAN总线向电机发送MIT模式下的控制帧。
+  72:Module/GIM6010/GIM6010.c **** ************************************************************************
+  73:Module/GIM6010/GIM6010.c **** **/
+  74:Module/GIM6010/GIM6010.c **** void mit_ctrl(FDCAN_HandleTypeDef* hfdcan, uint16_t *id, float pos, float vel,float kp, float kd, f
+  75:Module/GIM6010/GIM6010.c **** {
+ 244              		.loc 1 75 1
+ 245              		.cfi_startproc
+ 246              		@ args = 0, pretend = 0, frame = 56
+ 247              		@ frame_needed = 1, uses_anonymous_args = 0
+ 248 0000 80B5     		push	{r7, lr}
+ 249              	.LCFI17:
+ 250              		.cfi_def_cfa_offset 8
+ 251              		.cfi_offset 7, -8
+ 252              		.cfi_offset 14, -4
+ 253 0002 8EB0     		sub	sp, sp, #56
+ 254              	.LCFI18:
+ 255              		.cfi_def_cfa_offset 64
+ 256 0004 00AF     		add	r7, sp, #0
+ 257              	.LCFI19:
+ 258              		.cfi_def_cfa_register 7
+ 259 0006 F861     		str	r0, [r7, #28]
+ 260 0008 B961     		str	r1, [r7, #24]
+ 261 000a 87ED050A 		vstr.32	s0, [r7, #20]
+ 262 000e C7ED040A 		vstr.32	s1, [r7, #16]
+ 263 0012 87ED031A 		vstr.32	s2, [r7, #12]
+ 264 0016 C7ED021A 		vstr.32	s3, [r7, #8]
+ 265 001a 87ED012A 		vstr.32	s4, [r7, #4]
+  76:Module/GIM6010/GIM6010.c **** 	uint8_t data[8];
+  77:Module/GIM6010/GIM6010.c **** 	uint16_t pos_tmp,vel_tmp,kp_tmp,kd_tmp,tor_tmp;
+  78:Module/GIM6010/GIM6010.c **** 
+  79:Module/GIM6010/GIM6010.c **** 	pos_tmp = float_to_uint(pos, P_MIN, P_MAX, 16);
+ 266              		.loc 1 79 12
+ 267 001e 1020     		movs	r0, #16
+ 268 0020 B2EE091A 		vmov.f32	s2, #1.25e+1
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 7
+
+
+ 269 0024 FAEE090A 		vmov.f32	s1, #-1.25e+1
+ 270 0028 97ED050A 		vldr.32	s0, [r7, #20]
+ 271 002c FFF7FEFF 		bl	float_to_uint
+ 272 0030 0346     		mov	r3, r0
+ 273              		.loc 1 79 10 discriminator 1
+ 274 0032 FB86     		strh	r3, [r7, #54]	@ movhi
+  80:Module/GIM6010/GIM6010.c **** 	vel_tmp = float_to_uint(vel, V_MIN, V_MAX, 12);
+ 275              		.loc 1 80 12
+ 276 0034 0C20     		movs	r0, #12
+ 277 0036 9FED371A 		vldr.32	s2, .L9
+ 278 003a DFED370A 		vldr.32	s1, .L9+4
+ 279 003e 97ED040A 		vldr.32	s0, [r7, #16]
+ 280 0042 FFF7FEFF 		bl	float_to_uint
+ 281 0046 0346     		mov	r3, r0
+ 282              		.loc 1 80 10 discriminator 1
+ 283 0048 BB86     		strh	r3, [r7, #52]	@ movhi
+  81:Module/GIM6010/GIM6010.c **** 	tor_tmp = float_to_uint(tor, T_MIN, T_MAX, 12);
+ 284              		.loc 1 81 12
+ 285 004a 0C20     		movs	r0, #12
+ 286 004c B3EE021A 		vmov.f32	s2, #1.8e+1
+ 287 0050 FBEE020A 		vmov.f32	s1, #-1.8e+1
+ 288 0054 97ED010A 		vldr.32	s0, [r7, #4]
+ 289 0058 FFF7FEFF 		bl	float_to_uint
+ 290 005c 0346     		mov	r3, r0
+ 291              		.loc 1 81 10 discriminator 1
+ 292 005e 7B86     		strh	r3, [r7, #50]	@ movhi
+  82:Module/GIM6010/GIM6010.c **** 	kp_tmp  = float_to_uint(kp,  KP_MIN, KP_MAX, 12);
+ 293              		.loc 1 82 12
+ 294 0060 0C20     		movs	r0, #12
+ 295 0062 9FED2E1A 		vldr.32	s2, .L9+8
+ 296 0066 DFED2E0A 		vldr.32	s1, .L9+12
+ 297 006a 97ED030A 		vldr.32	s0, [r7, #12]
+ 298 006e FFF7FEFF 		bl	float_to_uint
+ 299 0072 0346     		mov	r3, r0
+ 300              		.loc 1 82 10 discriminator 1
+ 301 0074 3B86     		strh	r3, [r7, #48]	@ movhi
+  83:Module/GIM6010/GIM6010.c **** 	kd_tmp  = float_to_uint(kd,  KD_MIN, KD_MAX, 12);
+ 302              		.loc 1 83 12
+ 303 0076 0C20     		movs	r0, #12
+ 304 0078 B1EE041A 		vmov.f32	s2, #5.0e+0
+ 305 007c DFED280A 		vldr.32	s1, .L9+12
+ 306 0080 97ED020A 		vldr.32	s0, [r7, #8]
+ 307 0084 FFF7FEFF 		bl	float_to_uint
+ 308 0088 0346     		mov	r3, r0
+ 309              		.loc 1 83 10 discriminator 1
+ 310 008a FB85     		strh	r3, [r7, #46]	@ movhi
+  84:Module/GIM6010/GIM6010.c **** 
+  85:Module/GIM6010/GIM6010.c **** 	data[0] = (pos_tmp >> 8);
+ 311              		.loc 1 85 10
+ 312 008c FB8E     		ldrh	r3, [r7, #54]
+ 313 008e 1B0A     		lsrs	r3, r3, #8
+ 314 0090 9BB2     		uxth	r3, r3
+ 315 0092 DBB2     		uxtb	r3, r3
+ 316 0094 87F82430 		strb	r3, [r7, #36]
+  86:Module/GIM6010/GIM6010.c **** 	data[1] = pos_tmp;
+ 317              		.loc 1 86 10
+ 318 0098 FB8E     		ldrh	r3, [r7, #54]	@ movhi
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 8
+
+
+ 319 009a DBB2     		uxtb	r3, r3
+ 320 009c 87F82530 		strb	r3, [r7, #37]
+  87:Module/GIM6010/GIM6010.c **** 	data[2] = (vel_tmp >> 4);
+ 321              		.loc 1 87 10
+ 322 00a0 BB8E     		ldrh	r3, [r7, #52]
+ 323 00a2 1B09     		lsrs	r3, r3, #4
+ 324 00a4 9BB2     		uxth	r3, r3
+ 325 00a6 DBB2     		uxtb	r3, r3
+ 326 00a8 87F82630 		strb	r3, [r7, #38]
+  88:Module/GIM6010/GIM6010.c **** 	data[3] = ((vel_tmp&0xF)<<4)|(kp_tmp>>8);
+ 327              		.loc 1 88 30
+ 328 00ac BB8E     		ldrh	r3, [r7, #52]	@ movhi
+ 329 00ae 5BB2     		sxtb	r3, r3
+ 330 00b0 1B01     		lsls	r3, r3, #4
+ 331 00b2 5AB2     		sxtb	r2, r3
+ 332 00b4 3B8E     		ldrh	r3, [r7, #48]
+ 333 00b6 1B0A     		lsrs	r3, r3, #8
+ 334 00b8 9BB2     		uxth	r3, r3
+ 335 00ba 5BB2     		sxtb	r3, r3
+ 336 00bc 1343     		orrs	r3, r3, r2
+ 337 00be 5BB2     		sxtb	r3, r3
+ 338 00c0 DBB2     		uxtb	r3, r3
+ 339              		.loc 1 88 10
+ 340 00c2 87F82730 		strb	r3, [r7, #39]
+  89:Module/GIM6010/GIM6010.c **** 	data[4] = kp_tmp;
+ 341              		.loc 1 89 10
+ 342 00c6 3B8E     		ldrh	r3, [r7, #48]	@ movhi
+ 343 00c8 DBB2     		uxtb	r3, r3
+ 344 00ca 87F82830 		strb	r3, [r7, #40]
+  90:Module/GIM6010/GIM6010.c **** 	data[5] = (kd_tmp >> 4);
+ 345              		.loc 1 90 10
+ 346 00ce FB8D     		ldrh	r3, [r7, #46]
+ 347 00d0 1B09     		lsrs	r3, r3, #4
+ 348 00d2 9BB2     		uxth	r3, r3
+ 349 00d4 DBB2     		uxtb	r3, r3
+ 350 00d6 87F82930 		strb	r3, [r7, #41]
+  91:Module/GIM6010/GIM6010.c **** 	data[6] = ((kd_tmp&0xF)<<4)|(tor_tmp>>8);
+ 351              		.loc 1 91 29
+ 352 00da FB8D     		ldrh	r3, [r7, #46]	@ movhi
+ 353 00dc 5BB2     		sxtb	r3, r3
+ 354 00de 1B01     		lsls	r3, r3, #4
+ 355 00e0 5AB2     		sxtb	r2, r3
+ 356 00e2 7B8E     		ldrh	r3, [r7, #50]
+ 357 00e4 1B0A     		lsrs	r3, r3, #8
+ 358 00e6 9BB2     		uxth	r3, r3
+ 359 00e8 5BB2     		sxtb	r3, r3
+ 360 00ea 1343     		orrs	r3, r3, r2
+ 361 00ec 5BB2     		sxtb	r3, r3
+ 362 00ee DBB2     		uxtb	r3, r3
+ 363              		.loc 1 91 10
+ 364 00f0 87F82A30 		strb	r3, [r7, #42]
+  92:Module/GIM6010/GIM6010.c **** 	data[7] = tor_tmp;
+ 365              		.loc 1 92 10
+ 366 00f4 7B8E     		ldrh	r3, [r7, #50]	@ movhi
+ 367 00f6 DBB2     		uxtb	r3, r3
+ 368 00f8 87F82B30 		strb	r3, [r7, #43]
+  93:Module/GIM6010/GIM6010.c **** 	
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 9
+
+
+  94:Module/GIM6010/GIM6010.c **** 	fdcan_send_message(hfdcan, id, data, sizeof(data));
+ 369              		.loc 1 94 2
+ 370 00fc BB69     		ldr	r3, [r7, #24]
+ 371 00fe 99B2     		uxth	r1, r3
+ 372 0100 07F12402 		add	r2, r7, #36
+ 373 0104 0823     		movs	r3, #8
+ 374 0106 F869     		ldr	r0, [r7, #28]
+ 375 0108 FFF7FEFF 		bl	fdcan_send_message
+  95:Module/GIM6010/GIM6010.c **** }
+ 376              		.loc 1 95 1
+ 377 010c 00BF     		nop
+ 378 010e 3837     		adds	r7, r7, #56
+ 379              	.LCFI20:
+ 380              		.cfi_def_cfa_offset 8
+ 381 0110 BD46     		mov	sp, r7
+ 382              	.LCFI21:
+ 383              		.cfi_def_cfa_register 13
+ 384              		@ sp needed
+ 385 0112 80BD     		pop	{r7, pc}
+ 386              	.L10:
+ 387              		.align	2
+ 388              	.L9:
+ 389 0114 00003442 		.word	1110704128
+ 390 0118 000034C2 		.word	-1036779520
+ 391 011c 0000FA43 		.word	1140457472
+ 392 0120 00000000 		.word	0
+ 393              		.cfi_endproc
+ 394              	.LFE135:
+ 396              		.text
+ 397              	.Letext0:
+ 398              		.file 2 "D:/msys64/mingw64/arm-none-eabi/include/machine/_default_types.h"
+ 399              		.file 3 "D:/msys64/mingw64/arm-none-eabi/include/sys/_stdint.h"
+ 400              		.file 4 "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h"
+ 401              		.file 5 "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h"
+ 402              		.file 6 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h"
+ 403              		.file 7 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h"
+ 404              		.file 8 "Module/GIM6010/GIM6010.h"
+ 405              		.file 9 "Core/Inc/fdcan.h"
+ 406              		.file 10 "Bsp/bsp_fdcan/bsp_fdcan.h"
+ 407              		.file 11 "<built-in>"
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 10
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 GIM6010.c
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:25     .bss.motor_t:00000000 motor_t
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:22     .bss.motor_t:00000000 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:28     .text.float_to_uint:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:33     .text.float_to_uint:00000000 float_to_uint
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:102    .text.uint_to_float:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:107    .text.uint_to_float:00000000 uint_to_float
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:175    .text.GIMMotorSetMode:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:181    .text.GIMMotorSetMode:00000000 GIMMotorSetMode
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:231    .text.GIMMotorSetMode:00000038 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:236    .text.mit_ctrl:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:242    .text.mit_ctrl:00000000 mit_ctrl
+C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:389    .text.mit_ctrl:00000114 $d
+
+UNDEFINED SYMBOLS
+memset
+fdcan_send_message
+hfdcan1

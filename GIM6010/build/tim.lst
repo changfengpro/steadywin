@@ -1,0 +1,407 @@
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"tim.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/tim.c"
+  20              		.global	htim6
+  21              		.section	.bss.htim6,"aw",%nobits
+  22              		.align	2
+  25              	htim6:
+  26 0000 00000000 		.space	76
+  26      00000000 
+  26      00000000 
+  26      00000000 
+  26      00000000 
+  27              		.section	.text.MX_TIM6_Init,"ax",%progbits
+  28              		.align	1
+  29              		.global	MX_TIM6_Init
+  30              		.syntax unified
+  31              		.thumb
+  32              		.thumb_func
+  34              	MX_TIM6_Init:
+  35              	.LFB132:
+   1:Core/Src/tim.c **** /* USER CODE BEGIN Header */
+   2:Core/Src/tim.c **** /**
+   3:Core/Src/tim.c ****   ******************************************************************************
+   4:Core/Src/tim.c ****   * @file    tim.c
+   5:Core/Src/tim.c ****   * @brief   This file provides code for the configuration
+   6:Core/Src/tim.c ****   *          of the TIM instances.
+   7:Core/Src/tim.c ****   ******************************************************************************
+   8:Core/Src/tim.c ****   * @attention
+   9:Core/Src/tim.c ****   *
+  10:Core/Src/tim.c ****   * Copyright (c) 2025 STMicroelectronics.
+  11:Core/Src/tim.c ****   * All rights reserved.
+  12:Core/Src/tim.c ****   *
+  13:Core/Src/tim.c ****   * This software is licensed under terms that can be found in the LICENSE file
+  14:Core/Src/tim.c ****   * in the root directory of this software component.
+  15:Core/Src/tim.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
+  16:Core/Src/tim.c ****   *
+  17:Core/Src/tim.c ****   ******************************************************************************
+  18:Core/Src/tim.c ****   */
+  19:Core/Src/tim.c **** /* USER CODE END Header */
+  20:Core/Src/tim.c **** /* Includes ------------------------------------------------------------------*/
+  21:Core/Src/tim.c **** #include "tim.h"
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s 			page 2
+
+
+  22:Core/Src/tim.c **** 
+  23:Core/Src/tim.c **** /* USER CODE BEGIN 0 */
+  24:Core/Src/tim.c **** 
+  25:Core/Src/tim.c **** /* USER CODE END 0 */
+  26:Core/Src/tim.c **** 
+  27:Core/Src/tim.c **** TIM_HandleTypeDef htim6;
+  28:Core/Src/tim.c **** 
+  29:Core/Src/tim.c **** /* TIM6 init function */
+  30:Core/Src/tim.c **** void MX_TIM6_Init(void)
+  31:Core/Src/tim.c **** {
+  36              		.loc 1 31 1
+  37              		.cfi_startproc
+  38              		@ args = 0, pretend = 0, frame = 16
+  39              		@ frame_needed = 1, uses_anonymous_args = 0
+  40 0000 80B5     		push	{r7, lr}
+  41              	.LCFI0:
+  42              		.cfi_def_cfa_offset 8
+  43              		.cfi_offset 7, -8
+  44              		.cfi_offset 14, -4
+  45 0002 84B0     		sub	sp, sp, #16
+  46              	.LCFI1:
+  47              		.cfi_def_cfa_offset 24
+  48 0004 00AF     		add	r7, sp, #0
+  49              	.LCFI2:
+  50              		.cfi_def_cfa_register 7
+  32:Core/Src/tim.c **** 
+  33:Core/Src/tim.c ****   /* USER CODE BEGIN TIM6_Init 0 */
+  34:Core/Src/tim.c **** 
+  35:Core/Src/tim.c ****   /* USER CODE END TIM6_Init 0 */
+  36:Core/Src/tim.c **** 
+  37:Core/Src/tim.c ****   TIM_MasterConfigTypeDef sMasterConfig = {0};
+  51              		.loc 1 37 27
+  52 0006 3B1D     		adds	r3, r7, #4
+  53 0008 0022     		movs	r2, #0
+  54 000a 1A60     		str	r2, [r3]
+  55 000c 5A60     		str	r2, [r3, #4]
+  56 000e 9A60     		str	r2, [r3, #8]
+  38:Core/Src/tim.c **** 
+  39:Core/Src/tim.c ****   /* USER CODE BEGIN TIM6_Init 1 */
+  40:Core/Src/tim.c **** 
+  41:Core/Src/tim.c ****   /* USER CODE END TIM6_Init 1 */
+  42:Core/Src/tim.c ****   htim6.Instance = TIM6;
+  57              		.loc 1 42 18
+  58 0010 144B     		ldr	r3, .L5
+  59 0012 154A     		ldr	r2, .L5+4
+  60 0014 1A60     		str	r2, [r3]
+  43:Core/Src/tim.c ****   htim6.Init.Prescaler = 160 -1;
+  61              		.loc 1 43 24
+  62 0016 134B     		ldr	r3, .L5
+  63 0018 9F22     		movs	r2, #159
+  64 001a 5A60     		str	r2, [r3, #4]
+  44:Core/Src/tim.c ****   htim6.Init.CounterMode = TIM_COUNTERMODE_UP;
+  65              		.loc 1 44 26
+  66 001c 114B     		ldr	r3, .L5
+  67 001e 0022     		movs	r2, #0
+  68 0020 9A60     		str	r2, [r3, #8]
+  45:Core/Src/tim.c ****   htim6.Init.Period = 99;
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s 			page 3
+
+
+  69              		.loc 1 45 21
+  70 0022 104B     		ldr	r3, .L5
+  71 0024 6322     		movs	r2, #99
+  72 0026 DA60     		str	r2, [r3, #12]
+  46:Core/Src/tim.c ****   htim6.Init.AutoReloadPreload = TIM_AUTORELOAD_PRELOAD_DISABLE;
+  73              		.loc 1 46 32
+  74 0028 0E4B     		ldr	r3, .L5
+  75 002a 0022     		movs	r2, #0
+  76 002c 9A61     		str	r2, [r3, #24]
+  47:Core/Src/tim.c ****   if (HAL_TIM_Base_Init(&htim6) != HAL_OK)
+  77              		.loc 1 47 7
+  78 002e 0D48     		ldr	r0, .L5
+  79 0030 FFF7FEFF 		bl	HAL_TIM_Base_Init
+  80 0034 0346     		mov	r3, r0
+  81              		.loc 1 47 6 discriminator 1
+  82 0036 002B     		cmp	r3, #0
+  83 0038 01D0     		beq	.L2
+  48:Core/Src/tim.c ****   {
+  49:Core/Src/tim.c ****     Error_Handler();
+  84              		.loc 1 49 5
+  85 003a FFF7FEFF 		bl	Error_Handler
+  86              	.L2:
+  50:Core/Src/tim.c ****   }
+  51:Core/Src/tim.c ****   sMasterConfig.MasterOutputTrigger = TIM_TRGO_RESET;
+  87              		.loc 1 51 37
+  88 003e 0023     		movs	r3, #0
+  89 0040 7B60     		str	r3, [r7, #4]
+  52:Core/Src/tim.c ****   sMasterConfig.MasterSlaveMode = TIM_MASTERSLAVEMODE_DISABLE;
+  90              		.loc 1 52 33
+  91 0042 0023     		movs	r3, #0
+  92 0044 FB60     		str	r3, [r7, #12]
+  53:Core/Src/tim.c ****   if (HAL_TIMEx_MasterConfigSynchronization(&htim6, &sMasterConfig) != HAL_OK)
+  93              		.loc 1 53 7
+  94 0046 3B1D     		adds	r3, r7, #4
+  95 0048 1946     		mov	r1, r3
+  96 004a 0648     		ldr	r0, .L5
+  97 004c FFF7FEFF 		bl	HAL_TIMEx_MasterConfigSynchronization
+  98 0050 0346     		mov	r3, r0
+  99              		.loc 1 53 6 discriminator 1
+ 100 0052 002B     		cmp	r3, #0
+ 101 0054 01D0     		beq	.L4
+  54:Core/Src/tim.c ****   {
+  55:Core/Src/tim.c ****     Error_Handler();
+ 102              		.loc 1 55 5
+ 103 0056 FFF7FEFF 		bl	Error_Handler
+ 104              	.L4:
+  56:Core/Src/tim.c ****   }
+  57:Core/Src/tim.c ****   /* USER CODE BEGIN TIM6_Init 2 */
+  58:Core/Src/tim.c **** 
+  59:Core/Src/tim.c ****   /* USER CODE END TIM6_Init 2 */
+  60:Core/Src/tim.c **** 
+  61:Core/Src/tim.c **** }
+ 105              		.loc 1 61 1
+ 106 005a 00BF     		nop
+ 107 005c 1037     		adds	r7, r7, #16
+ 108              	.LCFI3:
+ 109              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s 			page 4
+
+
+ 110 005e BD46     		mov	sp, r7
+ 111              	.LCFI4:
+ 112              		.cfi_def_cfa_register 13
+ 113              		@ sp needed
+ 114 0060 80BD     		pop	{r7, pc}
+ 115              	.L6:
+ 116 0062 00BF     		.align	2
+ 117              	.L5:
+ 118 0064 00000000 		.word	htim6
+ 119 0068 00100040 		.word	1073745920
+ 120              		.cfi_endproc
+ 121              	.LFE132:
+ 123              		.section	.text.HAL_TIM_Base_MspInit,"ax",%progbits
+ 124              		.align	1
+ 125              		.global	HAL_TIM_Base_MspInit
+ 126              		.syntax unified
+ 127              		.thumb
+ 128              		.thumb_func
+ 130              	HAL_TIM_Base_MspInit:
+ 131              	.LFB133:
+  62:Core/Src/tim.c **** 
+  63:Core/Src/tim.c **** void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
+  64:Core/Src/tim.c **** {
+ 132              		.loc 1 64 1
+ 133              		.cfi_startproc
+ 134              		@ args = 0, pretend = 0, frame = 16
+ 135              		@ frame_needed = 1, uses_anonymous_args = 0
+ 136 0000 80B5     		push	{r7, lr}
+ 137              	.LCFI5:
+ 138              		.cfi_def_cfa_offset 8
+ 139              		.cfi_offset 7, -8
+ 140              		.cfi_offset 14, -4
+ 141 0002 84B0     		sub	sp, sp, #16
+ 142              	.LCFI6:
+ 143              		.cfi_def_cfa_offset 24
+ 144 0004 00AF     		add	r7, sp, #0
+ 145              	.LCFI7:
+ 146              		.cfi_def_cfa_register 7
+ 147 0006 7860     		str	r0, [r7, #4]
+  65:Core/Src/tim.c **** 
+  66:Core/Src/tim.c ****   if(tim_baseHandle->Instance==TIM6)
+ 148              		.loc 1 66 20
+ 149 0008 7B68     		ldr	r3, [r7, #4]
+ 150 000a 1B68     		ldr	r3, [r3]
+ 151              		.loc 1 66 5
+ 152 000c 0D4A     		ldr	r2, .L10
+ 153 000e 9342     		cmp	r3, r2
+ 154 0010 13D1     		bne	.L9
+ 155              	.LBB2:
+  67:Core/Src/tim.c ****   {
+  68:Core/Src/tim.c ****   /* USER CODE BEGIN TIM6_MspInit 0 */
+  69:Core/Src/tim.c **** 
+  70:Core/Src/tim.c ****   /* USER CODE END TIM6_MspInit 0 */
+  71:Core/Src/tim.c ****     /* TIM6 clock enable */
+  72:Core/Src/tim.c ****     __HAL_RCC_TIM6_CLK_ENABLE();
+ 156              		.loc 1 72 5
+ 157 0012 0D4B     		ldr	r3, .L10+4
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s 			page 5
+
+
+ 158 0014 9B6D     		ldr	r3, [r3, #88]
+ 159 0016 0C4A     		ldr	r2, .L10+4
+ 160 0018 43F01003 		orr	r3, r3, #16
+ 161 001c 9365     		str	r3, [r2, #88]
+ 162 001e 0A4B     		ldr	r3, .L10+4
+ 163 0020 9B6D     		ldr	r3, [r3, #88]
+ 164 0022 03F01003 		and	r3, r3, #16
+ 165 0026 FB60     		str	r3, [r7, #12]
+ 166 0028 FB68     		ldr	r3, [r7, #12]
+ 167              	.LBE2:
+  73:Core/Src/tim.c **** 
+  74:Core/Src/tim.c ****     /* TIM6 interrupt Init */
+  75:Core/Src/tim.c ****     HAL_NVIC_SetPriority(TIM6_DAC_IRQn, 0, 0);
+ 168              		.loc 1 75 5
+ 169 002a 0022     		movs	r2, #0
+ 170 002c 0021     		movs	r1, #0
+ 171 002e 3620     		movs	r0, #54
+ 172 0030 FFF7FEFF 		bl	HAL_NVIC_SetPriority
+  76:Core/Src/tim.c ****     HAL_NVIC_EnableIRQ(TIM6_DAC_IRQn);
+ 173              		.loc 1 76 5
+ 174 0034 3620     		movs	r0, #54
+ 175 0036 FFF7FEFF 		bl	HAL_NVIC_EnableIRQ
+ 176              	.L9:
+  77:Core/Src/tim.c ****   /* USER CODE BEGIN TIM6_MspInit 1 */
+  78:Core/Src/tim.c **** 
+  79:Core/Src/tim.c ****   /* USER CODE END TIM6_MspInit 1 */
+  80:Core/Src/tim.c ****   }
+  81:Core/Src/tim.c **** }
+ 177              		.loc 1 81 1
+ 178 003a 00BF     		nop
+ 179 003c 1037     		adds	r7, r7, #16
+ 180              	.LCFI8:
+ 181              		.cfi_def_cfa_offset 8
+ 182 003e BD46     		mov	sp, r7
+ 183              	.LCFI9:
+ 184              		.cfi_def_cfa_register 13
+ 185              		@ sp needed
+ 186 0040 80BD     		pop	{r7, pc}
+ 187              	.L11:
+ 188 0042 00BF     		.align	2
+ 189              	.L10:
+ 190 0044 00100040 		.word	1073745920
+ 191 0048 00100240 		.word	1073876992
+ 192              		.cfi_endproc
+ 193              	.LFE133:
+ 195              		.section	.text.HAL_TIM_Base_MspDeInit,"ax",%progbits
+ 196              		.align	1
+ 197              		.global	HAL_TIM_Base_MspDeInit
+ 198              		.syntax unified
+ 199              		.thumb
+ 200              		.thumb_func
+ 202              	HAL_TIM_Base_MspDeInit:
+ 203              	.LFB134:
+  82:Core/Src/tim.c **** 
+  83:Core/Src/tim.c **** void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
+  84:Core/Src/tim.c **** {
+ 204              		.loc 1 84 1
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s 			page 6
+
+
+ 205              		.cfi_startproc
+ 206              		@ args = 0, pretend = 0, frame = 8
+ 207              		@ frame_needed = 1, uses_anonymous_args = 0
+ 208 0000 80B5     		push	{r7, lr}
+ 209              	.LCFI10:
+ 210              		.cfi_def_cfa_offset 8
+ 211              		.cfi_offset 7, -8
+ 212              		.cfi_offset 14, -4
+ 213 0002 82B0     		sub	sp, sp, #8
+ 214              	.LCFI11:
+ 215              		.cfi_def_cfa_offset 16
+ 216 0004 00AF     		add	r7, sp, #0
+ 217              	.LCFI12:
+ 218              		.cfi_def_cfa_register 7
+ 219 0006 7860     		str	r0, [r7, #4]
+  85:Core/Src/tim.c **** 
+  86:Core/Src/tim.c ****   if(tim_baseHandle->Instance==TIM6)
+ 220              		.loc 1 86 20
+ 221 0008 7B68     		ldr	r3, [r7, #4]
+ 222 000a 1B68     		ldr	r3, [r3]
+ 223              		.loc 1 86 5
+ 224 000c 074A     		ldr	r2, .L15
+ 225 000e 9342     		cmp	r3, r2
+ 226 0010 08D1     		bne	.L14
+  87:Core/Src/tim.c ****   {
+  88:Core/Src/tim.c ****   /* USER CODE BEGIN TIM6_MspDeInit 0 */
+  89:Core/Src/tim.c **** 
+  90:Core/Src/tim.c ****   /* USER CODE END TIM6_MspDeInit 0 */
+  91:Core/Src/tim.c ****     /* Peripheral clock disable */
+  92:Core/Src/tim.c ****     __HAL_RCC_TIM6_CLK_DISABLE();
+ 227              		.loc 1 92 5
+ 228 0012 074B     		ldr	r3, .L15+4
+ 229 0014 9B6D     		ldr	r3, [r3, #88]
+ 230 0016 064A     		ldr	r2, .L15+4
+ 231 0018 23F01003 		bic	r3, r3, #16
+ 232 001c 9365     		str	r3, [r2, #88]
+  93:Core/Src/tim.c **** 
+  94:Core/Src/tim.c ****     /* TIM6 interrupt Deinit */
+  95:Core/Src/tim.c ****     HAL_NVIC_DisableIRQ(TIM6_DAC_IRQn);
+ 233              		.loc 1 95 5
+ 234 001e 3620     		movs	r0, #54
+ 235 0020 FFF7FEFF 		bl	HAL_NVIC_DisableIRQ
+ 236              	.L14:
+  96:Core/Src/tim.c ****   /* USER CODE BEGIN TIM6_MspDeInit 1 */
+  97:Core/Src/tim.c **** 
+  98:Core/Src/tim.c ****   /* USER CODE END TIM6_MspDeInit 1 */
+  99:Core/Src/tim.c ****   }
+ 100:Core/Src/tim.c **** }
+ 237              		.loc 1 100 1
+ 238 0024 00BF     		nop
+ 239 0026 0837     		adds	r7, r7, #8
+ 240              	.LCFI13:
+ 241              		.cfi_def_cfa_offset 8
+ 242 0028 BD46     		mov	sp, r7
+ 243              	.LCFI14:
+ 244              		.cfi_def_cfa_register 13
+ 245              		@ sp needed
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s 			page 7
+
+
+ 246 002a 80BD     		pop	{r7, pc}
+ 247              	.L16:
+ 248              		.align	2
+ 249              	.L15:
+ 250 002c 00100040 		.word	1073745920
+ 251 0030 00100240 		.word	1073876992
+ 252              		.cfi_endproc
+ 253              	.LFE134:
+ 255              		.text
+ 256              	.Letext0:
+ 257              		.file 2 "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h"
+ 258              		.file 3 "D:/msys64/mingw64/arm-none-eabi/include/machine/_default_types.h"
+ 259              		.file 4 "D:/msys64/mingw64/arm-none-eabi/include/sys/_stdint.h"
+ 260              		.file 5 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h"
+ 261              		.file 6 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h"
+ 262              		.file 7 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h"
+ 263              		.file 8 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_cortex.h"
+ 264              		.file 9 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h"
+ 265              		.file 10 "Core/Inc/tim.h"
+ 266              		.file 11 "Core/Inc/main.h"
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s 			page 8
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 tim.c
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:25     .bss.htim6:00000000 htim6
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:22     .bss.htim6:00000000 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:28     .text.MX_TIM6_Init:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:34     .text.MX_TIM6_Init:00000000 MX_TIM6_Init
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:118    .text.MX_TIM6_Init:00000064 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:124    .text.HAL_TIM_Base_MspInit:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:130    .text.HAL_TIM_Base_MspInit:00000000 HAL_TIM_Base_MspInit
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:190    .text.HAL_TIM_Base_MspInit:00000044 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:196    .text.HAL_TIM_Base_MspDeInit:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:202    .text.HAL_TIM_Base_MspDeInit:00000000 HAL_TIM_Base_MspDeInit
+C:\Users\AURORA~1\AppData\Local\Temp\ccInHVSM.s:250    .text.HAL_TIM_Base_MspDeInit:0000002c $d
+
+UNDEFINED SYMBOLS
+HAL_TIM_Base_Init
+Error_Handler
+HAL_TIMEx_MasterConfigSynchronization
+HAL_NVIC_SetPriority
+HAL_NVIC_EnableIRQ
+HAL_NVIC_DisableIRQ

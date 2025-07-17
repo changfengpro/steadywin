@@ -1,0 +1,2 @@
+Level,Expression,Type,Value,Min,Max,Average,# Changes,Min. Change,Max. Change
+0,"uwTick","volatile unsigned long","129 089",1,"129 067",65073.1563,"11 830",0,29

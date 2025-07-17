@@ -1,0 +1,35 @@
+
+
+
+Breakpoint=D:/CubeMX/GIM6010/Core/Src/main.c:97:3, State=BP_STATE_DISABLED
+GraphedExpression="uwTick", DisplayFormat=DISPLAY_FORMAT_DEC, Color=#e56a6f
+OpenDocument="startup_stm32g474xx.s", FilePath="D:/CubeMX/GIM6010/startup_stm32g474xx.s", Line=50
+OpenDocument="Ozone_DataSampling_250707.csv", FilePath="D:/CubeMX/GIM6010/Ozone_DataSampling_250707.csv", Line=0
+OpenDocument="stm32g4xx_hal.c", FilePath="D:/CubeMX/GIM6010/Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal.c", Line=323
+OpenDocument="main.c", FilePath="D:/CubeMX/GIM6010/Core/Src/main.c", Line=62
+OpenDocument="GIM6010_8.c", FilePath="D:/CubeMX/GIM6010/Module/GIM6010_8/GIM6010_8.c", Line=4
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Call Stack", DockArea=RIGHT, x=0, y=2, w=702, h=76, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Source Files", DockArea=LEFT, x=0, y=0, w=533, h=332, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=0, w=702, h=112, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Memory 1", DockArea=BOTTOM, x=2, y=0, w=727, h=279, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, EditorAddress=0x24004487
+OpenWindow="Local Data", DockArea=RIGHT, x=0, y=1, w=702, h=126, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Watched Data 1", DockArea=LEFT, x=0, y=1, w=533, h=334, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Data Sampling", DockArea=BOTTOM, x=1, y=0, w=770, h=279, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, VisibleTab=0, UniformSampleSpacing=0
+OpenWindow="Timeline", DockArea=RIGHT, x=0, y=3, w=702, h=350, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=1, DataPaneShown=1, PowerPaneShown=0, CodePaneShown=0, PinCursor="Cursor Movable", TimePerDiv="10 s / Div", TimeStampFormat="Time", DataGraphDrawAsPoints=0, DataGraphLegendShown=1, DataGraphUniformSampleSpacing=0, DataGraphLegendPosition="526;0", DataGraphShowNamesAtCursor=0, PowerGraphDrawAsPoints=0, PowerGraphLegendShown=0, PowerGraphAvgFilterTime=Off, PowerGraphAvgFilterLen=Off, PowerGraphUniformSampleSpacing=0, PowerGraphLegendPosition="532;0", CodeGraphLegendShown=0, CodeGraphLegendPosition="538;0"
+OpenWindow="Console", DockArea=BOTTOM, x=0, y=0, w=421, h=279, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+SmartViewPlugin="", Page="", Toolbar="Hidden", Window="SmartView 1"
+TableHeader="Local Data", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Location";"Size";"Type";"Scope"], ColWidths=[154;159;100;100;231;100]
+TableHeader="Call Stack", SortCol="Function", SortOrder="ASCENDING", VisibleCols=["Function";"Stack Frame";"Source";"PC";"Return Address";"Stack Used"], ColWidths=[100;100;100;100;100;185]
+TableHeader="Source Files", SortCol="File", SortOrder="ASCENDING", VisibleCols=["File";"Status";"Size";"#Insts";"Path"], ColWidths=[239;100;100;100;482]
+TableHeader="Data Sampling Table", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";" uwTick"], ColWidths=[100;100;553]
+TableHeader="Data Sampling Setup", SortCol="Expression", SortOrder="DESCENDING", VisibleCols=["Expression";"Type";"Value";"Min";"Max";"Average";"# Changes";"Min. Change";"Max. Change"], ColWidths=[100;168;100;100;100;100;100;100;100]
+TableHeader="Power Sampling", SortCol="None", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[205;145;126;100]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;359]
+WatchedExpression="mit", Window=Watched Data 1
+WatchedExpression="uwTick", RefreshRate=5, Window=Watched Data 1
+WatchedExpression="rx_data", Window=Watched Data 1
+WatchedExpression="tx_buff", Window=Watched Data 1
+WatchedExpression="GIM6010_Measure", RefreshRate=5, Window=Watched Data 1

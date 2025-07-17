@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "*.py": "python",
+        "gim6010.h": "c",
+        "stdint.h": "c"
+    }
+}
