@@ -47,6 +47,10 @@ void fdcan_send_message(FDCAN_HandleTypeDef *fdhcan, uint16_t tx_id, uint8_t *tx
     {
         HAL_FDCAN_AddMessageToTxFifoQ(&hfdcan1, &txHeader, tx_data);
     }
+    else{
+        HAL_FDCAN_Stop(&hfdcan1);  // 停止FDCAN
+        HAL_FDCAN_Start(&hfdcan1); // 重启FDCAN
+    }
 
 }
 

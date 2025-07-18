@@ -27,6 +27,7 @@
 #include "bsp_fdcan.h"
 #include "GIM6010.h"
 #include "GIM6010_8.h"
+#include "math.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -47,18 +48,16 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-typedef struct 
-{
-  float pos, vel, tor, kp, kd; 
-}mit_s;
-
-mit_s mit;
+GIM6010_Measure_s *motor_param;
+float angle;
+float ki = 0.3;
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
 /* USER CODE BEGIN PFP */
-
+static void ReadParameter();
+static void Control_State_Machine();
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -99,16 +98,17 @@ int main(void)
   MX_TIM6_Init();
   /* USER CODE BEGIN 2 */
   fdcan_user_init();  
-GIMCANMotorSetMode(&hfdcan1, 0x01, GIMCAN_CMD_READ_ANGLE_MODE);
+  GIMCANMotorSetMode(&hfdcan1, 0x01, GIMCAN_CMD_READ_ANGLE_MODE);
+  motor_param = GIM6010_Measure_Ptr();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   { 
-    GIMCANMotorSetMode(&hfdcan1, 0x01, GIMCAN_CMD_READ_ANGLE_MODE);
-    // GIMMotorSetMode(&hfdcan1, 0x01, GIM_CMD_MOTOR_MODE);
-    HAL_Delay(100);
+    ReadParameter();
+    Control_State_Machine();
+    HAL_Delay(10);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
@@ -162,7 +162,26 @@ void SystemClock_Config(void)
 }
 
 /* USER CODE BEGIN 4 */
+static void ReadParameter()
+{
+  GIMCANMotorSetMode(&hfdcan1, 0x01, GIMCAN_CMD_READ_ANGLE_MODE);
+  GIMCANMotorSetMode(&hfdcan1, 0x01, GIMCAN_CMD_READ_RPM_MODE);
+}
 
+static void Control_State_Machine()
+{
+  motor_param->set_current = cos(motor_param->angle_single_round) * ki;
+  GIMCANMotorSetCurrent(&hfdcan1, 0x01, motor_param->set_current);
+  int32_t cnt = 0;
+  if(fabs(motor_param->speed_raw) > 50)
+  { 
+    cnt++;
+    while(cnt > 500)
+    {
+      GIMCANMotorSetMode(&hfdcan1, 0x01, GIMCAN_CMD_DISABLE_MODE);
+    }
+  }
+}
 /* USER CODE END 4 */
 
 /**

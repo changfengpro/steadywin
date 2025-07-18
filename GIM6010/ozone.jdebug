@@ -4,8 +4,8 @@
 *                         www.segger.com                             *
 **********************************************************************
 
-File          : D:/CubeMX/GIM6010/ozone.jdebug
-Created       : 7 Jul 2025 09:32
+File          : D:/CubeMX/Steadywin/GIM6010/ozone.jdebug
+Created       : 17 Jul 2025 16:47
 Ozone Version : V3.34
 */
 
@@ -22,8 +22,8 @@ void OnProjectLoad (void) {
   //
   // Dialog-generated settings
   //
-  Project.AddPathSubstitute ("D:/CubeMX/GIM6010", "$(ProjectDir)");
-  Project.AddPathSubstitute ("d:/cubemx/gim6010", "$(ProjectDir)");
+  Project.AddPathSubstitute ("D:/CubeMX/Steadywin/GIM6010", "$(ProjectDir)");
+  Project.AddPathSubstitute ("d:/cubemx/steadywin/gim6010", "$(ProjectDir)");
   Project.SetDevice ("STM32G474RB");
   Project.SetHostIF ("USB", "123456");
   Project.SetTargetIF ("SWD");
