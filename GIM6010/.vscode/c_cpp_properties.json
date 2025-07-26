@@ -6,7 +6,8 @@
                 "${workspaceFolder}/**",
                 "${workspaceFolder}/Core/Inc",
                 "${workspaceFolder}/Bsp/bsp_fdcan",
-                "${workspaceFolder}/Drivers/STM32G4xx_HAL_Driver/Inc"
+                "${workspaceFolder}/Drivers/STM32G4xx_HAL_Driver/Inc",
+                "${workspaceFolder}/Drivers/CMSIS/Device/ST/STM32G4xx/Include"
             ],
             "defines": [
                 "_DEBUG",

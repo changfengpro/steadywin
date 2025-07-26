@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -44,21 +44,21 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
    5:Module/GIM6010_8/GIM6010_8.c **** /**
    6:Module/GIM6010_8/GIM6010_8.c **** ************************************************************************
    7:Module/GIM6010_8/GIM6010_8.c **** * @brief:      	GIMMotorSetMode: 设置电机模式函数
-   8:Module/GIM6010_8/GIM6010_8.c **** * @param[in]:   fdhcan:     指向FDCAN_HandleTypeDef结构的指针
+   8:Module/GIM6010_8/GIM6010_8.c **** * @param[in]:   hfdcan:     指向FDCAN_HandleTypeDef结构的指针
    9:Module/GIM6010_8/GIM6010_8.c **** * @param[in]:   motor_id: 电机ID，指定目标电机
   10:Module/GIM6010_8/GIM6010_8.c **** * @param[in]:   cmd:    指定要开启的模式
   11:Module/GIM6010_8/GIM6010_8.c **** * @retval:     	void
   12:Module/GIM6010_8/GIM6010_8.c **** * @details:    	通过CAN总线向特定电机发送启用特定模式的命令
   13:Module/GIM6010_8/GIM6010_8.c **** ************************************************************************
   14:Module/GIM6010_8/GIM6010_8.c **** **/
-  15:Module/GIM6010_8/GIM6010_8.c **** void GIMCANMotorSetMode(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, GIMCANMotor_Mode_e cmd)
+  15:Module/GIM6010_8/GIM6010_8.c **** void GIMCANMotorSetMode(FDCAN_HandleTypeDef* hfdcan, uint16_t motor_id, GIMCANMotor_Mode_e cmd)
   16:Module/GIM6010_8/GIM6010_8.c **** {
   36              		.loc 1 16 1
   37              		.cfi_startproc
   38              		@ args = 0, pretend = 0, frame = 16
   39              		@ frame_needed = 1, uses_anonymous_args = 0
   40 0000 80B5     		push	{r7, lr}
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 2
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 2
 
 
   41              	.LCFI0:
@@ -117,8 +117,8 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
   22:Module/GIM6010_8/GIM6010_8.c **** /**
   23:Module/GIM6010_8/GIM6010_8.c **** ************************************************************************
   24:Module/GIM6010_8/GIM6010_8.c **** * @brief      GIMCANMotorSetCurrent: 设置电机Q轴电流
-  25:Module/GIM6010_8/GIM6010_8.c **** * @param[in]  fdhcan:     FDCAN句柄指针
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 3
+  25:Module/GIM6010_8/GIM6010_8.c **** * @param[in]  hfdcan:     FDCAN句柄指针
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 3
 
 
   26:Module/GIM6010_8/GIM6010_8.c **** * @param[in]  motor_id:   电机ID (设备地址或0x100|设备地址)
@@ -127,7 +127,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
   29:Module/GIM6010_8/GIM6010_8.c **** * @details    通过CAN总线向电机发送Q轴电流控制命令
   30:Module/GIM6010_8/GIM6010_8.c **** ************************************************************************
   31:Module/GIM6010_8/GIM6010_8.c **** **/
-  32:Module/GIM6010_8/GIM6010_8.c **** void GIMCANMotorSetCurrent(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, float current_A)
+  32:Module/GIM6010_8/GIM6010_8.c **** void GIMCANMotorSetCurrent(FDCAN_HandleTypeDef* hfdcan, uint16_t motor_id, float current_A)
   33:Module/GIM6010_8/GIM6010_8.c **** {
   91              		.loc 1 33 1
   92              		.cfi_startproc
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
  126 0030 FB69     		ldr	r3, [r7, #28]
  127 0032 1B12     		asrs	r3, r3, #8
  128              		.loc 1 44 16
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 4
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 4
 
 
  129 0034 DBB2     		uxtb	r3, r3
@@ -199,7 +199,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
  142 0046 3B76     		strb	r3, [r7, #24]
   47:Module/GIM6010_8/GIM6010_8.c ****     
   48:Module/GIM6010_8/GIM6010_8.c ****     // 发送CAN消息（DLC=5）
-  49:Module/GIM6010_8/GIM6010_8.c ****     fdcan_send_message(fdhcan, motor_id, tx_data, 5);
+  49:Module/GIM6010_8/GIM6010_8.c ****     fdcan_send_message(hfdcan, motor_id, tx_data, 5);
  143              		.loc 1 49 5
  144 0048 07F11402 		add	r2, r7, #20
  145 004c 7989     		ldrh	r1, [r7, #10]
@@ -236,9 +236,9 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
   53:Module/GIM6010_8/GIM6010_8.c **** /**
   54:Module/GIM6010_8/GIM6010_8.c **** ************************************************************************
   55:Module/GIM6010_8/GIM6010_8.c **** * @brief      GIMCANMotorSetAbsPosition: 设置电机绝对位置
-  56:Module/GIM6010_8/GIM6010_8.c **** * @param[in]  fdhcan:     FDCAN句柄指针
+  56:Module/GIM6010_8/GIM6010_8.c **** * @param[in]  hfdcan:     FDCAN句柄指针
   57:Module/GIM6010_8/GIM6010_8.c **** * @param[in]  motor_id:   电机ID (设备地址或0x100|设备地址)
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 5
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 5
 
 
   58:Module/GIM6010_8/GIM6010_8.c **** * @param[in]  angle_deg:  目标角度值(单位：度)
@@ -247,7 +247,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
   61:Module/GIM6010_8/GIM6010_8.c **** *             角度值将转换为电机计数值(Count)，电机一圈(360°)对应16384个计数
   62:Module/GIM6010_8/GIM6010_8.c **** ************************************************************************
   63:Module/GIM6010_8/GIM6010_8.c **** **/
-  64:Module/GIM6010_8/GIM6010_8.c **** void GIMCANMotorSetAbsPosition(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, float angle_deg)
+  64:Module/GIM6010_8/GIM6010_8.c **** void GIMCANMotorSetAbsPosition(FDCAN_HandleTypeDef* hfdcan, uint16_t motor_id, float angle_deg)
   65:Module/GIM6010_8/GIM6010_8.c **** {
  175              		.loc 1 65 1
  176              		.cfi_startproc
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
  209              		.loc 1 77 34
  210 0030 FB69     		ldr	r3, [r7, #28]
  211 0032 1B12     		asrs	r3, r3, #8
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 6
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 6
 
 
  212              		.loc 1 77 16
@@ -320,7 +320,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
  226 0046 3B76     		strb	r3, [r7, #24]
   80:Module/GIM6010_8/GIM6010_8.c ****     
   81:Module/GIM6010_8/GIM6010_8.c ****     // 发送CAN消息（DLC=5）
-  82:Module/GIM6010_8/GIM6010_8.c ****     fdcan_send_message(fdhcan, motor_id, tx_data, 5);
+  82:Module/GIM6010_8/GIM6010_8.c ****     fdcan_send_message(hfdcan, motor_id, tx_data, 5);
  227              		.loc 1 82 5
  228 0048 07F11402 		add	r2, r7, #20
  229 004c 7989     		ldrh	r1, [r7, #10]
@@ -344,364 +344,417 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 1
  246 0060 610B3642 		.word	1110838113
  247              		.cfi_endproc
  248              	.LFE134:
- 250              		.global	__aeabi_i2d
- 251              		.global	__aeabi_dmul
- 252              		.global	__aeabi_d2f
- 253              		.section	.text.fdcan1_rx_callback,"ax",%progbits
- 254              		.align	1
- 255              		.global	fdcan1_rx_callback
- 256              		.syntax unified
- 257              		.thumb
- 258              		.thumb_func
- 260              	fdcan1_rx_callback:
- 261              	.LFB135:
+ 250              		.section	.text.GIMCANMotorSetPositionMaxSpeed,"ax",%progbits
+ 251              		.align	1
+ 252              		.global	GIMCANMotorSetPositionMaxSpeed
+ 253              		.syntax unified
+ 254              		.thumb
+ 255              		.thumb_func
+ 257              	GIMCANMotorSetPositionMaxSpeed:
+ 258              	.LFB135:
   84:Module/GIM6010_8/GIM6010_8.c **** 
   85:Module/GIM6010_8/GIM6010_8.c **** 
-  86:Module/GIM6010_8/GIM6010_8.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 7
+  86:Module/GIM6010_8/GIM6010_8.c **** void GIMCANMotorSetPositionMaxSpeed(FDCAN_HandleTypeDef* hfdcan, uint16_t motor_id, float speed)
+  87:Module/GIM6010_8/GIM6010_8.c **** {
+ 259              		.loc 1 87 1
+ 260              		.cfi_startproc
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 7
 
 
-  87:Module/GIM6010_8/GIM6010_8.c **** void fdcan1_rx_callback()
-  88:Module/GIM6010_8/GIM6010_8.c **** {
- 262              		.loc 1 88 1
- 263              		.cfi_startproc
- 264              		@ args = 0, pretend = 0, frame = 32
- 265              		@ frame_needed = 1, uses_anonymous_args = 0
- 266 0000 80B5     		push	{r7, lr}
- 267              	.LCFI15:
- 268              		.cfi_def_cfa_offset 8
- 269              		.cfi_offset 7, -8
- 270              		.cfi_offset 14, -4
- 271 0002 88B0     		sub	sp, sp, #32
- 272              	.LCFI16:
- 273              		.cfi_def_cfa_offset 40
- 274 0004 00AF     		add	r7, sp, #0
- 275              	.LCFI17:
- 276              		.cfi_def_cfa_register 7
-  89:Module/GIM6010_8/GIM6010_8.c ****     uint16_t rx_id;
-  90:Module/GIM6010_8/GIM6010_8.c ****     uint8_t rx_data[8];
-  91:Module/GIM6010_8/GIM6010_8.c ****     FDCAN_Recieve_Message(&hfdcan1, &rx_id, rx_data);
- 277              		.loc 1 91 5
- 278 0006 3A1D     		adds	r2, r7, #4
- 279 0008 07F10E03 		add	r3, r7, #14
- 280 000c 1946     		mov	r1, r3
- 281 000e 4248     		ldr	r0, .L15+16
- 282 0010 FFF7FEFF 		bl	FDCAN_Recieve_Message
-  92:Module/GIM6010_8/GIM6010_8.c ****     switch (rx_data[0])
- 283              		.loc 1 92 20
- 284 0014 3B79     		ldrb	r3, [r7, #4]	@ zero_extendqisi2
- 285              		.loc 1 92 5
- 286 0016 C02B     		cmp	r3, #192
- 287 0018 33D0     		beq	.L11
- 288 001a C02B     		cmp	r3, #192
- 289 001c 6DDC     		bgt	.L14
- 290 001e A22B     		cmp	r3, #162
- 291 0020 4DD0     		beq	.L13
- 292 0022 A32B     		cmp	r3, #163
- 293 0024 69D1     		bne	.L14
- 294              	.LBB2:
-  93:Module/GIM6010_8/GIM6010_8.c ****     {
-  94:Module/GIM6010_8/GIM6010_8.c ****          case 0xA3:  // 角度数据命令码
-  95:Module/GIM6010_8/GIM6010_8.c ****         {
-  96:Module/GIM6010_8/GIM6010_8.c ****             /* 1. 解析单圈角度（2字节无符号整数） */
-  97:Module/GIM6010_8/GIM6010_8.c ****             uint16_t single_angle_raw = ((uint16_t)rx_data[2] << 8) | rx_data[1];
- 295              		.loc 1 97 59
- 296 0026 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
- 297              		.loc 1 97 69
- 298 0028 1BB2     		sxth	r3, r3
- 299 002a 1B02     		lsls	r3, r3, #8
- 300 002c 1AB2     		sxth	r2, r3
- 301              		.loc 1 97 78
- 302 002e 7B79     		ldrb	r3, [r7, #5]	@ zero_extendqisi2
- 303 0030 1BB2     		sxth	r3, r3
- 304              		.loc 1 97 69
- 305 0032 1343     		orrs	r3, r3, r2
- 306 0034 1BB2     		sxth	r3, r3
- 307              		.loc 1 97 22
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 8
+ 261              		@ args = 0, pretend = 0, frame = 16
+ 262              		@ frame_needed = 1, uses_anonymous_args = 0
+ 263              		@ link register save eliminated.
+ 264 0000 80B4     		push	{r7}
+ 265              	.LCFI15:
+ 266              		.cfi_def_cfa_offset 4
+ 267              		.cfi_offset 7, -4
+ 268 0002 85B0     		sub	sp, sp, #20
+ 269              	.LCFI16:
+ 270              		.cfi_def_cfa_offset 24
+ 271 0004 00AF     		add	r7, sp, #0
+ 272              	.LCFI17:
+ 273              		.cfi_def_cfa_register 7
+ 274 0006 F860     		str	r0, [r7, #12]
+ 275 0008 0B46     		mov	r3, r1
+ 276 000a 87ED010A 		vstr.32	s0, [r7, #4]
+ 277 000e 7B81     		strh	r3, [r7, #10]	@ movhi
+  88:Module/GIM6010_8/GIM6010_8.c ****     
+  89:Module/GIM6010_8/GIM6010_8.c **** }
+ 278              		.loc 1 89 1
+ 279 0010 00BF     		nop
+ 280 0012 1437     		adds	r7, r7, #20
+ 281              	.LCFI18:
+ 282              		.cfi_def_cfa_offset 4
+ 283 0014 BD46     		mov	sp, r7
+ 284              	.LCFI19:
+ 285              		.cfi_def_cfa_register 13
+ 286              		@ sp needed
+ 287 0016 5DF8047B 		ldr	r7, [sp], #4
+ 288              	.LCFI20:
+ 289              		.cfi_restore 7
+ 290              		.cfi_def_cfa_offset 0
+ 291 001a 7047     		bx	lr
+ 292              		.cfi_endproc
+ 293              	.LFE135:
+ 295              		.global	__aeabi_i2d
+ 296              		.global	__aeabi_dmul
+ 297              		.global	__aeabi_d2f
+ 298              		.section	.text.fdcan1_rx_callback,"ax",%progbits
+ 299              		.align	1
+ 300              		.global	fdcan1_rx_callback
+ 301              		.syntax unified
+ 302              		.thumb
+ 303              		.thumb_func
+ 305              	fdcan1_rx_callback:
+ 306              	.LFB136:
+  90:Module/GIM6010_8/GIM6010_8.c **** 
+  91:Module/GIM6010_8/GIM6010_8.c **** 
+  92:Module/GIM6010_8/GIM6010_8.c **** void fdcan1_rx_callback()
+  93:Module/GIM6010_8/GIM6010_8.c **** {
+ 307              		.loc 1 93 1
+ 308              		.cfi_startproc
+ 309              		@ args = 0, pretend = 0, frame = 32
+ 310              		@ frame_needed = 1, uses_anonymous_args = 0
+ 311 0000 80B5     		push	{r7, lr}
+ 312              	.LCFI21:
+ 313              		.cfi_def_cfa_offset 8
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 8
 
 
- 308 0036 7B83     		strh	r3, [r7, #26]	@ movhi
-  98:Module/GIM6010_8/GIM6010_8.c ****             GIM6010_Measure.angle_single_round = single_angle_raw * (360.0f / 16384.0f);
- 309              		.loc 1 98 67
- 310 0038 7B8B     		ldrh	r3, [r7, #26]
- 311 003a 07EE903A 		vmov	s15, r3	@ int
- 312 003e F8EEE77A 		vcvt.f32.s32	s15, s15
- 313 0042 9FED367A 		vldr.32	s14, .L15+20
- 314 0046 67EE877A 		vmul.f32	s15, s15, s14
- 315              		.loc 1 98 48
- 316 004a 354B     		ldr	r3, .L15+24
- 317 004c C3ED007A 		vstr.32	s15, [r3]
-  99:Module/GIM6010_8/GIM6010_8.c ****             
- 100:Module/GIM6010_8/GIM6010_8.c ****             /* 2. 解析多圈角度（4字节有符号整数） */
- 101:Module/GIM6010_8/GIM6010_8.c ****             int32_t multi_angle_raw = (int32_t)(rx_data[3]       | 
- 318              		.loc 1 101 56
- 319 0050 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
- 320 0052 1A46     		mov	r2, r3
- 102:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[4] << 8)  |
- 321              		.loc 1 102 55
- 322 0054 3B7A     		ldrb	r3, [r7, #8]	@ zero_extendqisi2
- 323              		.loc 1 102 59
- 324 0056 1B02     		lsls	r3, r3, #8
- 101:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[4] << 8)  |
- 325              		.loc 1 101 66
- 326 0058 1A43     		orrs	r2, r2, r3
- 103:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[5] << 16) |
- 327              		.loc 1 103 55
- 328 005a 7B7A     		ldrb	r3, [r7, #9]	@ zero_extendqisi2
- 329              		.loc 1 103 59
- 330 005c 1B04     		lsls	r3, r3, #16
- 102:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[4] << 8)  |
- 331              		.loc 1 102 66
- 332 005e 1A43     		orrs	r2, r2, r3
- 104:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[6] << 24));
- 333              		.loc 1 104 55
- 334 0060 BB7A     		ldrb	r3, [r7, #10]	@ zero_extendqisi2
- 335              		.loc 1 104 59
- 336 0062 1B06     		lsls	r3, r3, #24
- 101:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[4] << 8)  |
- 337              		.loc 1 101 21
- 338 0064 1343     		orrs	r3, r3, r2
- 339 0066 7B61     		str	r3, [r7, #20]
- 105:Module/GIM6010_8/GIM6010_8.c ****              GIM6010_Measure.multi_angle_deg = multi_angle_raw * (360.0f / 16384.0f);
- 340              		.loc 1 105 64
- 341 0068 7B69     		ldr	r3, [r7, #20]
- 342 006a 07EE903A 		vmov	s15, r3	@ int
- 343 006e F8EEE77A 		vcvt.f32.s32	s15, s15
- 344 0072 9FED2A7A 		vldr.32	s14, .L15+20
- 345 0076 67EE877A 		vmul.f32	s15, s15, s14
- 346              		.loc 1 105 46
- 347 007a 294B     		ldr	r3, .L15+24
- 348 007c C3ED017A 		vstr.32	s15, [r3, #4]
- 106:Module/GIM6010_8/GIM6010_8.c **** 
- 107:Module/GIM6010_8/GIM6010_8.c ****             break;
- 349              		.loc 1 107 13
- 350 0080 3BE0     		b	.L12
- 351              	.L11:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 9
+ 314              		.cfi_offset 7, -8
+ 315              		.cfi_offset 14, -4
+ 316 0002 88B0     		sub	sp, sp, #32
+ 317              	.LCFI22:
+ 318              		.cfi_def_cfa_offset 40
+ 319 0004 00AF     		add	r7, sp, #0
+ 320              	.LCFI23:
+ 321              		.cfi_def_cfa_register 7
+  94:Module/GIM6010_8/GIM6010_8.c ****     uint16_t rx_id;
+  95:Module/GIM6010_8/GIM6010_8.c ****     uint8_t rx_data[8];
+  96:Module/GIM6010_8/GIM6010_8.c ****     FDCAN_Recieve_Message(&hfdcan1, &rx_id, rx_data);
+ 322              		.loc 1 96 5
+ 323 0006 3A1D     		adds	r2, r7, #4
+ 324 0008 07F10E03 		add	r3, r7, #14
+ 325 000c 1946     		mov	r1, r3
+ 326 000e 4248     		ldr	r0, .L16+16
+ 327 0010 FFF7FEFF 		bl	FDCAN_Recieve_Message
+  97:Module/GIM6010_8/GIM6010_8.c ****     switch (rx_data[0])
+ 328              		.loc 1 97 20
+ 329 0014 3B79     		ldrb	r3, [r7, #4]	@ zero_extendqisi2
+ 330              		.loc 1 97 5
+ 331 0016 C02B     		cmp	r3, #192
+ 332 0018 33D0     		beq	.L12
+ 333 001a C02B     		cmp	r3, #192
+ 334 001c 6DDC     		bgt	.L15
+ 335 001e A22B     		cmp	r3, #162
+ 336 0020 4DD0     		beq	.L14
+ 337 0022 A32B     		cmp	r3, #163
+ 338 0024 69D1     		bne	.L15
+ 339              	.LBB2:
+  98:Module/GIM6010_8/GIM6010_8.c ****     {
+  99:Module/GIM6010_8/GIM6010_8.c ****          case 0xA3:  // 角度数据命令码
+ 100:Module/GIM6010_8/GIM6010_8.c ****         {
+ 101:Module/GIM6010_8/GIM6010_8.c ****             /* 1. 解析单圈角度（2字节无符号整数） */
+ 102:Module/GIM6010_8/GIM6010_8.c ****             uint16_t single_angle_raw = ((uint16_t)rx_data[2] << 8) | rx_data[1];
+ 340              		.loc 1 102 59
+ 341 0026 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 342              		.loc 1 102 69
+ 343 0028 1BB2     		sxth	r3, r3
+ 344 002a 1B02     		lsls	r3, r3, #8
+ 345 002c 1AB2     		sxth	r2, r3
+ 346              		.loc 1 102 78
+ 347 002e 7B79     		ldrb	r3, [r7, #5]	@ zero_extendqisi2
+ 348 0030 1BB2     		sxth	r3, r3
+ 349              		.loc 1 102 69
+ 350 0032 1343     		orrs	r3, r3, r2
+ 351 0034 1BB2     		sxth	r3, r3
+ 352              		.loc 1 102 22
+ 353 0036 7B83     		strh	r3, [r7, #26]	@ movhi
+ 103:Module/GIM6010_8/GIM6010_8.c ****             GIM6010_Measure.angle_single_round = single_angle_raw * (360.0f / 16384.0f);
+ 354              		.loc 1 103 67
+ 355 0038 7B8B     		ldrh	r3, [r7, #26]
+ 356 003a 07EE903A 		vmov	s15, r3	@ int
+ 357 003e F8EEE77A 		vcvt.f32.s32	s15, s15
+ 358 0042 9FED367A 		vldr.32	s14, .L16+20
+ 359 0046 67EE877A 		vmul.f32	s15, s15, s14
+ 360              		.loc 1 103 48
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 9
 
 
- 352              	.LBE2:
- 353              	.LBB3:
- 108:Module/GIM6010_8/GIM6010_8.c ****         }
- 109:Module/GIM6010_8/GIM6010_8.c ****         case 0xC0:  // Q轴电流控制响应
- 110:Module/GIM6010_8/GIM6010_8.c ****         {
- 111:Module/GIM6010_8/GIM6010_8.c ****             int32_t current_ma = (int32_t)(rx_data[1]   |
- 354              		.loc 1 111 51
- 355 0082 7B79     		ldrb	r3, [r7, #5]	@ zero_extendqisi2
- 356 0084 1A46     		mov	r2, r3
- 112:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[2] << 8)     |
- 357              		.loc 1 112 43
- 358 0086 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
- 359              		.loc 1 112 47
- 360 0088 1B02     		lsls	r3, r3, #8
- 111:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[2] << 8)     |
- 361              		.loc 1 111 57
- 362 008a 1A43     		orrs	r2, r2, r3
- 113:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[3] << 16)    |
- 363              		.loc 1 113 43
- 364 008c FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
- 365              		.loc 1 113 47
- 366 008e 1B04     		lsls	r3, r3, #16
- 112:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[2] << 8)     |
- 367              		.loc 1 112 57
- 368 0090 1A43     		orrs	r2, r2, r3
- 114:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[4] << 24));
- 369              		.loc 1 114 43
- 370 0092 3B7A     		ldrb	r3, [r7, #8]	@ zero_extendqisi2
- 371              		.loc 1 114 47
- 372 0094 1B06     		lsls	r3, r3, #24
- 111:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[2] << 8)     |
- 373              		.loc 1 111 21
- 374 0096 1343     		orrs	r3, r3, r2
- 375 0098 FB61     		str	r3, [r7, #28]
- 115:Module/GIM6010_8/GIM6010_8.c ****             GIM6010_Measure.current = current_ma * 0.001;
- 376              		.loc 1 115 50
- 377 009a F869     		ldr	r0, [r7, #28]
- 378 009c FFF7FEFF 		bl	__aeabi_i2d
- 379 00a0 19A3     		adr	r3, .L15
- 380 00a2 D3E90023 		ldrd	r2, [r3]
- 381 00a6 FFF7FEFF 		bl	__aeabi_dmul
- 382 00aa 0246     		mov	r2, r0
- 383 00ac 0B46     		mov	r3, r1
- 384 00ae 1046     		mov	r0, r2
- 385 00b0 1946     		mov	r1, r3
- 386 00b2 FFF7FEFF 		bl	__aeabi_d2f
- 387 00b6 0346     		mov	r3, r0	@ float
- 388              		.loc 1 115 37
- 389 00b8 194A     		ldr	r2, .L15+24
- 390 00ba 9360     		str	r3, [r2, #8]	@ float
- 116:Module/GIM6010_8/GIM6010_8.c ****             
- 117:Module/GIM6010_8/GIM6010_8.c ****             break;
- 391              		.loc 1 117 13
- 392 00bc 1DE0     		b	.L12
- 393              	.L13:
- 394              	.LBE3:
- 395              	.LBB4:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 10
+ 361 004a 354B     		ldr	r3, .L16+24
+ 362 004c C3ED007A 		vstr.32	s15, [r3]
+ 104:Module/GIM6010_8/GIM6010_8.c ****             
+ 105:Module/GIM6010_8/GIM6010_8.c ****             /* 2. 解析多圈角度（4字节有符号整数） */
+ 106:Module/GIM6010_8/GIM6010_8.c ****             int32_t multi_angle_raw = (int32_t)(rx_data[3]       | 
+ 363              		.loc 1 106 56
+ 364 0050 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 365 0052 1A46     		mov	r2, r3
+ 107:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[4] << 8)  |
+ 366              		.loc 1 107 55
+ 367 0054 3B7A     		ldrb	r3, [r7, #8]	@ zero_extendqisi2
+ 368              		.loc 1 107 59
+ 369 0056 1B02     		lsls	r3, r3, #8
+ 106:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[4] << 8)  |
+ 370              		.loc 1 106 66
+ 371 0058 1A43     		orrs	r2, r2, r3
+ 108:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[5] << 16) |
+ 372              		.loc 1 108 55
+ 373 005a 7B7A     		ldrb	r3, [r7, #9]	@ zero_extendqisi2
+ 374              		.loc 1 108 59
+ 375 005c 1B04     		lsls	r3, r3, #16
+ 107:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[4] << 8)  |
+ 376              		.loc 1 107 66
+ 377 005e 1A43     		orrs	r2, r2, r3
+ 109:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[6] << 24));
+ 378              		.loc 1 109 55
+ 379 0060 BB7A     		ldrb	r3, [r7, #10]	@ zero_extendqisi2
+ 380              		.loc 1 109 59
+ 381 0062 1B06     		lsls	r3, r3, #24
+ 106:Module/GIM6010_8/GIM6010_8.c ****                                               (rx_data[4] << 8)  |
+ 382              		.loc 1 106 21
+ 383 0064 1343     		orrs	r3, r3, r2
+ 384 0066 7B61     		str	r3, [r7, #20]
+ 110:Module/GIM6010_8/GIM6010_8.c ****              GIM6010_Measure.multi_angle_deg = multi_angle_raw * (360.0f / 16384.0f);
+ 385              		.loc 1 110 64
+ 386 0068 7B69     		ldr	r3, [r7, #20]
+ 387 006a 07EE903A 		vmov	s15, r3	@ int
+ 388 006e F8EEE77A 		vcvt.f32.s32	s15, s15
+ 389 0072 9FED2A7A 		vldr.32	s14, .L16+20
+ 390 0076 67EE877A 		vmul.f32	s15, s15, s14
+ 391              		.loc 1 110 46
+ 392 007a 294B     		ldr	r3, .L16+24
+ 393 007c C3ED017A 		vstr.32	s15, [r3, #4]
+ 111:Module/GIM6010_8/GIM6010_8.c **** 
+ 112:Module/GIM6010_8/GIM6010_8.c ****             break;
+ 394              		.loc 1 112 13
+ 395 0080 3BE0     		b	.L13
+ 396              	.L12:
+ 397              	.LBE2:
+ 398              	.LBB3:
+ 113:Module/GIM6010_8/GIM6010_8.c ****         }
+ 114:Module/GIM6010_8/GIM6010_8.c ****         case 0xC0:  // Q轴电流控制响应
+ 115:Module/GIM6010_8/GIM6010_8.c ****         {
+ 116:Module/GIM6010_8/GIM6010_8.c ****             int32_t current_ma = (int32_t)(rx_data[1]   |
+ 399              		.loc 1 116 51
+ 400 0082 7B79     		ldrb	r3, [r7, #5]	@ zero_extendqisi2
+ 401 0084 1A46     		mov	r2, r3
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 10
 
 
- 118:Module/GIM6010_8/GIM6010_8.c ****         }
- 119:Module/GIM6010_8/GIM6010_8.c ****         case 0xA2:  // 速度响应
- 120:Module/GIM6010_8/GIM6010_8.c ****         {
- 121:Module/GIM6010_8/GIM6010_8.c ****             int32_t speed_raw = (int32_t)(rx_data[1]        | 
- 396              		.loc 1 121 50
- 397 00be 7B79     		ldrb	r3, [r7, #5]	@ zero_extendqisi2
- 398 00c0 1A46     		mov	r2, r3
- 122:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[2] << 8)  |
- 399              		.loc 1 122 41
- 400 00c2 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
- 401              		.loc 1 122 45
- 402 00c4 1B02     		lsls	r3, r3, #8
- 121:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[2] << 8)  |
- 403              		.loc 1 121 61
- 404 00c6 1A43     		orrs	r2, r2, r3
- 123:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[3] << 16) |
- 405              		.loc 1 123 41
- 406 00c8 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
- 407              		.loc 1 123 45
- 408 00ca 1B04     		lsls	r3, r3, #16
- 122:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[2] << 8)  |
- 409              		.loc 1 122 52
- 410 00cc 1A43     		orrs	r2, r2, r3
- 124:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[4] << 24));
- 411              		.loc 1 124 41
- 412 00ce 3B7A     		ldrb	r3, [r7, #8]	@ zero_extendqisi2
- 413              		.loc 1 124 45
- 414 00d0 1B06     		lsls	r3, r3, #24
- 121:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[2] << 8)  |
- 415              		.loc 1 121 21
- 416 00d2 1343     		orrs	r3, r3, r2
- 417 00d4 3B61     		str	r3, [r7, #16]
- 125:Module/GIM6010_8/GIM6010_8.c ****             GIM6010_Measure.speed_raw = speed_raw * 0.01;
- 418              		.loc 1 125 51
- 419 00d6 3869     		ldr	r0, [r7, #16]
- 420 00d8 FFF7FEFF 		bl	__aeabi_i2d
- 421 00dc 0CA3     		adr	r3, .L15+8
- 422 00de D3E90023 		ldrd	r2, [r3]
- 423 00e2 FFF7FEFF 		bl	__aeabi_dmul
- 424 00e6 0246     		mov	r2, r0
- 425 00e8 0B46     		mov	r3, r1
- 426 00ea 1046     		mov	r0, r2
- 427 00ec 1946     		mov	r1, r3
- 428 00ee FFF7FEFF 		bl	__aeabi_d2f
- 429 00f2 0346     		mov	r3, r0	@ float
- 430              		.loc 1 125 39
- 431 00f4 0A4A     		ldr	r2, .L15+24
- 432 00f6 D360     		str	r3, [r2, #12]	@ float
- 433              	.LBE4:
- 126:Module/GIM6010_8/GIM6010_8.c ****         }
- 127:Module/GIM6010_8/GIM6010_8.c ****     }
- 128:Module/GIM6010_8/GIM6010_8.c **** }
- 434              		.loc 1 128 1
- 435 00f8 FFE7     		b	.L14
- 436              	.L12:
- 437              	.L14:
- 438 00fa 00BF     		nop
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 11
+ 117:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[2] << 8)     |
+ 402              		.loc 1 117 43
+ 403 0086 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 404              		.loc 1 117 47
+ 405 0088 1B02     		lsls	r3, r3, #8
+ 116:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[2] << 8)     |
+ 406              		.loc 1 116 57
+ 407 008a 1A43     		orrs	r2, r2, r3
+ 118:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[3] << 16)    |
+ 408              		.loc 1 118 43
+ 409 008c FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 410              		.loc 1 118 47
+ 411 008e 1B04     		lsls	r3, r3, #16
+ 117:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[2] << 8)     |
+ 412              		.loc 1 117 57
+ 413 0090 1A43     		orrs	r2, r2, r3
+ 119:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[4] << 24));
+ 414              		.loc 1 119 43
+ 415 0092 3B7A     		ldrb	r3, [r7, #8]	@ zero_extendqisi2
+ 416              		.loc 1 119 47
+ 417 0094 1B06     		lsls	r3, r3, #24
+ 116:Module/GIM6010_8/GIM6010_8.c ****                                   (rx_data[2] << 8)     |
+ 418              		.loc 1 116 21
+ 419 0096 1343     		orrs	r3, r3, r2
+ 420 0098 FB61     		str	r3, [r7, #28]
+ 120:Module/GIM6010_8/GIM6010_8.c ****             GIM6010_Measure.current = current_ma * 0.001;
+ 421              		.loc 1 120 50
+ 422 009a F869     		ldr	r0, [r7, #28]
+ 423 009c FFF7FEFF 		bl	__aeabi_i2d
+ 424 00a0 19A3     		adr	r3, .L16
+ 425 00a2 D3E90023 		ldrd	r2, [r3]
+ 426 00a6 FFF7FEFF 		bl	__aeabi_dmul
+ 427 00aa 0246     		mov	r2, r0
+ 428 00ac 0B46     		mov	r3, r1
+ 429 00ae 1046     		mov	r0, r2
+ 430 00b0 1946     		mov	r1, r3
+ 431 00b2 FFF7FEFF 		bl	__aeabi_d2f
+ 432 00b6 0346     		mov	r3, r0	@ float
+ 433              		.loc 1 120 37
+ 434 00b8 194A     		ldr	r2, .L16+24
+ 435 00ba 9360     		str	r3, [r2, #8]	@ float
+ 121:Module/GIM6010_8/GIM6010_8.c ****             
+ 122:Module/GIM6010_8/GIM6010_8.c ****             break;
+ 436              		.loc 1 122 13
+ 437 00bc 1DE0     		b	.L13
+ 438              	.L14:
+ 439              	.LBE3:
+ 440              	.LBB4:
+ 123:Module/GIM6010_8/GIM6010_8.c ****         }
+ 124:Module/GIM6010_8/GIM6010_8.c ****         case 0xA2:  // 速度响应
+ 125:Module/GIM6010_8/GIM6010_8.c ****         {
+ 126:Module/GIM6010_8/GIM6010_8.c ****             int32_t speed_raw = (int32_t)(rx_data[1]     | 
+ 441              		.loc 1 126 50
+ 442 00be 7B79     		ldrb	r3, [r7, #5]	@ zero_extendqisi2
+ 443 00c0 1A46     		mov	r2, r3
+ 127:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[2] << 8)        |
+ 444              		.loc 1 127 41
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 11
 
 
- 439 00fc 2037     		adds	r7, r7, #32
- 440              	.LCFI18:
- 441              		.cfi_def_cfa_offset 8
- 442 00fe BD46     		mov	sp, r7
- 443              	.LCFI19:
- 444              		.cfi_def_cfa_register 13
- 445              		@ sp needed
- 446 0100 80BD     		pop	{r7, pc}
- 447              	.L16:
- 448 0102 00BFAFF3 		.align	3
- 448      0080
- 449              	.L15:
- 450 0108 FCA9F1D2 		.word	-755914244
- 451 010c 4D62503F 		.word	1062232653
- 452 0110 7B14AE47 		.word	1202590843
- 453 0114 E17A843F 		.word	1065646817
- 454 0118 00000000 		.word	hfdcan1
- 455 011c 0000B43C 		.word	1018429440
- 456 0120 00000000 		.word	GIM6010_Measure
- 457              		.cfi_endproc
- 458              	.LFE135:
- 460              		.section	.text.GIM6010_Measure_Ptr,"ax",%progbits
- 461              		.align	1
- 462              		.global	GIM6010_Measure_Ptr
- 463              		.syntax unified
- 464              		.thumb
- 465              		.thumb_func
- 467              	GIM6010_Measure_Ptr:
- 468              	.LFB136:
- 129:Module/GIM6010_8/GIM6010_8.c **** 
- 130:Module/GIM6010_8/GIM6010_8.c **** GIM6010_Measure_s *GIM6010_Measure_Ptr()
- 131:Module/GIM6010_8/GIM6010_8.c **** {
- 469              		.loc 1 131 1
- 470              		.cfi_startproc
- 471              		@ args = 0, pretend = 0, frame = 0
- 472              		@ frame_needed = 1, uses_anonymous_args = 0
- 473              		@ link register save eliminated.
- 474 0000 80B4     		push	{r7}
- 475              	.LCFI20:
- 476              		.cfi_def_cfa_offset 4
- 477              		.cfi_offset 7, -4
- 478 0002 00AF     		add	r7, sp, #0
- 479              	.LCFI21:
- 480              		.cfi_def_cfa_register 7
- 132:Module/GIM6010_8/GIM6010_8.c ****     return &GIM6010_Measure;
- 481              		.loc 1 132 12
- 482 0004 024B     		ldr	r3, .L19
- 133:Module/GIM6010_8/GIM6010_8.c **** }...
- 483              		.loc 1 133 1
- 484 0006 1846     		mov	r0, r3
- 485 0008 BD46     		mov	sp, r7
- 486              	.LCFI22:
- 487              		.cfi_def_cfa_register 13
- 488              		@ sp needed
- 489 000a 5DF8047B 		ldr	r7, [sp], #4
- 490              	.LCFI23:
- 491              		.cfi_restore 7
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 12
+ 445 00c2 BB79     		ldrb	r3, [r7, #6]	@ zero_extendqisi2
+ 446              		.loc 1 127 45
+ 447 00c4 1B02     		lsls	r3, r3, #8
+ 126:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[2] << 8)        |
+ 448              		.loc 1 126 58
+ 449 00c6 1A43     		orrs	r2, r2, r3
+ 128:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[3] << 16)       |
+ 450              		.loc 1 128 41
+ 451 00c8 FB79     		ldrb	r3, [r7, #7]	@ zero_extendqisi2
+ 452              		.loc 1 128 45
+ 453 00ca 1B04     		lsls	r3, r3, #16
+ 127:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[2] << 8)        |
+ 454              		.loc 1 127 58
+ 455 00cc 1A43     		orrs	r2, r2, r3
+ 129:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[4] << 24));
+ 456              		.loc 1 129 41
+ 457 00ce 3B7A     		ldrb	r3, [r7, #8]	@ zero_extendqisi2
+ 458              		.loc 1 129 45
+ 459 00d0 1B06     		lsls	r3, r3, #24
+ 126:Module/GIM6010_8/GIM6010_8.c ****                                 (rx_data[2] << 8)        |
+ 460              		.loc 1 126 21
+ 461 00d2 1343     		orrs	r3, r3, r2
+ 462 00d4 3B61     		str	r3, [r7, #16]
+ 130:Module/GIM6010_8/GIM6010_8.c ****             GIM6010_Measure.speed_raw = speed_raw * 0.01;
+ 463              		.loc 1 130 51
+ 464 00d6 3869     		ldr	r0, [r7, #16]
+ 465 00d8 FFF7FEFF 		bl	__aeabi_i2d
+ 466 00dc 0CA3     		adr	r3, .L16+8
+ 467 00de D3E90023 		ldrd	r2, [r3]
+ 468 00e2 FFF7FEFF 		bl	__aeabi_dmul
+ 469 00e6 0246     		mov	r2, r0
+ 470 00e8 0B46     		mov	r3, r1
+ 471 00ea 1046     		mov	r0, r2
+ 472 00ec 1946     		mov	r1, r3
+ 473 00ee FFF7FEFF 		bl	__aeabi_d2f
+ 474 00f2 0346     		mov	r3, r0	@ float
+ 475              		.loc 1 130 39
+ 476 00f4 0A4A     		ldr	r2, .L16+24
+ 477 00f6 D360     		str	r3, [r2, #12]	@ float
+ 478              	.LBE4:
+ 131:Module/GIM6010_8/GIM6010_8.c ****         }
+ 132:Module/GIM6010_8/GIM6010_8.c ****     }
+ 133:Module/GIM6010_8/GIM6010_8.c **** }
+ 479              		.loc 1 133 1
+ 480 00f8 FFE7     		b	.L15
+ 481              	.L13:
+ 482              	.L15:
+ 483 00fa 00BF     		nop
+ 484 00fc 2037     		adds	r7, r7, #32
+ 485              	.LCFI24:
+ 486              		.cfi_def_cfa_offset 8
+ 487 00fe BD46     		mov	sp, r7
+ 488              	.LCFI25:
+ 489              		.cfi_def_cfa_register 13
+ 490              		@ sp needed
+ 491 0100 80BD     		pop	{r7, pc}
+ 492              	.L17:
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 12
 
 
- 492              		.cfi_def_cfa_offset 0
- 493 000e 7047     		bx	lr
- 494              	.L20:
- 495              		.align	2
- 496              	.L19:
- 497 0010 00000000 		.word	GIM6010_Measure
- 498              		.cfi_endproc
- 499              	.LFE136:
- 501              		.text
- 502              	.Letext0:
- 503              		.file 2 "D:/msys64/mingw64/arm-none-eabi/include/machine/_default_types.h"
- 504              		.file 3 "D:/msys64/mingw64/arm-none-eabi/include/sys/_stdint.h"
- 505              		.file 4 "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h"
- 506              		.file 5 "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h"
- 507              		.file 6 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h"
- 508              		.file 7 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h"
- 509              		.file 8 "Module/GIM6010_8/GIM6010_8.h"
- 510              		.file 9 "Core/Inc/fdcan.h"
- 511              		.file 10 "Bsp/bsp_fdcan/bsp_fdcan.h"
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s 			page 13
+ 493 0102 00BFAFF3 		.align	3
+ 493      0080
+ 494              	.L16:
+ 495 0108 FCA9F1D2 		.word	-755914244
+ 496 010c 4D62503F 		.word	1062232653
+ 497 0110 7B14AE47 		.word	1202590843
+ 498 0114 E17A843F 		.word	1065646817
+ 499 0118 00000000 		.word	hfdcan1
+ 500 011c 0000B43C 		.word	1018429440
+ 501 0120 00000000 		.word	GIM6010_Measure
+ 502              		.cfi_endproc
+ 503              	.LFE136:
+ 505              		.section	.text.GIM6010_Measure_Ptr,"ax",%progbits
+ 506              		.align	1
+ 507              		.global	GIM6010_Measure_Ptr
+ 508              		.syntax unified
+ 509              		.thumb
+ 510              		.thumb_func
+ 512              	GIM6010_Measure_Ptr:
+ 513              	.LFB137:
+ 134:Module/GIM6010_8/GIM6010_8.c **** 
+ 135:Module/GIM6010_8/GIM6010_8.c **** GIM6010_Measure_s *GIM6010_Measure_Ptr()
+ 136:Module/GIM6010_8/GIM6010_8.c **** {
+ 514              		.loc 1 136 1
+ 515              		.cfi_startproc
+ 516              		@ args = 0, pretend = 0, frame = 0
+ 517              		@ frame_needed = 1, uses_anonymous_args = 0
+ 518              		@ link register save eliminated.
+ 519 0000 80B4     		push	{r7}
+ 520              	.LCFI26:
+ 521              		.cfi_def_cfa_offset 4
+ 522              		.cfi_offset 7, -4
+ 523 0002 00AF     		add	r7, sp, #0
+ 524              	.LCFI27:
+ 525              		.cfi_def_cfa_register 7
+ 137:Module/GIM6010_8/GIM6010_8.c ****     return &GIM6010_Measure;
+ 526              		.loc 1 137 12
+ 527 0004 024B     		ldr	r3, .L20
+ 138:Module/GIM6010_8/GIM6010_8.c **** }...
+ 528              		.loc 1 138 1
+ 529 0006 1846     		mov	r0, r3
+ 530 0008 BD46     		mov	sp, r7
+ 531              	.LCFI28:
+ 532              		.cfi_def_cfa_register 13
+ 533              		@ sp needed
+ 534 000a 5DF8047B 		ldr	r7, [sp], #4
+ 535              	.LCFI29:
+ 536              		.cfi_restore 7
+ 537              		.cfi_def_cfa_offset 0
+ 538 000e 7047     		bx	lr
+ 539              	.L21:
+ 540              		.align	2
+ 541              	.L20:
+ 542 0010 00000000 		.word	GIM6010_Measure
+ 543              		.cfi_endproc
+ 544              	.LFE137:
+ 546              		.text
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 13
+
+
+ 547              	.Letext0:
+ 548              		.file 2 "D:/msys64/mingw64/arm-none-eabi/include/machine/_default_types.h"
+ 549              		.file 3 "D:/msys64/mingw64/arm-none-eabi/include/sys/_stdint.h"
+ 550              		.file 4 "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h"
+ 551              		.file 5 "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g4xx.h"
+ 552              		.file 6 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h"
+ 553              		.file 7 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_fdcan.h"
+ 554              		.file 8 "Module/GIM6010_8/GIM6010_8.h"
+ 555              		.file 9 "Core/Inc/fdcan.h"
+ 556              		.file 10 "Bsp/bsp_fdcan/bsp_fdcan.h"
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s 			page 14
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 GIM6010_8.c
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:25     .bss.GIM6010_Measure:00000000 GIM6010_Measure
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:22     .bss.GIM6010_Measure:00000000 $d
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:28     .text.GIMCANMotorSetMode:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:34     .text.GIMCANMotorSetMode:00000000 GIMCANMotorSetMode
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:78     .text.GIMCANMotorSetMode:0000002c $d
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:83     .text.GIMCANMotorSetCurrent:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:89     .text.GIMCANMotorSetCurrent:00000000 GIMCANMotorSetCurrent
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:162    .text.GIMCANMotorSetCurrent:00000060 $d
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:167    .text.GIMCANMotorSetAbsPosition:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:173    .text.GIMCANMotorSetAbsPosition:00000000 GIMCANMotorSetAbsPosition
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:246    .text.GIMCANMotorSetAbsPosition:00000060 $d
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:254    .text.fdcan1_rx_callback:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:260    .text.fdcan1_rx_callback:00000000 fdcan1_rx_callback
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:450    .text.fdcan1_rx_callback:00000108 $d
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:461    .text.GIM6010_Measure_Ptr:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:467    .text.GIM6010_Measure_Ptr:00000000 GIM6010_Measure_Ptr
-C:\Users\AURORA~1\AppData\Local\Temp\ccDHUs64.s:497    .text.GIM6010_Measure_Ptr:00000010 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:25     .bss.GIM6010_Measure:00000000 GIM6010_Measure
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:22     .bss.GIM6010_Measure:00000000 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:28     .text.GIMCANMotorSetMode:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:34     .text.GIMCANMotorSetMode:00000000 GIMCANMotorSetMode
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:78     .text.GIMCANMotorSetMode:0000002c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:83     .text.GIMCANMotorSetCurrent:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:89     .text.GIMCANMotorSetCurrent:00000000 GIMCANMotorSetCurrent
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:162    .text.GIMCANMotorSetCurrent:00000060 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:167    .text.GIMCANMotorSetAbsPosition:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:173    .text.GIMCANMotorSetAbsPosition:00000000 GIMCANMotorSetAbsPosition
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:246    .text.GIMCANMotorSetAbsPosition:00000060 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:251    .text.GIMCANMotorSetPositionMaxSpeed:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:257    .text.GIMCANMotorSetPositionMaxSpeed:00000000 GIMCANMotorSetPositionMaxSpeed
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:299    .text.fdcan1_rx_callback:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:305    .text.fdcan1_rx_callback:00000000 fdcan1_rx_callback
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:495    .text.fdcan1_rx_callback:00000108 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:506    .text.GIM6010_Measure_Ptr:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:512    .text.GIM6010_Measure_Ptr:00000000 GIM6010_Measure_Ptr
+C:\Users\AURORA~1\AppData\Local\Temp\ccYE07SY.s:542    .text.GIM6010_Measure_Ptr:00000010 $d
 
 UNDEFINED SYMBOLS
 fdcan_send_message

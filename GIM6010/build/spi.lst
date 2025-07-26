@@ -1,0 +1,460 @@
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s 			page 1
+
+
+   1              		.cpu cortex-m4
+   2              		.arch armv7e-m
+   3              		.fpu fpv4-sp-d16
+   4              		.eabi_attribute 27, 1
+   5              		.eabi_attribute 28, 1
+   6              		.eabi_attribute 20, 1
+   7              		.eabi_attribute 21, 1
+   8              		.eabi_attribute 23, 3
+   9              		.eabi_attribute 24, 1
+  10              		.eabi_attribute 25, 1
+  11              		.eabi_attribute 26, 1
+  12              		.eabi_attribute 30, 6
+  13              		.eabi_attribute 34, 1
+  14              		.eabi_attribute 18, 4
+  15              		.file	"spi.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.file 1 "Core/Src/spi.c"
+  20              		.global	hspi3
+  21              		.section	.bss.hspi3,"aw",%nobits
+  22              		.align	2
+  25              	hspi3:
+  26 0000 00000000 		.space	100
+  26      00000000 
+  26      00000000 
+  26      00000000 
+  26      00000000 
+  27              		.section	.text.MX_SPI3_Init,"ax",%progbits
+  28              		.align	1
+  29              		.global	MX_SPI3_Init
+  30              		.syntax unified
+  31              		.thumb
+  32              		.thumb_func
+  34              	MX_SPI3_Init:
+  35              	.LFB132:
+   1:Core/Src/spi.c **** /* USER CODE BEGIN Header */
+   2:Core/Src/spi.c **** /**
+   3:Core/Src/spi.c ****   ******************************************************************************
+   4:Core/Src/spi.c ****   * @file    spi.c
+   5:Core/Src/spi.c ****   * @brief   This file provides code for the configuration
+   6:Core/Src/spi.c ****   *          of the SPI instances.
+   7:Core/Src/spi.c ****   ******************************************************************************
+   8:Core/Src/spi.c ****   * @attention
+   9:Core/Src/spi.c ****   *
+  10:Core/Src/spi.c ****   * Copyright (c) 2025 STMicroelectronics.
+  11:Core/Src/spi.c ****   * All rights reserved.
+  12:Core/Src/spi.c ****   *
+  13:Core/Src/spi.c ****   * This software is licensed under terms that can be found in the LICENSE file
+  14:Core/Src/spi.c ****   * in the root directory of this software component.
+  15:Core/Src/spi.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
+  16:Core/Src/spi.c ****   *
+  17:Core/Src/spi.c ****   ******************************************************************************
+  18:Core/Src/spi.c ****   */
+  19:Core/Src/spi.c **** /* USER CODE END Header */
+  20:Core/Src/spi.c **** /* Includes ------------------------------------------------------------------*/
+  21:Core/Src/spi.c **** #include "spi.h"
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s 			page 2
+
+
+  22:Core/Src/spi.c **** 
+  23:Core/Src/spi.c **** /* USER CODE BEGIN 0 */
+  24:Core/Src/spi.c **** 
+  25:Core/Src/spi.c **** /* USER CODE END 0 */
+  26:Core/Src/spi.c **** 
+  27:Core/Src/spi.c **** SPI_HandleTypeDef hspi3;
+  28:Core/Src/spi.c **** 
+  29:Core/Src/spi.c **** /* SPI3 init function */
+  30:Core/Src/spi.c **** void MX_SPI3_Init(void)
+  31:Core/Src/spi.c **** {
+  36              		.loc 1 31 1
+  37              		.cfi_startproc
+  38              		@ args = 0, pretend = 0, frame = 0
+  39              		@ frame_needed = 1, uses_anonymous_args = 0
+  40 0000 80B5     		push	{r7, lr}
+  41              	.LCFI0:
+  42              		.cfi_def_cfa_offset 8
+  43              		.cfi_offset 7, -8
+  44              		.cfi_offset 14, -4
+  45 0002 00AF     		add	r7, sp, #0
+  46              	.LCFI1:
+  47              		.cfi_def_cfa_register 7
+  32:Core/Src/spi.c **** 
+  33:Core/Src/spi.c ****   /* USER CODE BEGIN SPI3_Init 0 */
+  34:Core/Src/spi.c **** 
+  35:Core/Src/spi.c ****   /* USER CODE END SPI3_Init 0 */
+  36:Core/Src/spi.c **** 
+  37:Core/Src/spi.c ****   /* USER CODE BEGIN SPI3_Init 1 */
+  38:Core/Src/spi.c **** 
+  39:Core/Src/spi.c ****   /* USER CODE END SPI3_Init 1 */
+  40:Core/Src/spi.c ****   hspi3.Instance = SPI3;
+  48              		.loc 1 40 18
+  49 0004 1B4B     		ldr	r3, .L4
+  50 0006 1C4A     		ldr	r2, .L4+4
+  51 0008 1A60     		str	r2, [r3]
+  41:Core/Src/spi.c ****   hspi3.Init.Mode = SPI_MODE_MASTER;
+  52              		.loc 1 41 19
+  53 000a 1A4B     		ldr	r3, .L4
+  54 000c 4FF48272 		mov	r2, #260
+  55 0010 5A60     		str	r2, [r3, #4]
+  42:Core/Src/spi.c ****   hspi3.Init.Direction = SPI_DIRECTION_2LINES;
+  56              		.loc 1 42 24
+  57 0012 184B     		ldr	r3, .L4
+  58 0014 0022     		movs	r2, #0
+  59 0016 9A60     		str	r2, [r3, #8]
+  43:Core/Src/spi.c ****   hspi3.Init.DataSize = SPI_DATASIZE_8BIT;
+  60              		.loc 1 43 23
+  61 0018 164B     		ldr	r3, .L4
+  62 001a 4FF4E062 		mov	r2, #1792
+  63 001e DA60     		str	r2, [r3, #12]
+  44:Core/Src/spi.c ****   hspi3.Init.CLKPolarity = SPI_POLARITY_HIGH;
+  64              		.loc 1 44 26
+  65 0020 144B     		ldr	r3, .L4
+  66 0022 0222     		movs	r2, #2
+  67 0024 1A61     		str	r2, [r3, #16]
+  45:Core/Src/spi.c ****   hspi3.Init.CLKPhase = SPI_PHASE_1EDGE;
+  68              		.loc 1 45 23
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s 			page 3
+
+
+  69 0026 134B     		ldr	r3, .L4
+  70 0028 0022     		movs	r2, #0
+  71 002a 5A61     		str	r2, [r3, #20]
+  46:Core/Src/spi.c ****   hspi3.Init.NSS = SPI_NSS_SOFT;
+  72              		.loc 1 46 18
+  73 002c 114B     		ldr	r3, .L4
+  74 002e 4FF40072 		mov	r2, #512
+  75 0032 9A61     		str	r2, [r3, #24]
+  47:Core/Src/spi.c ****   hspi3.Init.BaudRatePrescaler = SPI_BAUDRATEPRESCALER_8;
+  76              		.loc 1 47 32
+  77 0034 0F4B     		ldr	r3, .L4
+  78 0036 1022     		movs	r2, #16
+  79 0038 DA61     		str	r2, [r3, #28]
+  48:Core/Src/spi.c ****   hspi3.Init.FirstBit = SPI_FIRSTBIT_MSB;
+  80              		.loc 1 48 23
+  81 003a 0E4B     		ldr	r3, .L4
+  82 003c 0022     		movs	r2, #0
+  83 003e 1A62     		str	r2, [r3, #32]
+  49:Core/Src/spi.c ****   hspi3.Init.TIMode = SPI_TIMODE_DISABLE;
+  84              		.loc 1 49 21
+  85 0040 0C4B     		ldr	r3, .L4
+  86 0042 0022     		movs	r2, #0
+  87 0044 5A62     		str	r2, [r3, #36]
+  50:Core/Src/spi.c ****   hspi3.Init.CRCCalculation = SPI_CRCCALCULATION_DISABLE;
+  88              		.loc 1 50 29
+  89 0046 0B4B     		ldr	r3, .L4
+  90 0048 0022     		movs	r2, #0
+  91 004a 9A62     		str	r2, [r3, #40]
+  51:Core/Src/spi.c ****   hspi3.Init.CRCPolynomial = 7;
+  92              		.loc 1 51 28
+  93 004c 094B     		ldr	r3, .L4
+  94 004e 0722     		movs	r2, #7
+  95 0050 DA62     		str	r2, [r3, #44]
+  52:Core/Src/spi.c ****   hspi3.Init.CRCLength = SPI_CRC_LENGTH_DATASIZE;
+  96              		.loc 1 52 24
+  97 0052 084B     		ldr	r3, .L4
+  98 0054 0022     		movs	r2, #0
+  99 0056 1A63     		str	r2, [r3, #48]
+  53:Core/Src/spi.c ****   hspi3.Init.NSSPMode = SPI_NSS_PULSE_ENABLE;
+ 100              		.loc 1 53 23
+ 101 0058 064B     		ldr	r3, .L4
+ 102 005a 0822     		movs	r2, #8
+ 103 005c 5A63     		str	r2, [r3, #52]
+  54:Core/Src/spi.c ****   if (HAL_SPI_Init(&hspi3) != HAL_OK)
+ 104              		.loc 1 54 7
+ 105 005e 0548     		ldr	r0, .L4
+ 106 0060 FFF7FEFF 		bl	HAL_SPI_Init
+ 107 0064 0346     		mov	r3, r0
+ 108              		.loc 1 54 6 discriminator 1
+ 109 0066 002B     		cmp	r3, #0
+ 110 0068 01D0     		beq	.L3
+  55:Core/Src/spi.c ****   {
+  56:Core/Src/spi.c ****     Error_Handler();
+ 111              		.loc 1 56 5
+ 112 006a FFF7FEFF 		bl	Error_Handler
+ 113              	.L3:
+  57:Core/Src/spi.c ****   }
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s 			page 4
+
+
+  58:Core/Src/spi.c ****   /* USER CODE BEGIN SPI3_Init 2 */
+  59:Core/Src/spi.c **** 
+  60:Core/Src/spi.c ****   /* USER CODE END SPI3_Init 2 */
+  61:Core/Src/spi.c **** 
+  62:Core/Src/spi.c **** }
+ 114              		.loc 1 62 1
+ 115 006e 00BF     		nop
+ 116 0070 80BD     		pop	{r7, pc}
+ 117              	.L5:
+ 118 0072 00BF     		.align	2
+ 119              	.L4:
+ 120 0074 00000000 		.word	hspi3
+ 121 0078 003C0040 		.word	1073757184
+ 122              		.cfi_endproc
+ 123              	.LFE132:
+ 125              		.section	.text.HAL_SPI_MspInit,"ax",%progbits
+ 126              		.align	1
+ 127              		.global	HAL_SPI_MspInit
+ 128              		.syntax unified
+ 129              		.thumb
+ 130              		.thumb_func
+ 132              	HAL_SPI_MspInit:
+ 133              	.LFB133:
+  63:Core/Src/spi.c **** 
+  64:Core/Src/spi.c **** void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle)
+  65:Core/Src/spi.c **** {
+ 134              		.loc 1 65 1
+ 135              		.cfi_startproc
+ 136              		@ args = 0, pretend = 0, frame = 40
+ 137              		@ frame_needed = 1, uses_anonymous_args = 0
+ 138 0000 80B5     		push	{r7, lr}
+ 139              	.LCFI2:
+ 140              		.cfi_def_cfa_offset 8
+ 141              		.cfi_offset 7, -8
+ 142              		.cfi_offset 14, -4
+ 143 0002 8AB0     		sub	sp, sp, #40
+ 144              	.LCFI3:
+ 145              		.cfi_def_cfa_offset 48
+ 146 0004 00AF     		add	r7, sp, #0
+ 147              	.LCFI4:
+ 148              		.cfi_def_cfa_register 7
+ 149 0006 7860     		str	r0, [r7, #4]
+  66:Core/Src/spi.c **** 
+  67:Core/Src/spi.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
+ 150              		.loc 1 67 20
+ 151 0008 07F11403 		add	r3, r7, #20
+ 152 000c 0022     		movs	r2, #0
+ 153 000e 1A60     		str	r2, [r3]
+ 154 0010 5A60     		str	r2, [r3, #4]
+ 155 0012 9A60     		str	r2, [r3, #8]
+ 156 0014 DA60     		str	r2, [r3, #12]
+ 157 0016 1A61     		str	r2, [r3, #16]
+  68:Core/Src/spi.c ****   if(spiHandle->Instance==SPI3)
+ 158              		.loc 1 68 15
+ 159 0018 7B68     		ldr	r3, [r7, #4]
+ 160 001a 1B68     		ldr	r3, [r3]
+ 161              		.loc 1 68 5
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s 			page 5
+
+
+ 162 001c 174A     		ldr	r2, .L9
+ 163 001e 9342     		cmp	r3, r2
+ 164 0020 28D1     		bne	.L8
+ 165              	.LBB2:
+  69:Core/Src/spi.c ****   {
+  70:Core/Src/spi.c ****   /* USER CODE BEGIN SPI3_MspInit 0 */
+  71:Core/Src/spi.c **** 
+  72:Core/Src/spi.c ****   /* USER CODE END SPI3_MspInit 0 */
+  73:Core/Src/spi.c ****     /* SPI3 clock enable */
+  74:Core/Src/spi.c ****     __HAL_RCC_SPI3_CLK_ENABLE();
+ 166              		.loc 1 74 5
+ 167 0022 174B     		ldr	r3, .L9+4
+ 168 0024 9B6D     		ldr	r3, [r3, #88]
+ 169 0026 164A     		ldr	r2, .L9+4
+ 170 0028 43F40043 		orr	r3, r3, #32768
+ 171 002c 9365     		str	r3, [r2, #88]
+ 172 002e 144B     		ldr	r3, .L9+4
+ 173 0030 9B6D     		ldr	r3, [r3, #88]
+ 174 0032 03F40043 		and	r3, r3, #32768
+ 175 0036 3B61     		str	r3, [r7, #16]
+ 176 0038 3B69     		ldr	r3, [r7, #16]
+ 177              	.LBE2:
+ 178              	.LBB3:
+  75:Core/Src/spi.c **** 
+  76:Core/Src/spi.c ****     __HAL_RCC_GPIOC_CLK_ENABLE();
+ 179              		.loc 1 76 5
+ 180 003a 114B     		ldr	r3, .L9+4
+ 181 003c DB6C     		ldr	r3, [r3, #76]
+ 182 003e 104A     		ldr	r2, .L9+4
+ 183 0040 43F00403 		orr	r3, r3, #4
+ 184 0044 D364     		str	r3, [r2, #76]
+ 185 0046 0E4B     		ldr	r3, .L9+4
+ 186 0048 DB6C     		ldr	r3, [r3, #76]
+ 187 004a 03F00403 		and	r3, r3, #4
+ 188 004e FB60     		str	r3, [r7, #12]
+ 189 0050 FB68     		ldr	r3, [r7, #12]
+ 190              	.LBE3:
+  77:Core/Src/spi.c ****     /**SPI3 GPIO Configuration
+  78:Core/Src/spi.c ****     PC10     ------> SPI3_SCK
+  79:Core/Src/spi.c ****     PC12     ------> SPI3_MOSI
+  80:Core/Src/spi.c ****     */
+  81:Core/Src/spi.c ****     GPIO_InitStruct.Pin = GPIO_PIN_10|GPIO_PIN_12;
+ 191              		.loc 1 81 25
+ 192 0052 4FF4A053 		mov	r3, #5120
+ 193 0056 7B61     		str	r3, [r7, #20]
+  82:Core/Src/spi.c ****     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
+ 194              		.loc 1 82 26
+ 195 0058 0223     		movs	r3, #2
+ 196 005a BB61     		str	r3, [r7, #24]
+  83:Core/Src/spi.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
+ 197              		.loc 1 83 26
+ 198 005c 0023     		movs	r3, #0
+ 199 005e FB61     		str	r3, [r7, #28]
+  84:Core/Src/spi.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
+ 200              		.loc 1 84 27
+ 201 0060 0023     		movs	r3, #0
+ 202 0062 3B62     		str	r3, [r7, #32]
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s 			page 6
+
+
+  85:Core/Src/spi.c ****     GPIO_InitStruct.Alternate = GPIO_AF6_SPI3;
+ 203              		.loc 1 85 31
+ 204 0064 0623     		movs	r3, #6
+ 205 0066 7B62     		str	r3, [r7, #36]
+  86:Core/Src/spi.c ****     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
+ 206              		.loc 1 86 5
+ 207 0068 07F11403 		add	r3, r7, #20
+ 208 006c 1946     		mov	r1, r3
+ 209 006e 0548     		ldr	r0, .L9+8
+ 210 0070 FFF7FEFF 		bl	HAL_GPIO_Init
+ 211              	.L8:
+  87:Core/Src/spi.c **** 
+  88:Core/Src/spi.c ****   /* USER CODE BEGIN SPI3_MspInit 1 */
+  89:Core/Src/spi.c **** 
+  90:Core/Src/spi.c ****   /* USER CODE END SPI3_MspInit 1 */
+  91:Core/Src/spi.c ****   }
+  92:Core/Src/spi.c **** }
+ 212              		.loc 1 92 1
+ 213 0074 00BF     		nop
+ 214 0076 2837     		adds	r7, r7, #40
+ 215              	.LCFI5:
+ 216              		.cfi_def_cfa_offset 8
+ 217 0078 BD46     		mov	sp, r7
+ 218              	.LCFI6:
+ 219              		.cfi_def_cfa_register 13
+ 220              		@ sp needed
+ 221 007a 80BD     		pop	{r7, pc}
+ 222              	.L10:
+ 223              		.align	2
+ 224              	.L9:
+ 225 007c 003C0040 		.word	1073757184
+ 226 0080 00100240 		.word	1073876992
+ 227 0084 00080048 		.word	1207961600
+ 228              		.cfi_endproc
+ 229              	.LFE133:
+ 231              		.section	.text.HAL_SPI_MspDeInit,"ax",%progbits
+ 232              		.align	1
+ 233              		.global	HAL_SPI_MspDeInit
+ 234              		.syntax unified
+ 235              		.thumb
+ 236              		.thumb_func
+ 238              	HAL_SPI_MspDeInit:
+ 239              	.LFB134:
+  93:Core/Src/spi.c **** 
+  94:Core/Src/spi.c **** void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
+  95:Core/Src/spi.c **** {
+ 240              		.loc 1 95 1
+ 241              		.cfi_startproc
+ 242              		@ args = 0, pretend = 0, frame = 8
+ 243              		@ frame_needed = 1, uses_anonymous_args = 0
+ 244 0000 80B5     		push	{r7, lr}
+ 245              	.LCFI7:
+ 246              		.cfi_def_cfa_offset 8
+ 247              		.cfi_offset 7, -8
+ 248              		.cfi_offset 14, -4
+ 249 0002 82B0     		sub	sp, sp, #8
+ 250              	.LCFI8:
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s 			page 7
+
+
+ 251              		.cfi_def_cfa_offset 16
+ 252 0004 00AF     		add	r7, sp, #0
+ 253              	.LCFI9:
+ 254              		.cfi_def_cfa_register 7
+ 255 0006 7860     		str	r0, [r7, #4]
+  96:Core/Src/spi.c **** 
+  97:Core/Src/spi.c ****   if(spiHandle->Instance==SPI3)
+ 256              		.loc 1 97 15
+ 257 0008 7B68     		ldr	r3, [r7, #4]
+ 258 000a 1B68     		ldr	r3, [r3]
+ 259              		.loc 1 97 5
+ 260 000c 084A     		ldr	r2, .L14
+ 261 000e 9342     		cmp	r3, r2
+ 262 0010 0AD1     		bne	.L13
+  98:Core/Src/spi.c ****   {
+  99:Core/Src/spi.c ****   /* USER CODE BEGIN SPI3_MspDeInit 0 */
+ 100:Core/Src/spi.c **** 
+ 101:Core/Src/spi.c ****   /* USER CODE END SPI3_MspDeInit 0 */
+ 102:Core/Src/spi.c ****     /* Peripheral clock disable */
+ 103:Core/Src/spi.c ****     __HAL_RCC_SPI3_CLK_DISABLE();
+ 263              		.loc 1 103 5
+ 264 0012 084B     		ldr	r3, .L14+4
+ 265 0014 9B6D     		ldr	r3, [r3, #88]
+ 266 0016 074A     		ldr	r2, .L14+4
+ 267 0018 23F40043 		bic	r3, r3, #32768
+ 268 001c 9365     		str	r3, [r2, #88]
+ 104:Core/Src/spi.c **** 
+ 105:Core/Src/spi.c ****     /**SPI3 GPIO Configuration
+ 106:Core/Src/spi.c ****     PC10     ------> SPI3_SCK
+ 107:Core/Src/spi.c ****     PC12     ------> SPI3_MOSI
+ 108:Core/Src/spi.c ****     */
+ 109:Core/Src/spi.c ****     HAL_GPIO_DeInit(GPIOC, GPIO_PIN_10|GPIO_PIN_12);
+ 269              		.loc 1 109 5
+ 270 001e 4FF4A051 		mov	r1, #5120
+ 271 0022 0548     		ldr	r0, .L14+8
+ 272 0024 FFF7FEFF 		bl	HAL_GPIO_DeInit
+ 273              	.L13:
+ 110:Core/Src/spi.c **** 
+ 111:Core/Src/spi.c ****   /* USER CODE BEGIN SPI3_MspDeInit 1 */
+ 112:Core/Src/spi.c **** 
+ 113:Core/Src/spi.c ****   /* USER CODE END SPI3_MspDeInit 1 */
+ 114:Core/Src/spi.c ****   }
+ 115:Core/Src/spi.c **** }
+ 274              		.loc 1 115 1
+ 275 0028 00BF     		nop
+ 276 002a 0837     		adds	r7, r7, #8
+ 277              	.LCFI10:
+ 278              		.cfi_def_cfa_offset 8
+ 279 002c BD46     		mov	sp, r7
+ 280              	.LCFI11:
+ 281              		.cfi_def_cfa_register 13
+ 282              		@ sp needed
+ 283 002e 80BD     		pop	{r7, pc}
+ 284              	.L15:
+ 285              		.align	2
+ 286              	.L14:
+ 287 0030 003C0040 		.word	1073757184
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s 			page 8
+
+
+ 288 0034 00100240 		.word	1073876992
+ 289 0038 00080048 		.word	1207961600
+ 290              		.cfi_endproc
+ 291              	.LFE134:
+ 293              		.text
+ 294              	.Letext0:
+ 295              		.file 2 "D:/msys64/mingw64/arm-none-eabi/include/machine/_default_types.h"
+ 296              		.file 3 "D:/msys64/mingw64/arm-none-eabi/include/sys/_stdint.h"
+ 297              		.file 4 "Drivers/CMSIS/Device/ST/STM32G4xx/Include/stm32g474xx.h"
+ 298              		.file 5 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_def.h"
+ 299              		.file 6 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_gpio.h"
+ 300              		.file 7 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_dma.h"
+ 301              		.file 8 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h"
+ 302              		.file 9 "Core/Inc/spi.h"
+ 303              		.file 10 "Core/Inc/main.h"
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s 			page 9
+
+
+DEFINED SYMBOLS
+                            *ABS*:00000000 spi.c
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:25     .bss.hspi3:00000000 hspi3
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:22     .bss.hspi3:00000000 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:28     .text.MX_SPI3_Init:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:34     .text.MX_SPI3_Init:00000000 MX_SPI3_Init
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:120    .text.MX_SPI3_Init:00000074 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:126    .text.HAL_SPI_MspInit:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:132    .text.HAL_SPI_MspInit:00000000 HAL_SPI_MspInit
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:225    .text.HAL_SPI_MspInit:0000007c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:232    .text.HAL_SPI_MspDeInit:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:238    .text.HAL_SPI_MspDeInit:00000000 HAL_SPI_MspDeInit
+C:\Users\AURORA~1\AppData\Local\Temp\ccHhCeEB.s:287    .text.HAL_SPI_MspDeInit:00000030 $d
+
+UNDEFINED SYMBOLS
+HAL_SPI_Init
+Error_Handler
+HAL_GPIO_Init
+HAL_GPIO_DeInit

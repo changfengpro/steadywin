@@ -5,14 +5,14 @@ GIM6010_Measure_s GIM6010_Measure;
 /**
 ************************************************************************
 * @brief:      	GIMMotorSetMode: 设置电机模式函数
-* @param[in]:   fdhcan:     指向FDCAN_HandleTypeDef结构的指针
+* @param[in]:   hfdcan:     指向FDCAN_HandleTypeDef结构的指针
 * @param[in]:   motor_id: 电机ID，指定目标电机
 * @param[in]:   cmd:    指定要开启的模式
 * @retval:     	void
 * @details:    	通过CAN总线向特定电机发送启用特定模式的命令
 ************************************************************************
 **/
-void GIMCANMotorSetMode(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, GIMCANMotor_Mode_e cmd)
+void GIMCANMotorSetMode(FDCAN_HandleTypeDef* hfdcan, uint16_t motor_id, GIMCANMotor_Mode_e cmd)
 {
     uint8_t tx_buff;
     tx_buff = (uint8_t)cmd; // 最后一位是命令id
@@ -22,14 +22,14 @@ void GIMCANMotorSetMode(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, GIMCANMo
 /**
 ************************************************************************
 * @brief      GIMCANMotorSetCurrent: 设置电机Q轴电流
-* @param[in]  fdhcan:     FDCAN句柄指针
+* @param[in]  hfdcan:     FDCAN句柄指针
 * @param[in]  motor_id:   电机ID (设备地址或0x100|设备地址)
 * @param[in]  current_A:  目标电流值(单位：A)
 * @retval     void
 * @details    通过CAN总线向电机发送Q轴电流控制命令
 ************************************************************************
 **/
-void GIMCANMotorSetCurrent(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, float current_A)
+void GIMCANMotorSetCurrent(FDCAN_HandleTypeDef* hfdcan, uint16_t motor_id, float current_A)
 {
     uint8_t tx_data[5];
     
@@ -46,14 +46,14 @@ void GIMCANMotorSetCurrent(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, float
     tx_data[4] = (current_ma >> 24) & 0xFF; // 最高字节
     
     // 发送CAN消息（DLC=5）
-    fdcan_send_message(fdhcan, motor_id, tx_data, 5);
+    fdcan_send_message(hfdcan, motor_id, tx_data, 5);
 }
 
 
 /**
 ************************************************************************
 * @brief      GIMCANMotorSetAbsPosition: 设置电机绝对位置
-* @param[in]  fdhcan:     FDCAN句柄指针
+* @param[in]  hfdcan:     FDCAN句柄指针
 * @param[in]  motor_id:   电机ID (设备地址或0x100|设备地址)
 * @param[in]  angle_deg:  目标角度值(单位：度)
 * @retval     void
@@ -61,7 +61,7 @@ void GIMCANMotorSetCurrent(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, float
 *             角度值将转换为电机计数值(Count)，电机一圈(360°)对应16384个计数值
 ************************************************************************
 **/
-void GIMCANMotorSetAbsPosition(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, float angle_deg)
+void GIMCANMotorSetAbsPosition(FDCAN_HandleTypeDef* hfdcan, uint16_t motor_id, float angle_deg)
 {
     uint8_t tx_data[5];
     
@@ -79,9 +79,14 @@ void GIMCANMotorSetAbsPosition(FDCAN_HandleTypeDef* fdhcan, uint16_t motor_id, f
     tx_data[4] = (position_count >> 24) & 0xFF; // 最高字节
     
     // 发送CAN消息（DLC=5）
-    fdcan_send_message(fdhcan, motor_id, tx_data, 5);
+    fdcan_send_message(hfdcan, motor_id, tx_data, 5);
 }
 
+
+void GIMCANMotorSetPositionMaxSpeed(FDCAN_HandleTypeDef* hfdcan, uint16_t motor_id, float speed)
+{
+    
+}
 
 
 void fdcan1_rx_callback()
@@ -118,9 +123,9 @@ void fdcan1_rx_callback()
         }
         case 0xA2:  // 速度响应
         {
-            int32_t speed_raw = (int32_t)(rx_data[1]        | 
-                                (rx_data[2] << 8)  |
-                                (rx_data[3] << 16) |
+            int32_t speed_raw = (int32_t)(rx_data[1]     | 
+                                (rx_data[2] << 8)        |
+                                (rx_data[3] << 16)       |
                                 (rx_data[4] << 24));
             GIM6010_Measure.speed_raw = speed_raw * 0.01;
         }

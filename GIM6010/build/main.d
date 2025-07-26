@@ -23,10 +23,13 @@ build/main.o: Core/Src/main.c Core/Inc/main.h \
  Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h \
  Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h \
  Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h \
+ Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h \
+ Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h \
  Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h \
  Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h Core/Inc/fdcan.h \
- Core/Inc/main.h Core/Inc/tim.h Core/Inc/gpio.h Bsp/bsp_fdcan/bsp_fdcan.h \
- Module/GIM6010/GIM6010.h Module/GIM6010_8/GIM6010_8.h
+ Core/Inc/main.h Core/Inc/spi.h Core/Inc/tim.h Core/Inc/gpio.h \
+ Bsp/bsp_fdcan/bsp_fdcan.h Module/GIM6010/GIM6010.h \
+ Module/GIM6010_8/GIM6010_8.h
 Core/Inc/main.h:
 Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h:
 Core/Inc/stm32g4xx_hal_conf.h:
@@ -54,10 +57,13 @@ Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ex.h:
 Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_flash_ramfunc.h:
 Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h:
 Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h:
+Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h:
+Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h:
 Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h:
 Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h:
 Core/Inc/fdcan.h:
 Core/Inc/main.h:
+Core/Inc/spi.h:
 Core/Inc/tim.h:
 Core/Inc/gpio.h:
 Bsp/bsp_fdcan/bsp_fdcan.h:

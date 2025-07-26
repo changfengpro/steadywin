@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
   37              		@ args = 0, pretend = 0, frame = 24
   38              		@ frame_needed = 1, uses_anonymous_args = 0
   39              		@ link register save eliminated.
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 2
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s 			page 2
 
 
   40 0000 80B4     		push	{r7}
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
   89 005e BD46     		mov	sp, r7
   90              	.LCFI4:
   91              		.cfi_def_cfa_register 13
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 3
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s 			page 3
 
 
   92              		@ sp needed
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
   38:Module/GIM6010/GIM6010.c **** 	float offset = x_min;
  133              		.loc 1 38 8
  134 0022 BB68     		ldr	r3, [r7, #8]	@ float
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 4
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s 			page 4
 
 
  135 0024 3B61     		str	r3, [r7, #16]	@ float
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
   47:Module/GIM6010/GIM6010.c **** * @param[in]:   cmd:    指定要开启的模式
   48:Module/GIM6010/GIM6010.c **** * @retval:     	void
   49:Module/GIM6010/GIM6010.c **** * @details:    	通过CAN总线向特定电机发送启用特定模式的命令
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 5
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s 			page 5
 
 
   50:Module/GIM6010/GIM6010.c **** ************************************************************************
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
  228              	.L7:
  229              		.align	2
  230              	.L6:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 6
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s 			page 6
 
 
  231 0038 00000000 		.word	hfdcan1
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
  266              		.loc 1 79 12
  267 001e 1020     		movs	r0, #16
  268 0020 B2EE091A 		vmov.f32	s2, #1.25e+1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 7
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s 			page 7
 
 
  269 0024 FAEE090A 		vmov.f32	s1, #-1.25e+1
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
   86:Module/GIM6010/GIM6010.c **** 	data[1] = pos_tmp;
  317              		.loc 1 86 10
  318 0098 FB8E     		ldrh	r3, [r7, #54]	@ movhi
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 8
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s 			page 8
 
 
  319 009a DBB2     		uxtb	r3, r3
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
  367 00f6 DBB2     		uxtb	r3, r3
  368 00f8 87F82B30 		strb	r3, [r7, #43]
   93:Module/GIM6010/GIM6010.c **** 	
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 9
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s 			page 9
 
 
   94:Module/GIM6010/GIM6010.c **** 	fdcan_send_message(hfdcan, id, data, sizeof(data));
@@ -521,23 +521,23 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 1
  405              		.file 9 "Core/Inc/fdcan.h"
  406              		.file 10 "Bsp/bsp_fdcan/bsp_fdcan.h"
  407              		.file 11 "<built-in>"
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s 			page 10
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s 			page 10
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 GIM6010.c
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:25     .bss.motor_t:00000000 motor_t
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:22     .bss.motor_t:00000000 $d
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:28     .text.float_to_uint:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:33     .text.float_to_uint:00000000 float_to_uint
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:102    .text.uint_to_float:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:107    .text.uint_to_float:00000000 uint_to_float
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:175    .text.GIMMotorSetMode:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:181    .text.GIMMotorSetMode:00000000 GIMMotorSetMode
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:231    .text.GIMMotorSetMode:00000038 $d
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:236    .text.mit_ctrl:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:242    .text.mit_ctrl:00000000 mit_ctrl
-C:\Users\AURORA~1\AppData\Local\Temp\ccJjvxFi.s:389    .text.mit_ctrl:00000114 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:25     .bss.motor_t:00000000 motor_t
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:22     .bss.motor_t:00000000 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:28     .text.float_to_uint:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:33     .text.float_to_uint:00000000 float_to_uint
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:102    .text.uint_to_float:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:107    .text.uint_to_float:00000000 uint_to_float
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:175    .text.GIMMotorSetMode:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:181    .text.GIMMotorSetMode:00000000 GIMMotorSetMode
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:231    .text.GIMMotorSetMode:00000038 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:236    .text.mit_ctrl:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:242    .text.mit_ctrl:00000000 mit_ctrl
+C:\Users\AURORA~1\AppData\Local\Temp\cc6o06lA.s:389    .text.mit_ctrl:00000114 $d
 
 UNDEFINED SYMBOLS
 memset

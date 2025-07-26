@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
   28:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   * @{
   29:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   */
   30:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 2
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 2
 
 
   31:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** /** @defgroup RCCEx RCCEx
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
   85:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         select the RTC clock source; in this case the Backup domain will be reset in
   86:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         order to modify the RTC Clock source, as consequence RTC registers (including
   87:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         the backup registers) are set to their reset values.
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 3
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 3
 
 
   88:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  126:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   uint32_t tickstart;
  127:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   HAL_StatusTypeDef ret = HAL_OK;      /* Intermediate status */
   45              		.loc 1 127 21
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 4
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 4
 
 
   46 0008 0023     		movs	r3, #0
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  145:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       pwrclkchanged = SET;
   83              		.loc 1 145 21
   84 0046 0123     		movs	r3, #1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 5
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 5
 
 
   85 0048 7B74     		strb	r3, [r7, #17]
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  122              	.L5:
  160:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       }
  161:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     }
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 6
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 6
 
 
  162:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  162              		.loc 1 176 12
  163 00cc 184A     		ldr	r2, .L34
  164              		.loc 1 176 19
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 7
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 7
 
 
  165 00ce 7B69     		ldr	r3, [r7, #20]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  202 010a ECD0     		beq	.L11
  203              	.L9:
  192:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****           }
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 8
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 8
 
 
  193:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         }
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  236 0140 05D1     		bne	.L2
  215:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     {
  216:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       __HAL_RCC_PWR_CLK_DISABLE();
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 9
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 9
 
 
  237              		.loc 1 216 7
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  237:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     __HAL_RCC_USART2_CONFIG(PeriphClkInit->Usart2ClockSelection);
  271              		.loc 1 237 5
  272 017c 984B     		ldr	r3, .L36
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 10
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 10
 
 
  273 017e D3F88830 		ldr	r3, [r3, #136]
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  258:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     __HAL_RCC_UART4_CONFIG(PeriphClkInit->Uart4ClockSelection);
  307              		.loc 1 258 5
  308 01c0 874B     		ldr	r3, .L36
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 11
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 11
 
 
  309 01c2 D3F88830 		ldr	r3, [r3, #136]
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  279:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     /* Check the parameters */
  280:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     assert_param(IS_RCC_LPUART1CLKSOURCE(PeriphClkInit->Lpuart1ClockSelection));
  281:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 12
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 12
 
 
  282:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     /* Configure the LPUAR1 clock source */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  300:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     assert_param(IS_RCC_I2C2CLKSOURCE(PeriphClkInit->I2c2ClockSelection));
  301:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
  302:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     /* Configure the I2C2 clock source */
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 13
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 13
 
 
  303:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     __HAL_RCC_I2C2_CONFIG(PeriphClkInit->I2c2ClockSelection);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  321:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     /* Check the parameters */
  322:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     assert_param(IS_RCC_I2C4CLKSOURCE(PeriphClkInit->I2c4ClockSelection));
  323:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 14
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 14
 
 
  324:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     /* Configure the I2C4 clock source */
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  342:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   {
  343:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     /* Check the parameters */
  344:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     assert_param(IS_RCC_SAI1CLKSOURCE(PeriphClkInit->Sai1ClockSelection));
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 15
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 15
 
 
  345:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  486 0314 5B6B     		ldr	r3, [r3, #52]
  487 0316 3249     		ldr	r1, .L36
  488 0318 1343     		orrs	r3, r3, r2
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 16
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 16
 
 
  489 031a C1F88830 		str	r3, [r1, #136]
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  524 035a B3F1807F 		cmp	r3, #16777216
  525 035e 05D1     		bne	.L27
  383:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     {
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 17
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 17
 
 
  384:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       /* Enable PLL48M1CLK output */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  562              	.L28:
  402:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     }
  403:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   }
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 18
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 18
 
 
  404:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  599              		.loc 1 421 21
  600 03e4 7B68     		ldr	r3, [r7, #4]
  601 03e6 1B68     		ldr	r3, [r3]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 19
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 19
 
 
  602              		.loc 1 421 45
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  441:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     assert_param(IS_RCC_ADC345CLKSOURCE(PeriphClkInit->Adc345ClockSelection));
  442:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
  443:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     /* Configure the ADC345 interface clock source */
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 20
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 20
 
 
  444:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     __HAL_RCC_ADC345_CONFIG(PeriphClkInit->Adc345ClockSelection);
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  671 046a 7B68     		ldr	r3, [r7, #4]
  672 046c DB6C     		ldr	r3, [r3, #76]
  673 046e 0A49     		ldr	r1, .L39
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 21
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 21
 
 
  674 0470 1343     		orrs	r3, r3, r2
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  477:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** /**
  478:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   * @brief  Get the RCC_ClkInitStruct according to the internal RCC configuration registers.
  479:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   * @param  PeriphClkInit  pointer to an RCC_PeriphCLKInitTypeDef structure that
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 22
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 22
 
 
  480:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   *         returns the configuration information for the Extended Peripherals
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  514:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****                                         RCC_PERIPHCLK_I2C4    | \
  515:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****                                         RCC_PERIPHCLK_LPTIM1  | RCC_PERIPHCLK_SAI1   | RCC_PERIPHCL
  516:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****                                         RCC_PERIPHCLK_RNG     | RCC_PERIPHCLK_USB    | RCC_PERIPHCL
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 23
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 23
 
 
  517:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****                                         RCC_PERIPHCLK_QSPI    | \
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  755              		.loc 1 552 40
  756 0034 7B68     		ldr	r3, [r7, #4]
  757 0036 DA60     		str	r2, [r3, #12]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 24
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 24
 
 
  553:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  572:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
  573:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   /* Get the I2C3 clock source -----------------------------------------------*/
  574:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   PeriphClkInit->I2c3ClockSelection    = __HAL_RCC_GET_I2C3_SOURCE();
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 25
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 25
 
 
  793              		.loc 1 574 42
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  829 00c4 1C4B     		ldr	r3, .L42+4
  830 00c6 D3F88830 		ldr	r3, [r3, #136]
  831 00ca 03F04072 		and	r2, r3, #50331648
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 26
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 26
 
 
  832              		.loc 1 592 41
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  865 010c D3F89C30 		ldr	r3, [r3, #156]
  866 0110 03F44012 		and	r2, r3, #3145728
  867              		.loc 1 613 37
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 27
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 27
 
 
  868 0114 7B68     		ldr	r3, [r7, #4]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  630:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_UART5  UART5 peripheral clock (only for devices with UART5)
  631:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_LPUART1  LPUART1 peripheral clock
  632:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_I2C1  I2C1 peripheral clock
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 28
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 28
 
 
  633:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   *            @arg @ref RCC_PERIPHCLK_I2C2  I2C2 peripheral clock
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  934              		.loc 1 660 12
  935 001a 03F44073 		and	r3, r3, #768
  936 001e 3B61     		str	r3, [r7, #16]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 29
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 29
 
 
  661:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  978 0072 B3F5407F 		cmp	r3, #768
  979 0076 40F0F584 		bne	.L49
  674:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     {
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 30
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 30
 
 
  675:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       frequency = HSE_VALUE / 32U;
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1009              		.loc 1 699 13
  1010 00a8 8C4B     		ldr	r3, .L165
  1011 00aa DB68     		ldr	r3, [r3, #12]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 31
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 31
 
 
  1012 00ac 03F00303 		and	r3, r3, #3
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  717:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
  718:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     switch(PeriphClk)
  1049              		.loc 1 718 5
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 32
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 32
 
 
  1050 00e6 7B68     		ldr	r3, [r7, #4]
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1104 019a 7B68     		ldr	r3, [r7, #4]
  1105 019c B3F5007F 		cmp	r3, #512
  1106 01a0 00F03682 		beq	.L65
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 33
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 33
 
 
  1107 01a4 7B68     		ldr	r3, [r7, #4]
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1161 0254 170A0000 		.word	.L144+1
  1162 0258 170A0000 		.word	.L144+1
  1163 025c 170A0000 		.word	.L144+1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 34
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 34
 
 
  1164 0260 170A0000 		.word	.L144+1
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  764:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       else if((HAL_IS_BIT_SET(RCC->BDCR, RCC_BDCR_LSERDY))  && (srcclk == RCC_USART2CLKSOURCE_LSE))
  765:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
  766:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         frequency = LSE_VALUE;
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 35
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 35
 
 
  767:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       }
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  821:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         frequency = LSE_VALUE;
  822:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       }
  823:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       /* Clock not enabled for UART4 */
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 36
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 36
 
 
  824:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       else
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  878:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         frequency = LSE_VALUE;
  879:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       }
  880:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       /* Clock not enabled for LPUART1 */
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 37
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 37
 
 
  881:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       else
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  935:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       srcclk = __HAL_RCC_GET_I2C3_SOURCE();
  936:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
  937:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       if(srcclk == RCC_I2C3CLKSOURCE_PCLK1)
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 38
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 38
 
 
  938:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  992:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
  993:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         frequency = LSI_VALUE;
  994:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       }
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 39
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 39
 
 
  995:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       else if((HAL_IS_BIT_SET(RCC->CR, RCC_CR_HSIRDY)) && (srcclk == RCC_LPTIM1CLKSOURCE_HSI))
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1049:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         frequency = HAL_RCC_GetSysClockFreq();
 1050:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       }
 1051:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       else if(srcclk == RCC_I2SCLKSOURCE_PLL)
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 40
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 40
 
 
 1052:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1106:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** #if defined(USB)
 1107:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     
 1108:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****     case RCC_PERIPHCLK_USB:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 41
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 41
 
 
 1109:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       /* Get the current USB source */
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1163:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****             if(READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLP) != 0U)
 1164:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****             {
 1165:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****               pllp = 17U;
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 42
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 42
 
 
 1166:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****             }
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1220:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       }
 1221:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       break;
 1222:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** #endif /* ADC345_COMMON */
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 43
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 43
 
 
 1223:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1191              	.L77:
  729:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
  1192              		.loc 1 729 14
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 44
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 44
 
 
  1193 0294 3B69     		ldr	r3, [r7, #16]
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1235              	.L166:
  1236              		.align	2
  1237              	.L165:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 45
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 45
 
 
  1238 02dc 00100240 		.word	1073876992
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1280              		.loc 1 762 19
  1281 0328 944B     		ldr	r3, .L167+4
  1282 032a FB61     		str	r3, [r7, #28]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 46
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 46
 
 
  773:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1324 036e FFF7FEFF 		bl	HAL_RCC_GetSysClockFreq
  1325 0372 F861     		str	r0, [r7, #28]
  800:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 47
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 47
 
 
  1326              		.loc 1 800 7
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1368 03ba 3B61     		str	r3, [r7, #16]
  807:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
  1369              		.loc 1 807 9
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 48
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 48
 
 
  1370 03bc 3B69     		ldr	r3, [r7, #16]
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1412 03fe 40F01283 		bne	.L148
  819:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
  1413              		.loc 1 819 60 discriminator 1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 49
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 49
 
 
  1414 0402 3B69     		ldr	r3, [r7, #16]
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  844:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
  1456              		.loc 1 844 56 discriminator 1
  1457 044a 3B69     		ldr	r3, [r7, #16]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 50
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 50
 
 
  1458 044c B3F5007F 		cmp	r3, #512
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1499              		.loc 1 868 14
  1500 0494 3B69     		ldr	r3, [r7, #16]
  1501 0496 B3F5806F 		cmp	r3, #1024
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 51
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 51
 
 
  1502 049a 03D1     		bne	.L99
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1543              		.loc 1 889 16
  1544 04e2 254B     		ldr	r3, .L167
  1545 04e4 D3F88830 		ldr	r3, [r3, #136]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 52
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 52
 
 
  889:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1587 052c 124B     		ldr	r3, .L167
  1588 052e D3F88830 		ldr	r3, [r3, #136]
  912:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 53
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 53
 
 
  1589              		.loc 1 912 14
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1632 057c 0024F400 		.word	16000000
  1633              	.L66:
  935:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 54
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 54
 
 
  1634              		.loc 1 935 16
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1676              	.L57:
  960:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
  1677              		.loc 1 960 16
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 55
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 55
 
 
  1678 05ca 8E4B     		ldr	r3, .L169
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  985:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
  1720              		.loc 1 985 16
  1721 0610 7C4B     		ldr	r3, .L169
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 56
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 56
 
 
  1722 0612 D3F88830 		ldr	r3, [r3, #136]
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1764 065e 6A4B     		ldr	r3, .L169+4
  1765 0660 FB61     		str	r3, [r7, #28]
  1766 0662 10E0     		b	.L114
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 57
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 57
 
 
  1767              	.L116:
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1809 06ac DB68     		ldr	r3, [r3, #12]
  1810 06ae 03F48013 		and	r3, r3, #1048576
 1020:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         {
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 58
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 58
 
 
  1811              		.loc 1 1020 11
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1032:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
  1852              		.loc 1 1032 16
  1853 06f0 444B     		ldr	r3, .L169
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 59
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 59
 
 
  1854 06f2 1B68     		ldr	r3, [r3]
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1056:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****           frequency = (pllvco * plln) / (((READ_BIT(RCC->PLLCFGR, RCC_PLLCFGR_PLLQ) >> RCC_PLLCFGR_
  1896              		.loc 1 1056 18
  1897 0740 304B     		ldr	r3, .L169
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 60
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 60
 
 
  1898 0742 DB68     		ldr	r3, [r3, #12]
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1938              		.loc 1 1065 14
  1939 0780 B3F5806F 		cmp	r3, #1024
  1940 0784 40F06181 		bne	.L157
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 61
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 61
 
 
 1065:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  1982 07ca 0E4B     		ldr	r3, .L169
  1983 07cc DB68     		ldr	r3, [r3, #12]
  1984 07ce 03F48013 		and	r3, r3, #1048576
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 62
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 62
 
 
 1091:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         {
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2026              		.loc 1 1110 14
  2027 081a 03F04063 		and	r3, r3, #201326592
  2028 081e 3B61     		str	r3, [r7, #16]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 63
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 63
 
 
 1112:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2069 0862 3B69     		ldr	r3, [r7, #16]
  2070 0864 002B     		cmp	r3, #0
  2071 0866 40F0F480 		bne	.L159
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 64
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 64
 
 
 1120:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       }
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2112 08aa FB61     		str	r3, [r7, #28]
 1148:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
  2113              		.loc 1 1148 7
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 65
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 65
 
 
  2114 08ac D3E0     		b	.L160
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2155              		.loc 1 1159 16
  2156 08f4 03F07F03 		and	r3, r3, #127
  2157 08f8 FB60     		str	r3, [r7, #12]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 66
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 66
 
 
 1160:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****           if(pllp == 0U)
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2200 093a 40F08E80 		bne	.L161
 1177:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       }
  2201              		.loc 1 1177 21
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 67
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 67
 
 
  2202 093e FFF7FEFF 		bl	HAL_RCC_GetSysClockFreq
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2243 0982 0AD1     		bne	.L138
 1200:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****             {
  2244              		.loc 1 1200 16
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 68
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 68
 
 
  2245 0984 3A4B     		ldr	r3, .L171
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2287              		.loc 1 1230 9
  2288 09c8 3B69     		ldr	r3, [r7, #16]
  2289 09ca B3F5001F 		cmp	r3, #2097152
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 69
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 69
 
 
  2290 09ce 14D1     		bne	.L140
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2330 0a08 3B69     		ldr	r3, [r7, #16]
  2331 0a0a 002B     		cmp	r3, #0
  2332 0a0c 29D1     		bne	.L163
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 70
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 70
 
 
 1242:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       }
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2376 0a3a 00BF     		nop
  2377 0a3c 12E0     		b	.L49
  2378              	.L154:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 71
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 71
 
 
  979:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2419 0a64 FB69     		ldr	r3, [r7, #28]
 1258:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** }
  2420              		.loc 1 1258 1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 72
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 72
 
 
  2421 0a66 1846     		mov	r0, r3
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2448              		.loc 1 1287 1
  2449              		.cfi_startproc
  2450              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 73
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 73
 
 
  2451              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2497              		@ link register save eliminated.
  2498 0000 80B4     		push	{r7}
  2499              	.LCFI20:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 74
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 74
 
 
  2500              		.cfi_def_cfa_offset 4
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1310:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** {
  2544              		.loc 1 1310 1
  2545              		.cfi_startproc
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 75
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 75
 
 
  2546              		@ args = 0, pretend = 0, frame = 0
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2590 0040 7047     		bx	lr
  2591              	.L181:
  2592 0042 00BF     		.align	2
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 76
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 76
 
 
  2593              	.L180:
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1336:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   }
 1337:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** }
  2634              		.loc 1 1337 1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 77
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 77
 
 
  2635 001e 00BF     		nop
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2681              		.global	HAL_RCCEx_EnableLSCO
  2682              		.syntax unified
  2683              		.thumb
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 78
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 78
 
 
  2684              		.thumb_func
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2719 0024 03F00103 		and	r3, r3, #1
  2720 0028 FB60     		str	r3, [r7, #12]
  2721 002a FB68     		ldr	r3, [r7, #12]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 79
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 79
 
 
  2722              	.LBE4:
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2763              	.L189:
 1382:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   }
 1383:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   if(HAL_IS_BIT_CLR(PWR->CR1, PWR_CR1_DBP))
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 80
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 80
 
 
  2764              		.loc 1 1383 6
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1398:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   }
 1399:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** }
  2804              		.loc 1 1399 1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 81
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 81
 
 
  2805 00c2 00BF     		nop
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1409:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
 1410:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   /* Update LSCOEN bit in Backup Domain control register */
 1411:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   if(__HAL_RCC_PWR_IS_CLK_DISABLED())
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 82
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 82
 
 
  2852              		.loc 1 1411 6
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  2894 0056 C2F89030 		str	r3, [r2, #144]
 1424:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
 1425:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   /* Restore previous configuration */
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 83
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 83
 
 
 1426:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   if(backupchanged == SET)
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1437:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
 1438:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** /**
 1439:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   * @}
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 84
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 84
 
 
 1440:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   */
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1494:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****               (++) Implement CRS status management in the following user callbacks called from
 1495:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****                    HAL_RCCEx_CRS_IRQHandler():
 1496:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****                    (+++) HAL_RCCEx_CRS_SyncOkCallback()
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 85
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 85
 
 
 1497:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****                    (+++) HAL_RCCEx_CRS_SyncWarnCallback()
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1529:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   __HAL_RCC_CRS_RELEASE_RESET();
  2962              		.loc 1 1529 3
  2963 0014 194B     		ldr	r3, .L205
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 86
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 86
 
 
  2964 0016 9B6B     		ldr	r3, [r3, #56]
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3004 0050 1B68     		ldr	r3, [r3]
  3005 0052 23F4FE42 		bic	r2, r3, #32512
  3006 0056 7B68     		ldr	r3, [r7, #4]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 87
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 87
 
 
  3007 0058 5B69     		ldr	r3, [r3, #20]
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3050              		.cfi_startproc
  3051              		@ args = 0, pretend = 0, frame = 0
  3052              		@ frame_needed = 1, uses_anonymous_args = 0
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 88
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 88
 
 
  3053              		@ link register save eliminated.
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3099 0000 80B4     		push	{r7}
  3100              	.LCFI54:
  3101              		.cfi_def_cfa_offset 4
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 89
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 89
 
 
  3102              		.cfi_offset 7, -4
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1581:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** }
  3142              		.loc 1 1581 1
  3143 0038 00BF     		nop
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 90
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 90
 
 
  3144 003a 0C37     		adds	r7, r7, #12
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3182              	.LCFI61:
  3183              		.cfi_def_cfa_offset 24
  3184 0004 00AF     		add	r7, sp, #0
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 91
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 91
 
 
  3185              	.LCFI62:
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3221 0038 03F00103 		and	r3, r3, #1
  3222              		.loc 1 1617 7
  3223 003c 012B     		cmp	r3, #1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 92
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 92
 
 
  3224 003e 06D1     		bne	.L216
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1639:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       /* CRS SYNC Error */
 1640:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       crsstatus |= RCC_CRS_TRIMOVF;
  3257              		.loc 1 1640 17
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 93
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 93
 
 
  3258 0076 FB68     		ldr	r3, [r7, #12]
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3292 00b4 FB60     		str	r3, [r7, #12]
 1661:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
 1662:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       /* Clear CRS SYNC Missed bit */
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 94
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 94
 
 
 1663:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       __HAL_RCC_CRS_CLEAR_FLAG(RCC_CRS_FLAG_SYNCMISS);
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3335              		.global	HAL_RCCEx_CRS_IRQHandler
  3336              		.syntax unified
  3337              		.thumb
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 95
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 95
 
 
  3338              		.thumb_func
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3379              		.loc 1 1689 46 discriminator 1
  3380 0026 002B     		cmp	r3, #0
  3381 0028 05D0     		beq	.L227
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 96
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 96
 
 
 1690:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   {
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3418 0062 03F00803 		and	r3, r3, #8
  3419              		.loc 1 1707 50 discriminator 1
  3420 0066 002B     		cmp	r3, #0
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 97
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 97
 
 
  3421 0068 05D0     		beq	.L230
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3458 00a4 03D0     		beq	.L232
 1725:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****       {
 1726:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****         crserror |= RCC_CRS_SYNCMISS;
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 98
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 98
 
 
  3459              		.loc 1 1726 18
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3499              		.cfi_endproc
  3500              	.LFE146:
  3502              		.section	.text.HAL_RCCEx_CRS_SyncOkCallback,"ax",%progbits
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 99
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 99
 
 
  3503              		.align	1
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1755:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   * @retval none
 1756:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   */
 1757:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** __weak void HAL_RCCEx_CRS_SyncWarnCallback(void)
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 100
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 100
 
 
 1758:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** {
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3590 0002 00AF     		add	r7, sp, #0
  3591              	.LCFI79:
  3592              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 101
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 101
 
 
 1770:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   /* NOTE : This function should not be modified, when the callback is needed,
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
 1787:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   UNUSED(Error);
 1788:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c **** 
 1789:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****   /* NOTE : This function should not be modified, when the callback is needed,
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 102
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 102
 
 
 1790:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_rcc_ex.c ****             the @ref HAL_RCCEx_CRS_ErrorCallback should be implemented in the user file
@@ -6092,78 +6092,78 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 1
  3658              		.file 9 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h"
  3659              		.file 10 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_rcc.h"
  3660              		.file 11 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h"
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 103
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 103
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32g4xx_hal_rcc_ex.c
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:21     .text.HAL_RCCEx_PeriphCLKConfig:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:27     .text.HAL_RCCEx_PeriphCLKConfig:00000000 HAL_RCCEx_PeriphCLKConfig
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:226    .text.HAL_RCCEx_PeriphCLKConfig:00000130 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:230    .text.HAL_RCCEx_PeriphCLKConfig:00000138 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:596    .text.HAL_RCCEx_PeriphCLKConfig:000003e0 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:600    .text.HAL_RCCEx_PeriphCLKConfig:000003e4 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:704    .text.HAL_RCCEx_PeriphCLKConfig:00000498 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:709    .text.HAL_RCCEx_GetPeriphCLKConfig:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:715    .text.HAL_RCCEx_GetPeriphCLKConfig:00000000 HAL_RCCEx_GetPeriphCLKConfig
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:894    .text.HAL_RCCEx_GetPeriphCLKConfig:00000134 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:900    .text.HAL_RCCEx_GetPeriphCLKFreq:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:906    .text.HAL_RCCEx_GetPeriphCLKFreq:00000000 HAL_RCCEx_GetPeriphCLKFreq
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:1136   .text.HAL_RCCEx_GetPeriphCLKFreq:000001f0 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:1168   .text.HAL_RCCEx_GetPeriphCLKFreq:00000270 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:1238   .text.HAL_RCCEx_GetPeriphCLKFreq:000002dc $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:1244   .text.HAL_RCCEx_GetPeriphCLKFreq:000002ec $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:1631   .text.HAL_RCCEx_GetPeriphCLKFreq:00000578 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:1635   .text.HAL_RCCEx_GetPeriphCLKFreq:00000580 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2018   .text.HAL_RCCEx_GetPeriphCLKFreq:00000804 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2024   .text.HAL_RCCEx_GetPeriphCLKFreq:00000814 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2433   .text.HAL_RCCEx_GetPeriphCLKFreq:00000a70 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2440   .text.HAL_RCCEx_EnableLSECSS:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2446   .text.HAL_RCCEx_EnableLSECSS:00000000 HAL_RCCEx_EnableLSECSS
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2480   .text.HAL_RCCEx_EnableLSECSS:00000020 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2485   .text.HAL_RCCEx_DisableLSECSS:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2491   .text.HAL_RCCEx_DisableLSECSS:00000000 HAL_RCCEx_DisableLSECSS
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2531   .text.HAL_RCCEx_DisableLSECSS:0000002c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2536   .text.HAL_RCCEx_EnableLSECSS_IT:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2542   .text.HAL_RCCEx_EnableLSECSS_IT:00000000 HAL_RCCEx_EnableLSECSS_IT
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2594   .text.HAL_RCCEx_EnableLSECSS_IT:00000044 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2600   .text.HAL_RCCEx_LSECSS_IRQHandler:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2606   .text.HAL_RCCEx_LSECSS_IRQHandler:00000000 HAL_RCCEx_LSECSS_IRQHandler
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2651   .text.HAL_RCCEx_LSECSS_Callback:00000000 HAL_RCCEx_LSECSS_Callback
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2640   .text.HAL_RCCEx_LSECSS_IRQHandler:00000024 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2645   .text.HAL_RCCEx_LSECSS_Callback:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2680   .text.HAL_RCCEx_EnableLSCO:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2686   .text.HAL_RCCEx_EnableLSCO:00000000 HAL_RCCEx_EnableLSCO
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2817   .text.HAL_RCCEx_EnableLSCO:000000cc $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2823   .text.HAL_RCCEx_DisableLSCO:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2829   .text.HAL_RCCEx_DisableLSCO:00000000 HAL_RCCEx_DisableLSCO
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2926   .text.HAL_RCCEx_DisableLSCO:00000080 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2932   .text.HAL_RCCEx_CRSConfig:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:2938   .text.HAL_RCCEx_CRSConfig:00000000 HAL_RCCEx_CRSConfig
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3035   .text.HAL_RCCEx_CRSConfig:0000007c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3041   .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3047   .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:00000000 HAL_RCCEx_CRSSoftwareSynchronizationGenerate
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3081   .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3086   .text.HAL_RCCEx_CRSGetSynchronizationInfo:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3092   .text.HAL_RCCEx_CRSGetSynchronizationInfo:00000000 HAL_RCCEx_CRSGetSynchronizationInfo
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3159   .text.HAL_RCCEx_CRSGetSynchronizationInfo:00000044 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3164   .text.HAL_RCCEx_CRSWaitSynchronization:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3170   .text.HAL_RCCEx_CRSWaitSynchronization:00000000 HAL_RCCEx_CRSWaitSynchronization
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3329   .text.HAL_RCCEx_CRSWaitSynchronization:000000e0 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3334   .text.HAL_RCCEx_CRS_IRQHandler:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3340   .text.HAL_RCCEx_CRS_IRQHandler:00000000 HAL_RCCEx_CRS_IRQHandler
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s 			page 104
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:21     .text.HAL_RCCEx_PeriphCLKConfig:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:27     .text.HAL_RCCEx_PeriphCLKConfig:00000000 HAL_RCCEx_PeriphCLKConfig
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:226    .text.HAL_RCCEx_PeriphCLKConfig:00000130 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:230    .text.HAL_RCCEx_PeriphCLKConfig:00000138 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:596    .text.HAL_RCCEx_PeriphCLKConfig:000003e0 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:600    .text.HAL_RCCEx_PeriphCLKConfig:000003e4 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:704    .text.HAL_RCCEx_PeriphCLKConfig:00000498 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:709    .text.HAL_RCCEx_GetPeriphCLKConfig:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:715    .text.HAL_RCCEx_GetPeriphCLKConfig:00000000 HAL_RCCEx_GetPeriphCLKConfig
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:894    .text.HAL_RCCEx_GetPeriphCLKConfig:00000134 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:900    .text.HAL_RCCEx_GetPeriphCLKFreq:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:906    .text.HAL_RCCEx_GetPeriphCLKFreq:00000000 HAL_RCCEx_GetPeriphCLKFreq
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:1136   .text.HAL_RCCEx_GetPeriphCLKFreq:000001f0 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:1168   .text.HAL_RCCEx_GetPeriphCLKFreq:00000270 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:1238   .text.HAL_RCCEx_GetPeriphCLKFreq:000002dc $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:1244   .text.HAL_RCCEx_GetPeriphCLKFreq:000002ec $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:1631   .text.HAL_RCCEx_GetPeriphCLKFreq:00000578 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:1635   .text.HAL_RCCEx_GetPeriphCLKFreq:00000580 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2018   .text.HAL_RCCEx_GetPeriphCLKFreq:00000804 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2024   .text.HAL_RCCEx_GetPeriphCLKFreq:00000814 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2433   .text.HAL_RCCEx_GetPeriphCLKFreq:00000a70 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2440   .text.HAL_RCCEx_EnableLSECSS:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2446   .text.HAL_RCCEx_EnableLSECSS:00000000 HAL_RCCEx_EnableLSECSS
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2480   .text.HAL_RCCEx_EnableLSECSS:00000020 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2485   .text.HAL_RCCEx_DisableLSECSS:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2491   .text.HAL_RCCEx_DisableLSECSS:00000000 HAL_RCCEx_DisableLSECSS
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2531   .text.HAL_RCCEx_DisableLSECSS:0000002c $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2536   .text.HAL_RCCEx_EnableLSECSS_IT:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2542   .text.HAL_RCCEx_EnableLSECSS_IT:00000000 HAL_RCCEx_EnableLSECSS_IT
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2594   .text.HAL_RCCEx_EnableLSECSS_IT:00000044 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2600   .text.HAL_RCCEx_LSECSS_IRQHandler:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2606   .text.HAL_RCCEx_LSECSS_IRQHandler:00000000 HAL_RCCEx_LSECSS_IRQHandler
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2651   .text.HAL_RCCEx_LSECSS_Callback:00000000 HAL_RCCEx_LSECSS_Callback
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2640   .text.HAL_RCCEx_LSECSS_IRQHandler:00000024 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2645   .text.HAL_RCCEx_LSECSS_Callback:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2680   .text.HAL_RCCEx_EnableLSCO:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2686   .text.HAL_RCCEx_EnableLSCO:00000000 HAL_RCCEx_EnableLSCO
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2817   .text.HAL_RCCEx_EnableLSCO:000000cc $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2823   .text.HAL_RCCEx_DisableLSCO:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2829   .text.HAL_RCCEx_DisableLSCO:00000000 HAL_RCCEx_DisableLSCO
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2926   .text.HAL_RCCEx_DisableLSCO:00000080 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2932   .text.HAL_RCCEx_CRSConfig:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:2938   .text.HAL_RCCEx_CRSConfig:00000000 HAL_RCCEx_CRSConfig
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3035   .text.HAL_RCCEx_CRSConfig:0000007c $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3041   .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3047   .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:00000000 HAL_RCCEx_CRSSoftwareSynchronizationGenerate
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3081   .text.HAL_RCCEx_CRSSoftwareSynchronizationGenerate:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3086   .text.HAL_RCCEx_CRSGetSynchronizationInfo:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3092   .text.HAL_RCCEx_CRSGetSynchronizationInfo:00000000 HAL_RCCEx_CRSGetSynchronizationInfo
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3159   .text.HAL_RCCEx_CRSGetSynchronizationInfo:00000044 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3164   .text.HAL_RCCEx_CRSWaitSynchronization:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3170   .text.HAL_RCCEx_CRSWaitSynchronization:00000000 HAL_RCCEx_CRSWaitSynchronization
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3329   .text.HAL_RCCEx_CRSWaitSynchronization:000000e0 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3334   .text.HAL_RCCEx_CRS_IRQHandler:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3340   .text.HAL_RCCEx_CRS_IRQHandler:00000000 HAL_RCCEx_CRS_IRQHandler
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s 			page 104
 
 
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3509   .text.HAL_RCCEx_CRS_SyncOkCallback:00000000 HAL_RCCEx_CRS_SyncOkCallback
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3544   .text.HAL_RCCEx_CRS_SyncWarnCallback:00000000 HAL_RCCEx_CRS_SyncWarnCallback
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3579   .text.HAL_RCCEx_CRS_ExpectedSyncCallback:00000000 HAL_RCCEx_CRS_ExpectedSyncCallback
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3614   .text.HAL_RCCEx_CRS_ErrorCallback:00000000 HAL_RCCEx_CRS_ErrorCallback
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3498   .text.HAL_RCCEx_CRS_IRQHandler:000000d8 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3503   .text.HAL_RCCEx_CRS_SyncOkCallback:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3538   .text.HAL_RCCEx_CRS_SyncWarnCallback:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3573   .text.HAL_RCCEx_CRS_ExpectedSyncCallback:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cca5OvA3.s:3608   .text.HAL_RCCEx_CRS_ErrorCallback:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3509   .text.HAL_RCCEx_CRS_SyncOkCallback:00000000 HAL_RCCEx_CRS_SyncOkCallback
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3544   .text.HAL_RCCEx_CRS_SyncWarnCallback:00000000 HAL_RCCEx_CRS_SyncWarnCallback
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3579   .text.HAL_RCCEx_CRS_ExpectedSyncCallback:00000000 HAL_RCCEx_CRS_ExpectedSyncCallback
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3614   .text.HAL_RCCEx_CRS_ErrorCallback:00000000 HAL_RCCEx_CRS_ErrorCallback
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3498   .text.HAL_RCCEx_CRS_IRQHandler:000000d8 $d
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3503   .text.HAL_RCCEx_CRS_SyncOkCallback:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3538   .text.HAL_RCCEx_CRS_SyncWarnCallback:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3573   .text.HAL_RCCEx_CRS_ExpectedSyncCallback:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\cc3nfJXy.s:3608   .text.HAL_RCCEx_CRS_ErrorCallback:00000000 $t
 
 UNDEFINED SYMBOLS
 HAL_GetTick

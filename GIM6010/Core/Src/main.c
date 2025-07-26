@@ -19,6 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "fdcan.h"
+#include "spi.h"
 #include "tim.h"
 #include "gpio.h"
 
@@ -96,6 +97,7 @@ int main(void)
   MX_GPIO_Init();
   MX_FDCAN1_Init();
   MX_TIM6_Init();
+  MX_SPI3_Init();
   /* USER CODE BEGIN 2 */
   fdcan_user_init();  
   GIMCANMotorSetMode(&hfdcan1, 0x01, GIMCAN_CMD_READ_ANGLE_MODE);

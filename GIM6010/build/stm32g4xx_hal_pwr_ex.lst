@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
   28:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   * @{
   29:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   */
   30:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 2
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 2
 
 
   31:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** /** @defgroup PWREx PWREx
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
   85:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** 
   86:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** /** @defgroup PWREx_Exported_Functions PWR Extended Exported Functions
   87:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   * @{
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 3
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 3
 
 
   88:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   */
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
   55 001e 03F48073 		and	r3, r3, #256
   56              		.loc 1 115 11
   57 0022 B3F5807F 		cmp	r3, #256
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 4
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 4
 
 
   58 0026 02D1     		bne	.L4
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  137:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *                                                typical output voltage at 1.2 V,
  138:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *                                                system frequency up to 150 MHz.
  139:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *            @arg @ref PWR_REGULATOR_VOLTAGE_SCALE2 Regulator voltage output range 2 mode,
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 5
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 5
 
 
  140:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *                                                typical output voltage at 1.0 V,
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  121 001c 474B     		ldr	r3, .L20
  122 001e D3F88030 		ldr	r3, [r3, #128]
  123 0022 464A     		ldr	r2, .L20
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 6
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 6
 
 
  124 0024 23F48073 		bic	r3, r3, #256
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  176:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       if (HAL_IS_BIT_SET(PWR->SR2, PWR_SR2_VOSF))
  165              		.loc 1 176 11 is_stmt 1
  166 006e 334B     		ldr	r3, .L20
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 7
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 7
 
 
  167 0070 5B69     		ldr	r3, [r3, #20]
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  197:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       MODIFY_REG(PWR->CR1, PWR_CR1_VOS, PWR_REGULATOR_VOLTAGE_SCALE1);
  201              		.loc 1 197 7
  202 00b8 204B     		ldr	r3, .L20
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 8
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 8
 
 
  203 00ba 1B68     		ldr	r3, [r3]
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  246 0106 12D1     		bne	.L13
  206:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       {
  207:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****         return HAL_TIMEOUT;
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 9
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 9
 
 
  247              		.loc 1 207 16
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  282              		.cfi_def_cfa_offset 0
  283 013a 7047     		bx	lr
  284              	.L21:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 10
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 10
 
 
  285              		.align	2
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  324 0014 1343     		orrs	r3, r3, r2
  325 0016 CB60     		str	r3, [r1, #12]
  244:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 11
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 11
 
 
  245:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   /* Enable battery charging */
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  371 0002 00AF     		add	r7, sp, #0
  372              	.LCFI17:
  373              		.cfi_def_cfa_register 7
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 12
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 12
 
 
  256:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   CLEAR_BIT(PWR->CR4, PWR_CR4_VBE);
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  419              		.loc 1 266 3
  420 0004 054B     		ldr	r3, .L29
  421 0006 9B68     		ldr	r3, [r3, #8]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 13
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 13
 
 
  422 0008 044A     		ldr	r2, .L29
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  468 000a 23F40043 		bic	r3, r3, #32768
  469 000e 9360     		str	r3, [r2, #8]
  277:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** }
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 14
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 14
 
 
  470              		.loc 1 277 1
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  500              		@ frame_needed = 1, uses_anonymous_args = 0
  501              		@ link register save eliminated.
  502 0000 80B4     		push	{r7}
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 15
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 15
 
 
  503              	.LCFI28:
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  547 0052 DB43     		mvns	r3, r3
  548 0054 3449     		ldr	r1, .L46
  549 0056 1340     		ands	r3, r3, r2
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 16
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 16
 
 
  550 0058 4B62     		str	r3, [r1, #36]
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  593 009a 9A6B     		ldr	r2, [r3, #56]
  594 009c 2249     		ldr	r1, .L46
  595 009e 3B68     		ldr	r3, [r7]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 17
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 17
 
 
  596 00a0 1343     		orrs	r3, r3, r2
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  641 00e8 0F49     		ldr	r1, .L46
  642 00ea 1340     		ands	r3, r3, r2
  643 00ec CB64     		str	r3, [r1, #76]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 18
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 18
 
 
  334:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****        break;
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  686              		.cfi_restore 7
  687              		.cfi_def_cfa_offset 0
  688 0126 7047     		bx	lr
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 19
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 19
 
 
  689              	.L47:
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  366:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** 
  367:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   assert_param(IS_PWR_GPIO(GPIO));
  368:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   assert_param(IS_PWR_GPIO_BIT_NUMBER(GPIONumber));
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 20
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 20
 
 
  369:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** 
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  768 0060 3B68     		ldr	r3, [r7]
  769 0062 DB43     		mvns	r3, r3
  770 0064 1849     		ldr	r1, .L60
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 21
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 21
 
 
  771 0066 1340     		ands	r3, r3, r2
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  813 00a2 3B68     		ldr	r3, [r7]
  814 00a4 C3F30A03 		ubfx	r3, r3, #0, #11
  815 00a8 DB43     		mvns	r3, r3
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 22
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 22
 
 
  816 00aa 0749     		ldr	r1, .L60
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  404:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   * @brief Enable GPIO pull-down state in Standby and Shutdown modes.
  405:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   * @note  Set the relevant PDy bits of PWR_PDCRx register to configure the I/O in
  406:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *        pull-down state in Standby and Shutdown modes.
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 23
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 23
 
 
  407:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   * @note  This state is effective in Standby and Shutdown modes only if APC bit
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  889 0020 5D000000 		.word	.L70+1
  890 0024 7D000000 		.word	.L69+1
  891 0028 99000000 		.word	.L68+1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 24
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 24
 
 
  892 002c B5000000 		.word	.L67+1
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  442:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****        SET_BIT(PWR->PDCRC, GPIONumber);
  936              		.loc 1 442 8
  937 007c 2A4B     		ldr	r3, .L74
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 25
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 25
 
 
  938 007e 5A6B     		ldr	r2, [r3, #52]
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  983 00c6 DB43     		mvns	r3, r3
  984 00c8 1749     		ldr	r1, .L74
  985 00ca 1340     		ands	r3, r3, r2
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 26
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 26
 
 
  986 00cc 0B64     		str	r3, [r1, #64]
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  462:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       status = HAL_ERROR;
  1030              		.loc 1 462 14
  1031 0114 0123     		movs	r3, #1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 27
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 27
 
 
  1032 0116 FB73     		strb	r3, [r7, #15]
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  483:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   * @retval HAL Status
  484:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   */
  485:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** HAL_StatusTypeDef HAL_PWREx_DisableGPIOPullDown(uint32_t GPIO, uint32_t GPIONumber)
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 28
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 28
 
 
  486:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** {
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1112 0046 1340     		ands	r3, r3, r2
  1113 0048 4B62     		str	r3, [r1, #36]
  496:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****        break;
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 29
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 29
 
 
  1114              		.loc 1 496 8
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1157 008a 1340     		ands	r3, r3, r2
  1158 008c 4B64     		str	r3, [r1, #68]
  508:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****        break;
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 30
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 30
 
 
  1159              		.loc 1 508 8
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1200              	.LCFI50:
  1201              		.cfi_def_cfa_register 13
  1202              		@ sp needed
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 31
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 31
 
 
  1203 00c4 5DF8047B 		ldr	r7, [sp], #4
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1242              		.loc 1 538 1
  1243 0010 00BF     		nop
  1244 0012 BD46     		mov	sp, r7
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 32
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 32
 
 
  1245              	.LCFI54:
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1289 0012 BD46     		mov	sp, r7
  1290              	.LCFI58:
  1291              		.cfi_def_cfa_register 13
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 33
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 33
 
 
  1292              		@ sp needed
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1335              	.LCFI62:
  1336              		.cfi_def_cfa_register 13
  1337              		@ sp needed
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 34
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 34
 
 
  1338 0014 5DF8047B 		ldr	r7, [sp], #4
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1382              		@ sp needed
  1383 0014 5DF8047B 		ldr	r7, [sp], #4
  1384              	.LCFI67:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 35
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 35
 
 
  1385              		.cfi_restore 7
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1428 0014 5DF8047B 		ldr	r7, [sp], #4
  1429              	.LCFI71:
  1430              		.cfi_restore 7
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 36
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 36
 
 
  1431              		.cfi_def_cfa_offset 0
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1478              	.L107:
  1479 001a 00BF     		.align	2
  1480              	.L106:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 37
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 37
 
 
  1481 001c 00700040 		.word	1073770496
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1525              	.L109:
  1526 001c 00700040 		.word	1073770496
  1527              		.cfi_endproc
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 38
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 38
 
 
  1528              	.LFE148:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1576              		.align	1
  1577              		.global	HAL_PWREx_EnablePVM3
  1578              		.syntax unified
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 39
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 39
 
 
  1579              		.thumb
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1624              		.thumb
  1625              		.thumb_func
  1627              	HAL_PWREx_DisablePVM3:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 40
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 40
 
 
  1628              	.LFB151:
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  640:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** 
  641:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** /**
  642:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   * @brief Enable the Power Voltage Monitoring 4: VDDA versus OPAMP/DAC minimum voltage 1.8V.
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 41
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 41
 
 
  643:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   * @retval None
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  654:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** void HAL_PWREx_DisablePVM4(void)
  655:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** {
  1719              		.loc 1 655 1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 42
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 42
 
 
  1720              		.cfi_startproc
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  668:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *       called for each PVM used.
  669:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   * @note Refer to the electrical characteristics of your device datasheet for
  670:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *         more details about the voltage thresholds corresponding to each
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 43
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 43
 
 
  671:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *         detection level and to each monitored supply.
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  688:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** #if defined(PWR_CR2_PVME1)
  689:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****     case PWR_PVM_1:
  690:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       /* Clear any previous config. Keep it clear if no event or IT mode is selected */
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 44
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 44
 
 
  691:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       __HAL_PWR_PVM1_EXTI_DISABLE_EVENT();
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1842 007c 5B68     		ldr	r3, [r3, #4]
  1843              		.loc 1 703 28
  1844 007e 03F40033 		and	r3, r3, #131072
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 45
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 45
 
 
  1845              		.loc 1 703 9
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1884              		.loc 1 718 7
  1885 00c4 DEE0     		b	.L150
  1886              	.L131:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 46
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 46
 
 
  719:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** #endif /* PWR_CR2_PVME1 */
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  734:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** 
  735:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       /* Configure event mode */
  736:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       if((sConfigPVM->Mode & PVM_MODE_EVT) == PVM_MODE_EVT)
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 47
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 47
 
 
  1926              		.loc 1 736 21
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  1967 0150 4F4A     		ldr	r2, .L154
  1968 0152 43F01003 		orr	r3, r3, #16
  1969 0156 D362     		str	r3, [r2, #44]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 48
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 48
 
 
  750:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       }
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2009 019c 43F02003 		orr	r3, r3, #32
  2010 01a0 1362     		str	r3, [r2, #32]
  2011              	.L141:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 49
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 49
 
 
  765:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       }
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  781:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****         __HAL_PWR_PVM3_EXTI_ENABLE_FALLING_EDGE();
  2050              		.loc 1 781 9
  2051 01de 2C4B     		ldr	r3, .L154
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 50
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 50
 
 
  2052 01e0 DB6A     		ldr	r3, [r3, #44]
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2092 0228 194B     		ldr	r3, .L154
  2093 022a 1B6A     		ldr	r3, [r3, #32]
  2094 022c 184A     		ldr	r2, .L154
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 51
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 51
 
 
  2095 022e 43F04003 		orr	r3, r3, #64
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2134 026c 002B     		cmp	r3, #0
  2135 026e 11D0     		beq	.L153
  811:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****       {
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 52
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 52
 
 
  812:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****         __HAL_PWR_PVM4_EXTI_ENABLE_FALLING_EDGE();
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2175              	.LCFI103:
  2176              		.cfi_def_cfa_offset 4
  2177 029c BD46     		mov	sp, r7
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 53
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 53
 
 
  2178              	.LCFI104:
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2217 0010 00BF     		nop
  2218 0012 BD46     		mov	sp, r7
  2219              	.LCFI108:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 54
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 54
 
 
  2220              		.cfi_def_cfa_register 13
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2260 0008 1B68     		ldr	r3, [r3]
  2261 000a 164A     		ldr	r2, .L165
  2262 000c 23F48043 		bic	r3, r3, #16384
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 55
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 55
 
 
  2263 0010 1360     		str	r3, [r2]
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2304              	.L163:
  866:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   }
  867:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 56
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 56
 
 
  868:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   return HAL_OK;
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  889:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *          This parameter can be one of the following values:
  890:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *            @arg @ref PWR_STOPENTRY_WFI  Enter Stop mode with WFI instruction
  891:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   *            @arg @ref PWR_STOPENTRY_WFE  Enter Stop mode with WFE instruction
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 57
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 57
 
 
  892:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   * @retval None
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2376 0028 30BF     		wfi
  2377              	@ 0 "" 2
  2378              		.thumb
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 58
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 58
 
 
  2379              		.syntax unified
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2421 004c 00700040 		.word	1073770496
  2422 0050 00ED00E0 		.word	-536810240
  2423              		.cfi_endproc
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 59
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 59
 
 
  2424              	.LFE157:
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  950:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   /* Stop 1 mode with Low-Power Regulator */
  951:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   MODIFY_REG(PWR->CR1, PWR_CR1_LPMS, PWR_CR1_LPMS_STOP1);
  2452              		.loc 1 951 3
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 60
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 60
 
 
  2453 000a 114B     		ldr	r3, .L175
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2491              		.thumb
  2492              		.syntax unified
  2493              	.L174:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 61
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 61
 
 
  968:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   }
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  987:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** {
  2531              		.loc 1 987 1
  2532              		.cfi_startproc
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 62
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 62
 
 
  2533              		@ args = 0, pretend = 0, frame = 0
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2573 002a 7047     		bx	lr
  2574              	.L179:
  2575              		.align	2
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 63
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 63
 
 
  2576              	.L178:
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2613 0014 184B     		ldr	r3, .L187
  2614 0016 4FF48032 		mov	r2, #65536
  2615 001a 5A61     		str	r2, [r3, #20]
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 64
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 64
 
 
  2616              	.L181:
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2647 004a 5B6B     		ldr	r3, [r3, #52]
  2648 004c 03F02003 		and	r3, r3, #32
  2649              		.loc 1 1043 5
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 65
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 65
 
 
  2650 0050 002B     		cmp	r3, #0
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2690              	HAL_PWREx_PVM1Callback:
  2691              	.LFB161:
 1060:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** 
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 66
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 66
 
 
 1061:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** 
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2727              		.loc 1 1081 1
  2728              		.cfi_startproc
  2729              		@ args = 0, pretend = 0, frame = 0
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 67
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 67
 
 
  2730              		@ frame_needed = 1, uses_anonymous_args = 0
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
 1094:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****   /* NOTE : This function should not be modified; when the callback is needed,
 1095:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****             HAL_PWREx_PVM3Callback() API can be implemented in the user file
 1096:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c ****    */
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 68
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 68
 
 
 1097:Drivers/STM32G4xx_HAL_Driver/Src/stm32g4xx_hal_pwr_ex.c **** }
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2818              		.cfi_def_cfa_offset 0
  2819 000c 7047     		bx	lr
  2820              		.cfi_endproc
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 69
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 69
 
 
  2821              	.LFE164:
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2866              	.LFE165:
  2868              		.section	.text.HAL_PWREx_DisableUCPDStandbyMode,"ax",%progbits
  2869              		.align	1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 70
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 70
 
 
  2870              		.global	HAL_PWREx_DisableUCPDStandbyMode
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2913              		.section	.text.HAL_PWREx_EnableUCPDDeadBattery,"ax",%progbits
  2914              		.align	1
  2915              		.global	HAL_PWREx_EnableUCPDDeadBattery
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 71
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 71
 
 
  2916              		.syntax unified
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  2959              		.align	1
  2960              		.global	HAL_PWREx_DisableUCPDDeadBattery
  2961              		.syntax unified
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 72
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 72
 
 
  2962              		.thumb
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  3001              	.LFE168:
  3003              		.text
  3004              	.Letext0:
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 73
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 73
 
 
  3005              		.file 2 "D:/msys64/mingw64/arm-none-eabi/include/machine/_default_types.h"
@@ -4329,133 +4329,133 @@ ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 1
  3010              		.file 7 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr_ex.h"
  3011              		.file 8 "Drivers/CMSIS/Device/ST/STM32G4xx/Include/system_stm32g4xx.h"
  3012              		.file 9 "Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_pwr.h"
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 74
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 74
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32g4xx_hal_pwr_ex.c
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:21     .text.HAL_PWREx_GetVoltageRange:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:27     .text.HAL_PWREx_GetVoltageRange:00000000 HAL_PWREx_GetVoltageRange
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:80     .text.HAL_PWREx_GetVoltageRange:0000003c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:85     .text.HAL_PWREx_ControlVoltageScaling:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:91     .text.HAL_PWREx_ControlVoltageScaling:00000000 HAL_PWREx_ControlVoltageScaling
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:287    .text.HAL_PWREx_ControlVoltageScaling:0000013c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:294    .text.HAL_PWREx_EnableBatteryCharging:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:300    .text.HAL_PWREx_EnableBatteryCharging:00000000 HAL_PWREx_EnableBatteryCharging
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:349    .text.HAL_PWREx_EnableBatteryCharging:00000030 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:354    .text.HAL_PWREx_DisableBatteryCharging:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:360    .text.HAL_PWREx_DisableBatteryCharging:00000000 HAL_PWREx_DisableBatteryCharging
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:394    .text.HAL_PWREx_DisableBatteryCharging:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:399    .text.HAL_PWREx_EnableInternalWakeUpLine:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:405    .text.HAL_PWREx_EnableInternalWakeUpLine:00000000 HAL_PWREx_EnableInternalWakeUpLine
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:439    .text.HAL_PWREx_EnableInternalWakeUpLine:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:444    .text.HAL_PWREx_DisableInternalWakeUpLine:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:450    .text.HAL_PWREx_DisableInternalWakeUpLine:00000000 HAL_PWREx_DisableInternalWakeUpLine
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:484    .text.HAL_PWREx_DisableInternalWakeUpLine:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:489    .text.HAL_PWREx_EnableGPIOPullUp:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:495    .text.HAL_PWREx_EnableGPIOPullUp:00000000 HAL_PWREx_EnableGPIOPullUp
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:525    .text.HAL_PWREx_EnableGPIOPullUp:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:532    .text.HAL_PWREx_EnableGPIOPullUp:00000038 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:692    .text.HAL_PWREx_EnableGPIOPullUp:00000128 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:697    .text.HAL_PWREx_DisableGPIOPullUp:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:703    .text.HAL_PWREx_DisableGPIOPullUp:00000000 HAL_PWREx_DisableGPIOPullUp
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:733    .text.HAL_PWREx_DisableGPIOPullUp:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:740    .text.HAL_PWREx_DisableGPIOPullUp:00000038 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:847    .text.HAL_PWREx_DisableGPIOPullUp:000000c8 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:852    .text.HAL_PWREx_EnableGPIOPullDown:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:858    .text.HAL_PWREx_EnableGPIOPullDown:00000000 HAL_PWREx_EnableGPIOPullDown
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:888    .text.HAL_PWREx_EnableGPIOPullDown:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:895    .text.HAL_PWREx_EnableGPIOPullDown:00000038 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1055   .text.HAL_PWREx_EnableGPIOPullDown:00000128 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1060   .text.HAL_PWREx_DisableGPIOPullDown:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1066   .text.HAL_PWREx_DisableGPIOPullDown:00000000 HAL_PWREx_DisableGPIOPullDown
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1096   .text.HAL_PWREx_DisableGPIOPullDown:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1103   .text.HAL_PWREx_DisableGPIOPullDown:00000038 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1211   .text.HAL_PWREx_DisableGPIOPullDown:000000cc $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1216   .text.HAL_PWREx_EnablePullUpPullDownConfig:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1222   .text.HAL_PWREx_EnablePullUpPullDownConfig:00000000 HAL_PWREx_EnablePullUpPullDownConfig
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1256   .text.HAL_PWREx_EnablePullUpPullDownConfig:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1261   .text.HAL_PWREx_DisablePullUpPullDownConfig:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1267   .text.HAL_PWREx_DisablePullUpPullDownConfig:00000000 HAL_PWREx_DisablePullUpPullDownConfig
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1301   .text.HAL_PWREx_DisablePullUpPullDownConfig:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1306   .text.HAL_PWREx_EnableSRAM2ContentRetention:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1312   .text.HAL_PWREx_EnableSRAM2ContentRetention:00000000 HAL_PWREx_EnableSRAM2ContentRetention
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1346   .text.HAL_PWREx_EnableSRAM2ContentRetention:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1351   .text.HAL_PWREx_DisableSRAM2ContentRetention:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1357   .text.HAL_PWREx_DisableSRAM2ContentRetention:00000000 HAL_PWREx_DisableSRAM2ContentRetention
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1391   .text.HAL_PWREx_DisableSRAM2ContentRetention:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1396   .text.HAL_PWREx_EnablePVM1:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1402   .text.HAL_PWREx_EnablePVM1:00000000 HAL_PWREx_EnablePVM1
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1436   .text.HAL_PWREx_EnablePVM1:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1441   .text.HAL_PWREx_DisablePVM1:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1447   .text.HAL_PWREx_DisablePVM1:00000000 HAL_PWREx_DisablePVM1
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 75
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:21     .text.HAL_PWREx_GetVoltageRange:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:27     .text.HAL_PWREx_GetVoltageRange:00000000 HAL_PWREx_GetVoltageRange
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:80     .text.HAL_PWREx_GetVoltageRange:0000003c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:85     .text.HAL_PWREx_ControlVoltageScaling:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:91     .text.HAL_PWREx_ControlVoltageScaling:00000000 HAL_PWREx_ControlVoltageScaling
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:287    .text.HAL_PWREx_ControlVoltageScaling:0000013c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:294    .text.HAL_PWREx_EnableBatteryCharging:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:300    .text.HAL_PWREx_EnableBatteryCharging:00000000 HAL_PWREx_EnableBatteryCharging
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:349    .text.HAL_PWREx_EnableBatteryCharging:00000030 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:354    .text.HAL_PWREx_DisableBatteryCharging:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:360    .text.HAL_PWREx_DisableBatteryCharging:00000000 HAL_PWREx_DisableBatteryCharging
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:394    .text.HAL_PWREx_DisableBatteryCharging:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:399    .text.HAL_PWREx_EnableInternalWakeUpLine:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:405    .text.HAL_PWREx_EnableInternalWakeUpLine:00000000 HAL_PWREx_EnableInternalWakeUpLine
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:439    .text.HAL_PWREx_EnableInternalWakeUpLine:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:444    .text.HAL_PWREx_DisableInternalWakeUpLine:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:450    .text.HAL_PWREx_DisableInternalWakeUpLine:00000000 HAL_PWREx_DisableInternalWakeUpLine
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:484    .text.HAL_PWREx_DisableInternalWakeUpLine:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:489    .text.HAL_PWREx_EnableGPIOPullUp:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:495    .text.HAL_PWREx_EnableGPIOPullUp:00000000 HAL_PWREx_EnableGPIOPullUp
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:525    .text.HAL_PWREx_EnableGPIOPullUp:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:532    .text.HAL_PWREx_EnableGPIOPullUp:00000038 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:692    .text.HAL_PWREx_EnableGPIOPullUp:00000128 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:697    .text.HAL_PWREx_DisableGPIOPullUp:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:703    .text.HAL_PWREx_DisableGPIOPullUp:00000000 HAL_PWREx_DisableGPIOPullUp
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:733    .text.HAL_PWREx_DisableGPIOPullUp:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:740    .text.HAL_PWREx_DisableGPIOPullUp:00000038 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:847    .text.HAL_PWREx_DisableGPIOPullUp:000000c8 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:852    .text.HAL_PWREx_EnableGPIOPullDown:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:858    .text.HAL_PWREx_EnableGPIOPullDown:00000000 HAL_PWREx_EnableGPIOPullDown
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:888    .text.HAL_PWREx_EnableGPIOPullDown:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:895    .text.HAL_PWREx_EnableGPIOPullDown:00000038 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1055   .text.HAL_PWREx_EnableGPIOPullDown:00000128 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1060   .text.HAL_PWREx_DisableGPIOPullDown:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1066   .text.HAL_PWREx_DisableGPIOPullDown:00000000 HAL_PWREx_DisableGPIOPullDown
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1096   .text.HAL_PWREx_DisableGPIOPullDown:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1103   .text.HAL_PWREx_DisableGPIOPullDown:00000038 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1211   .text.HAL_PWREx_DisableGPIOPullDown:000000cc $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1216   .text.HAL_PWREx_EnablePullUpPullDownConfig:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1222   .text.HAL_PWREx_EnablePullUpPullDownConfig:00000000 HAL_PWREx_EnablePullUpPullDownConfig
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1256   .text.HAL_PWREx_EnablePullUpPullDownConfig:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1261   .text.HAL_PWREx_DisablePullUpPullDownConfig:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1267   .text.HAL_PWREx_DisablePullUpPullDownConfig:00000000 HAL_PWREx_DisablePullUpPullDownConfig
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1301   .text.HAL_PWREx_DisablePullUpPullDownConfig:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1306   .text.HAL_PWREx_EnableSRAM2ContentRetention:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1312   .text.HAL_PWREx_EnableSRAM2ContentRetention:00000000 HAL_PWREx_EnableSRAM2ContentRetention
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1346   .text.HAL_PWREx_EnableSRAM2ContentRetention:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1351   .text.HAL_PWREx_DisableSRAM2ContentRetention:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1357   .text.HAL_PWREx_DisableSRAM2ContentRetention:00000000 HAL_PWREx_DisableSRAM2ContentRetention
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1391   .text.HAL_PWREx_DisableSRAM2ContentRetention:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1396   .text.HAL_PWREx_EnablePVM1:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1402   .text.HAL_PWREx_EnablePVM1:00000000 HAL_PWREx_EnablePVM1
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1436   .text.HAL_PWREx_EnablePVM1:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1441   .text.HAL_PWREx_DisablePVM1:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1447   .text.HAL_PWREx_DisablePVM1:00000000 HAL_PWREx_DisablePVM1
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 75
 
 
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1481   .text.HAL_PWREx_DisablePVM1:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1486   .text.HAL_PWREx_EnablePVM2:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1492   .text.HAL_PWREx_EnablePVM2:00000000 HAL_PWREx_EnablePVM2
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1526   .text.HAL_PWREx_EnablePVM2:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1531   .text.HAL_PWREx_DisablePVM2:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1537   .text.HAL_PWREx_DisablePVM2:00000000 HAL_PWREx_DisablePVM2
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1571   .text.HAL_PWREx_DisablePVM2:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1576   .text.HAL_PWREx_EnablePVM3:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1582   .text.HAL_PWREx_EnablePVM3:00000000 HAL_PWREx_EnablePVM3
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1616   .text.HAL_PWREx_EnablePVM3:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1621   .text.HAL_PWREx_DisablePVM3:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1627   .text.HAL_PWREx_DisablePVM3:00000000 HAL_PWREx_DisablePVM3
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1661   .text.HAL_PWREx_DisablePVM3:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1666   .text.HAL_PWREx_EnablePVM4:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1672   .text.HAL_PWREx_EnablePVM4:00000000 HAL_PWREx_EnablePVM4
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1706   .text.HAL_PWREx_EnablePVM4:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1711   .text.HAL_PWREx_DisablePVM4:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1717   .text.HAL_PWREx_DisablePVM4:00000000 HAL_PWREx_DisablePVM4
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1751   .text.HAL_PWREx_DisablePVM4:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1756   .text.HAL_PWREx_ConfigPVM:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:1762   .text.HAL_PWREx_ConfigPVM:00000000 HAL_PWREx_ConfigPVM
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2165   .text.HAL_PWREx_ConfigPVM:00000290 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2168   .text.HAL_PWREx_ConfigPVM:00000294 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2190   .text.HAL_PWREx_EnableLowPowerRunMode:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2196   .text.HAL_PWREx_EnableLowPowerRunMode:00000000 HAL_PWREx_EnableLowPowerRunMode
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2230   .text.HAL_PWREx_EnableLowPowerRunMode:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2235   .text.HAL_PWREx_DisableLowPowerRunMode:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2241   .text.HAL_PWREx_DisableLowPowerRunMode:00000000 HAL_PWREx_DisableLowPowerRunMode
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2325   .text.HAL_PWREx_DisableLowPowerRunMode:00000064 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2332   .text.HAL_PWREx_EnterSTOP0Mode:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2338   .text.HAL_PWREx_EnterSTOP0Mode:00000000 HAL_PWREx_EnterSTOP0Mode
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2421   .text.HAL_PWREx_EnterSTOP0Mode:0000004c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2427   .text.HAL_PWREx_EnterSTOP1Mode:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2433   .text.HAL_PWREx_EnterSTOP1Mode:00000000 HAL_PWREx_EnterSTOP1Mode
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2517   .text.HAL_PWREx_EnterSTOP1Mode:00000050 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2523   .text.HAL_PWREx_EnterSHUTDOWNMode:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2529   .text.HAL_PWREx_EnterSHUTDOWNMode:00000000 HAL_PWREx_EnterSHUTDOWNMode
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2577   .text.HAL_PWREx_EnterSHUTDOWNMode:0000002c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2583   .text.HAL_PWREx_PVD_PVM_IRQHandler:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2589   .text.HAL_PWREx_PVD_PVM_IRQHandler:00000000 HAL_PWREx_PVD_PVM_IRQHandler
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2690   .text.HAL_PWREx_PVM1Callback:00000000 HAL_PWREx_PVM1Callback
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2725   .text.HAL_PWREx_PVM2Callback:00000000 HAL_PWREx_PVM2Callback
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2760   .text.HAL_PWREx_PVM3Callback:00000000 HAL_PWREx_PVM3Callback
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2795   .text.HAL_PWREx_PVM4Callback:00000000 HAL_PWREx_PVM4Callback
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2679   .text.HAL_PWREx_PVD_PVM_IRQHandler:00000078 $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2684   .text.HAL_PWREx_PVM1Callback:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2719   .text.HAL_PWREx_PVM2Callback:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2754   .text.HAL_PWREx_PVM3Callback:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2789   .text.HAL_PWREx_PVM4Callback:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2824   .text.HAL_PWREx_EnableUCPDStandbyMode:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2830   .text.HAL_PWREx_EnableUCPDStandbyMode:00000000 HAL_PWREx_EnableUCPDStandbyMode
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2864   .text.HAL_PWREx_EnableUCPDStandbyMode:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2869   .text.HAL_PWREx_DisableUCPDStandbyMode:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2875   .text.HAL_PWREx_DisableUCPDStandbyMode:00000000 HAL_PWREx_DisableUCPDStandbyMode
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2909   .text.HAL_PWREx_DisableUCPDStandbyMode:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2914   .text.HAL_PWREx_EnableUCPDDeadBattery:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2920   .text.HAL_PWREx_EnableUCPDDeadBattery:00000000 HAL_PWREx_EnableUCPDDeadBattery
-ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s 			page 76
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1481   .text.HAL_PWREx_DisablePVM1:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1486   .text.HAL_PWREx_EnablePVM2:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1492   .text.HAL_PWREx_EnablePVM2:00000000 HAL_PWREx_EnablePVM2
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1526   .text.HAL_PWREx_EnablePVM2:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1531   .text.HAL_PWREx_DisablePVM2:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1537   .text.HAL_PWREx_DisablePVM2:00000000 HAL_PWREx_DisablePVM2
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1571   .text.HAL_PWREx_DisablePVM2:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1576   .text.HAL_PWREx_EnablePVM3:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1582   .text.HAL_PWREx_EnablePVM3:00000000 HAL_PWREx_EnablePVM3
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1616   .text.HAL_PWREx_EnablePVM3:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1621   .text.HAL_PWREx_DisablePVM3:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1627   .text.HAL_PWREx_DisablePVM3:00000000 HAL_PWREx_DisablePVM3
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1661   .text.HAL_PWREx_DisablePVM3:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1666   .text.HAL_PWREx_EnablePVM4:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1672   .text.HAL_PWREx_EnablePVM4:00000000 HAL_PWREx_EnablePVM4
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1706   .text.HAL_PWREx_EnablePVM4:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1711   .text.HAL_PWREx_DisablePVM4:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1717   .text.HAL_PWREx_DisablePVM4:00000000 HAL_PWREx_DisablePVM4
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1751   .text.HAL_PWREx_DisablePVM4:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1756   .text.HAL_PWREx_ConfigPVM:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:1762   .text.HAL_PWREx_ConfigPVM:00000000 HAL_PWREx_ConfigPVM
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2165   .text.HAL_PWREx_ConfigPVM:00000290 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2168   .text.HAL_PWREx_ConfigPVM:00000294 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2190   .text.HAL_PWREx_EnableLowPowerRunMode:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2196   .text.HAL_PWREx_EnableLowPowerRunMode:00000000 HAL_PWREx_EnableLowPowerRunMode
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2230   .text.HAL_PWREx_EnableLowPowerRunMode:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2235   .text.HAL_PWREx_DisableLowPowerRunMode:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2241   .text.HAL_PWREx_DisableLowPowerRunMode:00000000 HAL_PWREx_DisableLowPowerRunMode
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2325   .text.HAL_PWREx_DisableLowPowerRunMode:00000064 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2332   .text.HAL_PWREx_EnterSTOP0Mode:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2338   .text.HAL_PWREx_EnterSTOP0Mode:00000000 HAL_PWREx_EnterSTOP0Mode
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2421   .text.HAL_PWREx_EnterSTOP0Mode:0000004c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2427   .text.HAL_PWREx_EnterSTOP1Mode:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2433   .text.HAL_PWREx_EnterSTOP1Mode:00000000 HAL_PWREx_EnterSTOP1Mode
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2517   .text.HAL_PWREx_EnterSTOP1Mode:00000050 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2523   .text.HAL_PWREx_EnterSHUTDOWNMode:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2529   .text.HAL_PWREx_EnterSHUTDOWNMode:00000000 HAL_PWREx_EnterSHUTDOWNMode
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2577   .text.HAL_PWREx_EnterSHUTDOWNMode:0000002c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2583   .text.HAL_PWREx_PVD_PVM_IRQHandler:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2589   .text.HAL_PWREx_PVD_PVM_IRQHandler:00000000 HAL_PWREx_PVD_PVM_IRQHandler
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2690   .text.HAL_PWREx_PVM1Callback:00000000 HAL_PWREx_PVM1Callback
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2725   .text.HAL_PWREx_PVM2Callback:00000000 HAL_PWREx_PVM2Callback
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2760   .text.HAL_PWREx_PVM3Callback:00000000 HAL_PWREx_PVM3Callback
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2795   .text.HAL_PWREx_PVM4Callback:00000000 HAL_PWREx_PVM4Callback
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2679   .text.HAL_PWREx_PVD_PVM_IRQHandler:00000078 $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2684   .text.HAL_PWREx_PVM1Callback:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2719   .text.HAL_PWREx_PVM2Callback:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2754   .text.HAL_PWREx_PVM3Callback:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2789   .text.HAL_PWREx_PVM4Callback:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2824   .text.HAL_PWREx_EnableUCPDStandbyMode:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2830   .text.HAL_PWREx_EnableUCPDStandbyMode:00000000 HAL_PWREx_EnableUCPDStandbyMode
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2864   .text.HAL_PWREx_EnableUCPDStandbyMode:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2869   .text.HAL_PWREx_DisableUCPDStandbyMode:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2875   .text.HAL_PWREx_DisableUCPDStandbyMode:00000000 HAL_PWREx_DisableUCPDStandbyMode
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2909   .text.HAL_PWREx_DisableUCPDStandbyMode:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2914   .text.HAL_PWREx_EnableUCPDDeadBattery:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2920   .text.HAL_PWREx_EnableUCPDDeadBattery:00000000 HAL_PWREx_EnableUCPDDeadBattery
+ARM GAS  C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s 			page 76
 
 
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2954   .text.HAL_PWREx_EnableUCPDDeadBattery:0000001c $d
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2959   .text.HAL_PWREx_DisableUCPDDeadBattery:00000000 $t
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2965   .text.HAL_PWREx_DisableUCPDDeadBattery:00000000 HAL_PWREx_DisableUCPDDeadBattery
-C:\Users\AURORA~1\AppData\Local\Temp\cc0DMz7v.s:2999   .text.HAL_PWREx_DisableUCPDDeadBattery:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2954   .text.HAL_PWREx_EnableUCPDDeadBattery:0000001c $d
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2959   .text.HAL_PWREx_DisableUCPDDeadBattery:00000000 $t
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2965   .text.HAL_PWREx_DisableUCPDDeadBattery:00000000 HAL_PWREx_DisableUCPDDeadBattery
+C:\Users\AURORA~1\AppData\Local\Temp\ccnfUAY9.s:2999   .text.HAL_PWREx_DisableUCPDDeadBattery:0000001c $d
 
 UNDEFINED SYMBOLS
 SystemCoreClock
